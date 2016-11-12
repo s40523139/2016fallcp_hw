@@ -28,15 +28,9 @@
 <v t="amd.20161004095719.1" a="E"><vh>封面投影片</vh>
 <v t="amd.20161004095719.2"><vh>封面投影片內容</vh></v>
 </v>
-<v t="amd.20161004104820.1" a="E"><vh>三大主題教學</vh>
-<v t="amd.20161004104641.1"><vh>主題教學</vh>
-<v t="amd.20161004104641.2"><vh>計算機程式在教什麼?</vh></v>
-</v>
-<v t="yen.20161011155543.1" a="E"><vh>主題教學內容</vh>
-<v t="yen.20161011155543.2"><vh>計算機程式在教什麼?</vh></v>
-</v>
-<v t="yen.20161011115740.1" a="E"><vh>相關課程</vh>
-<v t="yen.20161011115740.2"><vh>計算機程式系列課程</vh></v>
+<v t="amd.20161004104820.1" a="E"><vh>vimeo</vh>
+<v t="amd.20161004104641.1" a="E"><vh>主題教學</vh>
+<v t="amd.20161004104641.2"><vh>git clone&amp;git push</vh></v>
 </v>
 <v t="amd.20161004105131.1" a="E"><vh>創造力</vh>
 <v t="amd.20161004105131.2"><vh>何謂創造力?</vh></v>
@@ -170,6 +164,16 @@
 <v t="yen.20161011110116.8"><vh>new:&lt;&lt; 投影片標題 &gt;&gt;</vh></v>
 </v>
 </v>
+<v t="leo.20161112140804.1" a="E"><vh>Recovered Nodes</vh>
+<v t="leo.20161112140804.2"><vh>Recovered node "head" from @clean index.html</vh>
+<v t="leo.20161112140804.3"><vh>old:head</vh></v>
+<v t="leo.20161112140804.4"><vh>new:head</vh></v>
+</v>
+<v t="leo.20161112140804.5"><vh>Recovered node "封面投影片內容" from @clean index.html</vh>
+<v t="leo.20161112140804.6"><vh>old:封面投影片內容</vh></v>
+<v t="leo.20161112140804.7"><vh>new:封面投影片內容</vh></v>
+</v>
+</v>
 </vnodes>
 <tnodes>
 <t tx="amd.20151215170031.1"></t>
@@ -262,7 +266,7 @@ print("hello")
 					
 </t>
 <t tx="amd.20161004083800.15">&lt;section&gt;
-    &lt;h2&gt;github_intro&lt;/h2&gt;
+　&lt;h2&gt;github_intro&lt;/h2&gt;
     &lt;iframe src="https://player.vimeo.com/video/183950627" width="640" height="492" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen&gt;&lt;/iframe&gt;
     &lt;p&gt;
     &lt;a href="https://vimeo.com/183950627"&gt;2016-09-23_cpb_github_intro&lt;/a&gt; from 
@@ -308,7 +312,7 @@ apply broader style changes, like switching the page background.
 <t tx="amd.20161004083800.2">&lt;head&gt;
     &lt;meta charset="utf-8"&gt;
 &lt;title&gt;    
-2016 Fall 計算機程式課程
+2016 2016Fall 計算機程式課程
 &lt;/title&gt;
     &lt;meta name="description" content="A framework for easily creating beautiful presentations using HTML"&gt;
     &lt;meta name="author" content="Hakim El Hattab"&gt;
@@ -464,17 +468,16 @@ make.start()
 
 						
 </t>
-<t tx="amd.20161004095719.2"># 2016Fall 計算機程式課程
+<t tx="amd.20161004095719.2"># 40523139 劉育彤的投影片
 
-### 虎科大機械設計工程系
+### 
+
 
 &lt;small&gt;
-Created by [KMOLab](http://chiamingyen.github.io/kmolab/blog/)
+Created by me
 &lt;/small&gt;
 
-[甲班計算機程式課程網誌](blog/index.html)
-
-[乙班計算機程式課程網誌](https://mdecourse.github.io/2016fallcpb/blog)
+[blog](https://s40523139.github.io/2016fallcp_hw/blog/)
 </t>
 <t tx="amd.20161004100003.1">&lt;section data-markdown&gt;
     &lt;script type="text/template"&gt;
@@ -517,13 +520,14 @@ and images can be specified like so:
 
 						
 </t>
-<t tx="amd.20161004104641.2"># 計算機程式在教什麼?
-
-## 創造力
-## 表達力
-以及
-## 協同力
-
+<t tx="amd.20161004104641.2">&lt;section&gt;
+　&lt;h2&gt;git_clone&amp;git_push&lt;/h2&gt;
+　&lt;iframe src="https://player.vimeo.com/video/191251269" width="640" height="343" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen&gt;&lt;/iframe&gt;
+　&lt;p&gt;
+　&lt;a href="https://vimeo.com/191251269"&gt;2016-11-12 13-37-02&lt;/a&gt; from 
+&lt;a href="https://vimeo.com/user58915964"&gt;劉育彤&lt;/a&gt; on
+&lt;a href="https://vimeo.com"&gt;Vimeo&lt;/a&gt;.
+　&lt;/p&gt;
 </t>
 <t tx="amd.20161004104820.1">&lt;section&gt;
 @others
@@ -688,6 +692,157 @@ PLUGINS = ['liquid_tags.notebook', 'summary']
 <t tx="leo.20151213230957.1"># 設定網誌以 md 檔案建立的 file system date 為準, 無需自行設定
 
 DEFAULT_DATE = 'fs'</t>
+<t tx="leo.20161112140804.1"></t>
+<t tx="leo.20161112140804.2">(uncached) amd.20161004083800.2
+Diff...
+  &lt;head&gt;
+      &lt;meta charset="utf-8"&gt;
+  &lt;title&gt;    
+- 2016 2016Fall 計算機程式課程
+?      ----
++ 2016 Fall 計算機程式課程
+  &lt;/title&gt;
+      &lt;meta name="description" content="A framework for easily creating beautiful presentations using HTML"&gt;
+      &lt;meta name="author" content="Hakim El Hattab"&gt;
+      
+      &lt;meta name="apple-mobile-web-app-capable" content="yes"&gt;
+      &lt;meta name="apple-mobile-web-app-status-bar-style" content="black-translucent"&gt;
+      
+      &lt;meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"&gt;
+      
+      &lt;link rel="stylesheet" href="https://cad-lab.github.io/cadlab_data/reveal/css/reveal.css"&gt;
+      &lt;link rel="stylesheet" href="https://cad-lab.github.io/cadlab_data/reveal/css/theme/black.css" id="theme"&gt;
+      
+      &lt;!-- Theme used for syntax highlighting of code --&gt;
+      &lt;link rel="stylesheet" href="https://cad-lab.github.io/cadlab_data/reveal/lib/css/zenburn.css"&gt;
+  
+      &lt;!-- Printing and PDF exports --&gt;
+      &lt;script&gt;
+          var link = document.createElement( 'link' );
+          link.rel = 'stylesheet';
+          link.type = 'text/css';
+          link.href = window.location.search.match( /print-pdf/gi ) ? 'https://cad-lab.github.io/cadlab_data/reveal/css/print/pdf.css' : 'https://cad-lab.github.io/cadlab_data/reveal/css/print/paper.css';
+          document.getElementsByTagName( 'head' )[0].appendChild( link );
+      &lt;/script&gt;
+  
+      &lt;!--[if lt IE 9]&gt;
+      &lt;script src="https://cad-lab.github.io/cadlab_data/reveal/lib/js/html5shiv.js"&gt;&lt;/script&gt;
+      &lt;![endif]--&gt;
+  &lt;/head&gt;
+  
+</t>
+<t tx="leo.20161112140804.3">&lt;head&gt;
+    &lt;meta charset="utf-8"&gt;
+&lt;title&gt;    
+2016 Fall 計算機程式課程
+&lt;/title&gt;
+    &lt;meta name="description" content="A framework for easily creating beautiful presentations using HTML"&gt;
+    &lt;meta name="author" content="Hakim El Hattab"&gt;
+    
+    &lt;meta name="apple-mobile-web-app-capable" content="yes"&gt;
+    &lt;meta name="apple-mobile-web-app-status-bar-style" content="black-translucent"&gt;
+    
+    &lt;meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"&gt;
+    
+    &lt;link rel="stylesheet" href="https://cad-lab.github.io/cadlab_data/reveal/css/reveal.css"&gt;
+    &lt;link rel="stylesheet" href="https://cad-lab.github.io/cadlab_data/reveal/css/theme/black.css" id="theme"&gt;
+    
+    &lt;!-- Theme used for syntax highlighting of code --&gt;
+    &lt;link rel="stylesheet" href="https://cad-lab.github.io/cadlab_data/reveal/lib/css/zenburn.css"&gt;
+
+    &lt;!-- Printing and PDF exports --&gt;
+    &lt;script&gt;
+        var link = document.createElement( 'link' );
+        link.rel = 'stylesheet';
+        link.type = 'text/css';
+        link.href = window.location.search.match( /print-pdf/gi ) ? 'https://cad-lab.github.io/cadlab_data/reveal/css/print/pdf.css' : 'https://cad-lab.github.io/cadlab_data/reveal/css/print/paper.css';
+        document.getElementsByTagName( 'head' )[0].appendChild( link );
+    &lt;/script&gt;
+
+    &lt;!--[if lt IE 9]&gt;
+    &lt;script src="https://cad-lab.github.io/cadlab_data/reveal/lib/js/html5shiv.js"&gt;&lt;/script&gt;
+    &lt;![endif]--&gt;
+&lt;/head&gt;
+
+</t>
+<t tx="leo.20161112140804.4">&lt;head&gt;
+    &lt;meta charset="utf-8"&gt;
+&lt;title&gt;    
+2016 2016Fall 計算機程式課程
+&lt;/title&gt;
+    &lt;meta name="description" content="A framework for easily creating beautiful presentations using HTML"&gt;
+    &lt;meta name="author" content="Hakim El Hattab"&gt;
+    
+    &lt;meta name="apple-mobile-web-app-capable" content="yes"&gt;
+    &lt;meta name="apple-mobile-web-app-status-bar-style" content="black-translucent"&gt;
+    
+    &lt;meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"&gt;
+    
+    &lt;link rel="stylesheet" href="https://cad-lab.github.io/cadlab_data/reveal/css/reveal.css"&gt;
+    &lt;link rel="stylesheet" href="https://cad-lab.github.io/cadlab_data/reveal/css/theme/black.css" id="theme"&gt;
+    
+    &lt;!-- Theme used for syntax highlighting of code --&gt;
+    &lt;link rel="stylesheet" href="https://cad-lab.github.io/cadlab_data/reveal/lib/css/zenburn.css"&gt;
+
+    &lt;!-- Printing and PDF exports --&gt;
+    &lt;script&gt;
+        var link = document.createElement( 'link' );
+        link.rel = 'stylesheet';
+        link.type = 'text/css';
+        link.href = window.location.search.match( /print-pdf/gi ) ? 'https://cad-lab.github.io/cadlab_data/reveal/css/print/pdf.css' : 'https://cad-lab.github.io/cadlab_data/reveal/css/print/paper.css';
+        document.getElementsByTagName( 'head' )[0].appendChild( link );
+    &lt;/script&gt;
+
+    &lt;!--[if lt IE 9]&gt;
+    &lt;script src="https://cad-lab.github.io/cadlab_data/reveal/lib/js/html5shiv.js"&gt;&lt;/script&gt;
+    &lt;![endif]--&gt;
+&lt;/head&gt;
+
+</t>
+<t tx="leo.20161112140804.5">(uncached) amd.20161004095719.2
+Diff...
+- # 2016Fallcp_hw 劉育彤的簡報
++ # 2016Fall 計算機程式課程
+  
++ ### 虎科大機械設計工程系
+- ### THE HTML PRESENTATION FRAMEWORK
+- 
+  
+  &lt;small&gt;
++ Created by [KMOLab](http://chiamingyen.github.io/kmolab/blog/)
+- Created by [Hakim El Hattab](http://hakim.se)
+- [@hakimel](http://twitter.com/hakimel)
+  &lt;/small&gt;
+  
+- [blog](https://s40523139.github.io/2016fallcp_hw/blog/)
++ [甲班計算機程式課程網誌](blog/index.html)
++ 
++ [乙班計算機程式課程網誌](https://mdecourse.github.io/2016fallcpb/blog)
+</t>
+<t tx="leo.20161112140804.6"># 2016Fall 計算機程式課程
+
+### 虎科大機械設計工程系
+
+&lt;small&gt;
+Created by [KMOLab](http://chiamingyen.github.io/kmolab/blog/)
+&lt;/small&gt;
+
+[甲班計算機程式課程網誌](blog/index.html)
+
+[乙班計算機程式課程網誌](https://mdecourse.github.io/2016fallcpb/blog)
+</t>
+<t tx="leo.20161112140804.7"># 2016Fallcp_hw 劉育彤的簡報
+
+### THE HTML PRESENTATION FRAMEWORK
+
+
+&lt;small&gt;
+Created by [Hakim El Hattab](http://hakim.se)
+[@hakimel](http://twitter.com/hakimel)
+&lt;/small&gt;
+
+[blog](https://s40523139.github.io/2016fallcp_hw/blog/)
+</t>
 <t tx="yen.20161011110116.2"></t>
 <t tx="yen.20161011110116.3">(uncached) amd.20161004083800.2
 Diff...
@@ -816,24 +971,6 @@ Diff...
 ## 俱備&lt;small&gt;&lt;span style="color:#FF0080"&gt;豐富&lt;/span&gt;&lt;/small&gt;想像力-&gt;不受限, &lt;span style="color:#FFFF00"&gt;積極進行改造&lt;/span&gt;
 
 </t>
-<t tx="yen.20161011115740.1">&lt;section data-markdown&gt;
-    &lt;script type="text/template"&gt;
-@others
-    &lt;/script&gt;
-&lt;/section&gt;
-
-
-						
-</t>
-<t tx="yen.20161011115740.2"># 計算機程式系列課程
-
-## 網際內容管理
-## 電腦輔助設計實習
-&lt;span style="color:#00FF80"&gt;還有&lt;/span&gt;
-## 協同產品設計實習
-也在研習&lt;span style="color:#FFFF00"&gt;創造力&lt;/span&gt;、&lt;span style="color:#FFFF00"&gt;表達力&lt;/span&gt;與&lt;span style="color:#FFFF00"&gt;協同力&lt;/span&gt;
-
-</t>
 <t tx="yen.20161011121637.1">&lt;section data-markdown&gt;
     &lt;script type="text/template"&gt;
 @others
@@ -870,7 +1007,8 @@ Diff...
 </t>
 <t tx="yen.20161011122932.1">&lt;section&gt;
 @others
-&lt;/section&gt;</t>
+&lt;/section&gt;
+</t>
 <t tx="yen.20161011122957.1">&lt;section data-markdown&gt;
     &lt;script type="text/template"&gt;
 @others
@@ -926,7 +1064,8 @@ Brython (Javascript): https://www.brython.info/
 </t>
 <t tx="yen.20161011125115.1">&lt;section&gt;
 @others
-&lt;/section&gt;</t>
+&lt;/section&gt;
+</t>
 <t tx="yen.20161011125115.2">&lt;section data-markdown&gt;
     &lt;script type="text/template"&gt;
 @others
@@ -944,7 +1083,8 @@ Brython (Javascript): https://www.brython.info/
 </t>
 <t tx="yen.20161011143808.1">&lt;section&gt;
 @others
-&lt;/section&gt;</t>
+&lt;/section&gt;
+</t>
 <t tx="yen.20161011143808.2">&lt;section data-markdown&gt;
     &lt;script type="text/template"&gt;
 @others
@@ -993,7 +1133,8 @@ Brython (Javascript): https://www.brython.info/
 </t>
 <t tx="yen.20161011145156.1">&lt;section&gt;
 @others
-&lt;/section&gt;</t>
+&lt;/section&gt;
+</t>
 <t tx="yen.20161011145156.2">&lt;section data-markdown&gt;
     &lt;script type="text/template"&gt;
 @others
@@ -1116,23 +1257,6 @@ Brython (Javascript): https://www.brython.info/
 ####機構模擬
 ####猜顏色遊戲
 ####網際對戰遊戲
-</t>
-<t tx="yen.20161011155543.1">&lt;section data-markdown&gt;
-    &lt;script type="text/template"&gt;
-@others
-    &lt;/script&gt;
-&lt;/section&gt;
-
-
-						
-</t>
-<t tx="yen.20161011155543.2"># 計算機程式在教什麼?
-
-## &lt;span style="color:#FFFF00"&gt;創造力&lt;/span&gt;&lt;small&gt;=自學力+程式力+想像力&lt;/small&gt;
-## &lt;span style="color:#FFFF00"&gt;表達力&lt;/span&gt;&lt;small&gt;=口語+文字+2D+3D+理論+實體&lt;/small&gt;
-&lt;span style="color:#00FF80"&gt;以及&lt;/span&gt;
-## &lt;span style="color:#FFFF00"&gt;協同力&lt;/span&gt;&lt;small&gt;=電腦+網路+工具+專案&lt;/small&gt;
-
 </t>
 </tnodes>
 </leo_file>
