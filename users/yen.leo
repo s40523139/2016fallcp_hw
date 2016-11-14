@@ -29,24 +29,12 @@
 <v t="amd.20161004095719.2"><vh>封面投影片內容</vh></v>
 </v>
 <v t="amd.20161004104820.1" a="E"><vh>vimeo</vh>
-<v t="amd.20161004104641.1" a="E"><vh>主題教學</vh>
+<v t="amd.20161004104641.1" a="E"><vh>投影片</vh>
 <v t="amd.20161004104641.2"><vh>git clone&amp;git push</vh></v>
 </v>
-<v t="amd.20161004105131.1" a="E"><vh>創造力</vh>
-<v t="amd.20161004105131.2"><vh>何謂創造力?</vh></v>
 </v>
-<v t="yen.20161011114704.1" a="E"><vh>創造力</vh>
-<v t="yen.20161011114704.2"><vh>何謂創造力?</vh></v>
-</v>
-<v t="yen.20161011121637.1"><vh>所謂自學</vh>
-<v t="yen.20161011121637.2"><vh>自學的訓練</vh></v>
-</v>
-<v t="amd.20161004105716.1"><vh>執行力</vh>
-<v t="amd.20161004105716.2"><vh>高效執行力</vh></v>
-</v>
-</v>
-<v t="yen.20161011122932.1"><vh>自學力訓練</vh>
-<v t="yen.20161011122601.1" a="E"><vh>自學的材料</vh>
+<v t="yen.20161011122932.1" a="E"><vh>vimeo</vh>
+<v t="yen.20161011122601.1" a="E"><vh>投影片</vh>
 <v t="yen.20161011122601.2"><vh>自學 Python3</vh></v>
 </v>
 <v t="yen.20161011122957.1" a="E"><vh>Python 執行環境</vh>
@@ -533,41 +521,6 @@ and images can be specified like so:
 @others
 &lt;/section&gt;
 </t>
-<t tx="amd.20161004105131.1">&lt;section data-markdown&gt;
-    &lt;script type="text/template"&gt;
-@others
-    &lt;/script&gt;
-&lt;/section&gt;
-
-
-						
-</t>
-<t tx="amd.20161004105131.2"># 何謂創造力?
-
-## 能夠&lt;small&gt;&lt;span style="color:#FF0080"&gt;持續&lt;/span&gt;&lt;/small&gt;&lt;span style="color:#FFFF00"&gt;自學&lt;/span&gt;
-## 會安排&lt;small&gt;&lt;span style="color:#FF0080"&gt;高效&lt;/span&gt;&lt;/small&gt;&lt;span style="color:#FFFF00"&gt;可執行&lt;/span&gt;流程
-&lt;span style="color:#00FF80"&gt;還有&lt;/span&gt;
-## 俱備&lt;small&gt;&lt;span style="color:#FF0080"&gt;豐富&lt;/span&gt;&lt;/small&gt;&lt;span style="color:#FFFF00"&gt;想像力&lt;/span&gt;
-
-</t>
-<t tx="amd.20161004105716.1">&lt;section data-markdown&gt;
-    &lt;script type="text/template"&gt;
-@others
-    &lt;/script&gt;
-&lt;/section&gt;
-
-
-						
-</t>
-<t tx="amd.20161004105716.2"># 高效執行力
-
-## 用對的方法
-## 在對的時機
-## 找對的人
-## 作對的事
-
-
-</t>
 <t tx="amd.20161004171423.1">&lt;section data-markdown&gt;
     &lt;script type="text/template"&gt;
 &lt;!-- 請注意, @others 不可以內縮 --&gt;
@@ -954,40 +907,6 @@ Diff...
 <t tx="yen.20161011110116.7">2016 Fall 計算機程式課程
 </t>
 <t tx="yen.20161011110116.8"></t>
-<t tx="yen.20161011114704.1">&lt;section data-markdown&gt;
-    &lt;script type="text/template"&gt;
-@others
-    &lt;/script&gt;
-&lt;/section&gt;
-
-
-						
-</t>
-<t tx="yen.20161011114704.2"># 何謂創造力?
-
-## 能夠&lt;small&gt;&lt;span style="color:#FF0080"&gt;持續&lt;/span&gt;&lt;/small&gt;自學-&gt;&lt;span style="color:#FFFF00"&gt;不一定都要別人教&lt;/span&gt;
-## 會安排&lt;small&gt;&lt;span style="color:#FF0080"&gt;高效&lt;/span&gt;&lt;/small&gt;可執行流程-&gt;展現&lt;span style="color:#FFFF00"&gt;執行力&lt;/span&gt;
-&lt;span style="color:#00FF80"&gt;還有&lt;/span&gt;
-## 俱備&lt;small&gt;&lt;span style="color:#FF0080"&gt;豐富&lt;/span&gt;&lt;/small&gt;想像力-&gt;不受限, &lt;span style="color:#FFFF00"&gt;積極進行改造&lt;/span&gt;
-
-</t>
-<t tx="yen.20161011121637.1">&lt;section data-markdown&gt;
-    &lt;script type="text/template"&gt;
-@others
-    &lt;/script&gt;
-&lt;/section&gt;
-
-
-						
-</t>
-<t tx="yen.20161011121637.2"># 自學的訓練
-
-## 學員必須自己有學習動機
-## 能消化中英文資料
-## 從中體會學習的意義
-
-
-</t>
 <t tx="yen.20161011122601.1">&lt;section data-markdown&gt;
     &lt;script type="text/template"&gt;
 @others
@@ -997,14 +916,13 @@ Diff...
 
 						
 </t>
-<t tx="yen.20161011122601.2"># 自學 Python3
-
-[Python3 程式範例](https://github.com/mdecourse/2016fallcp/blob/master/python3program.py)
-### 在哪裡執行?
-### 如何執行?
-### 如何寫心得?
-### 如何錄製操作過程?
-</t>
+<t tx="yen.20161011122601.2">##利用Brython秀出學號
+&lt;iframe src="https://player.vimeo.com/video/191265690" width="640" height="343" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen&gt;&lt;/iframe&gt;
+&lt;p&gt;
+&lt;a href="https://vimeo.com/191265690"&gt;2016-11-12 19-31-16&lt;/a&gt; from 
+&lt;a href="https://vimeo.com/user58915964"&gt;劉育彤&lt;/a&gt; on
+ &lt;a href="https://vimeo.com"&gt;Vimeo&lt;/a&gt;.
+ &lt;/p&gt;</t>
 <t tx="yen.20161011122932.1">&lt;section&gt;
 @others
 &lt;/section&gt;
