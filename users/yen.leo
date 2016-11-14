@@ -37,15 +37,6 @@
 <v t="yen.20161011122601.1" a="E"><vh>投影片</vh>
 <v t="yen.20161011122601.2"><vh>自學 Python3</vh></v>
 </v>
-<v t="yen.20161011122957.1" a="E"><vh>Python 執行環境</vh>
-<v t="yen.20161011122957.2"><vh>在哪裡執行?</vh></v>
-</v>
-<v t="yen.20161011123951.1" a="E"><vh>Python 解譯器</vh>
-<v t="yen.20161011123951.2"><vh>Python 解譯器</vh></v>
-</v>
-<v t="yen.20161011124118.1" a="E"><vh>Python 版次</vh>
-<v t="yen.20161011124118.2"><vh>Python 2 或 3?</vh></v>
-</v>
 </v>
 <v t="yen.20161011125115.1"><vh>執行力訓練</vh>
 <v t="yen.20161011125115.2" a="E"><vh>分組排座位</vh>
@@ -131,8 +122,8 @@
 <v t="amd.20151216001126.1"><vh>md 檔案範例</vh></v>
 <v t="amd.20151215170031.1" a="E"><vh>@path ./../content</vh>
 <v t="amd.20160106093454.1" a="E"><vh>yen 所寫的網誌文章</vh>
-<v t="amd.20160727114506.1" a="E"><vh>201609</vh>
-<v t="amd.20160727120222.1"><vh>@edit 20160921.md</vh></v>
+<v t="amd.20160727114506.1" a="E"><vh>201611</vh>
+<v t="amd.20160727120222.1"><vh>@edit 20161115.md</vh></v>
 </v>
 </v>
 </v>
@@ -456,7 +447,7 @@ make.start()
 
 						
 </t>
-<t tx="amd.20161004095719.2"># 40523139 劉育彤的投影片
+<t tx="amd.20161004095719.2"># 2016fall cpa 40523139 劉育彤
 
 ### 
 
@@ -464,6 +455,10 @@ make.start()
 &lt;small&gt;
 Created by me
 &lt;/small&gt;
+
+[vimeo](https://vimeo.com/user58915964)
+
+[wiki](https://github.com/s40523139/2016fallcp_hw/wiki)
 
 [blog](https://s40523139.github.io/2016fallcp_hw/blog/)
 </t>
@@ -926,59 +921,6 @@ Diff...
 <t tx="yen.20161011122932.1">&lt;section&gt;
 @others
 &lt;/section&gt;
-</t>
-<t tx="yen.20161011122957.1">&lt;section data-markdown&gt;
-    &lt;script type="text/template"&gt;
-@others
-    &lt;/script&gt;
-&lt;/section&gt;
-
-
-						
-</t>
-<t tx="yen.20161011122957.2"># 在哪裡執行?
-
-### 單機操作系統中 (近端)
-### 單機連結到遠端主機中 (遠端)
-### 瀏覽器中 (網際端)
-</t>
-<t tx="yen.20161011123951.1">&lt;section data-markdown&gt;
-    &lt;script type="text/template"&gt;
-@others
-    &lt;/script&gt;
-&lt;/section&gt;
-
-
-						
-</t>
-<t tx="yen.20161011123951.2"># Python 解譯器
-
-CPython: https://www.python.org/
-
-(Anaconda: https://www.continuum.io/downloads)
-    
-IronPython (.NET): http://ironpython.net/
-
-Jython (Java): http://www.jython.org/
-
-Pypy (Python): http://pypy.org/
-
-Brython (Javascript): https://www.brython.info/
-</t>
-<t tx="yen.20161011124118.1">&lt;section data-markdown&gt;
-    &lt;script type="text/template"&gt;
-@others
-    &lt;/script&gt;
-&lt;/section&gt;
-
-
-						
-</t>
-<t tx="yen.20161011124118.2"># Python 2 或 3?
-
-### 業界大部份仍以 2.7 版為主
-但是, 若沒有特別約束
-### 建議直接學習 Python3
 </t>
 <t tx="yen.20161011125115.1">&lt;section&gt;
 @others
