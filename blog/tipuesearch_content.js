@@ -1,1 +1,0 @@
-var tipuesearch = {"pages":[{"tags":"misc","text":"2016Fall 修課成員網誌","title":"About","url":"./pages/about/"}]};
