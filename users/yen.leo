@@ -42,7 +42,6 @@
 <v t="amd.20161004112026.2"><vh>在近端開啟部落格</vh></v>
 </v>
 <v t="amd.20161004083800.15"><vh>github intro</vh></v>
-<v t="amd.20161004083800.21"><vh>fork 與 pull requests</vh></v>
 <v t="amd.20161004083800.27" a="E"><vh>投影片</vh>
 <v t="amd.20161004101902.1" a="E"><vh>使用 iframe 嵌入影片連節</vh>
 <v t="amd.20161004101902.2"><vh>iframe 導入影片</vh></v>
@@ -91,8 +90,8 @@
 <v t="amd.20160106093454.1" a="E"><vh>yen 所寫的網誌文章</vh>
 <v t="amd.20160727114506.1" a="E"><vh>201609</vh>
 <v t="amd.20160727120222.1"><vh>@edit 20160921.md</vh></v>
-<v t="leo.20161115180949.1"><vh>@edit 20161115.md</vh></v>
-<v t="leo.20161115223025.1"><vh>@edit 20161114.md</vh></v>
+<v t="leo.20161115223929.1"><vh>@edit 20161115.md</vh></v>
+<v t="leo.20161115223947.1"><vh>@edit 20161114.md</vh></v>
 </v>
 </v>
 </v>
@@ -102,14 +101,22 @@
 </v>
 </v>
 <v t="amd.20161004202833.1"><vh>@edit ../README.md</vh></v>
-<v t="leo.20161115175310.2" a="E"><vh>Recovered Nodes</vh>
-<v t="leo.20161115175310.3"><vh>Recovered node "head" from @clean index.html</vh>
-<v t="leo.20161115175310.4"><vh>old:head</vh></v>
-<v t="leo.20161115175310.5"><vh>new:head</vh></v>
+<v t="leo.20161113210536.2" a="E"><vh>Recovered Nodes</vh>
+<v t="leo.20161113210536.3"><vh>Recovered node "head" from @clean index.html</vh>
+<v t="leo.20161113210536.4"><vh>old:head</vh></v>
+<v t="leo.20161113210536.5"><vh>new:head</vh></v>
 </v>
-<v t="leo.20161115175310.6"><vh>Recovered node "&lt;&lt; 投影片標題 &gt;&gt;" from @clean index.html</vh>
-<v t="leo.20161115175310.7"><vh>old:&lt;&lt; 投影片標題 &gt;&gt;</vh></v>
-<v t="leo.20161115175310.8"><vh>new:&lt;&lt; 投影片標題 &gt;&gt;</vh></v>
+<v t="leo.20161113210536.6"><vh>Recovered node "&lt;&lt; 投影片標題 &gt;&gt;" from @clean index.html</vh>
+<v t="leo.20161113210536.7"><vh>old:&lt;&lt; 投影片標題 &gt;&gt;</vh></v>
+<v t="leo.20161113210536.8"><vh>new:&lt;&lt; 投影片標題 &gt;&gt;</vh></v>
+</v>
+<v t="leo.20161113210536.9"><vh>Recovered node "封面投影片內容" from @clean index.html</vh>
+<v t="leo.20161113210536.10"><vh>old:封面投影片內容</vh></v>
+<v t="leo.20161113210536.11"><vh>new:封面投影片內容</vh></v>
+</v>
+<v t="leo.20161113210536.12"><vh>Recovered node "HTML 投影片 (標題)" from @clean index.html</vh>
+<v t="leo.20161113210536.13"><vh>old:HTML 投影片 (標題)</vh></v>
+<v t="leo.20161113210536.14"><vh>new:HTML 投影片 (標題)</vh></v>
 </v>
 </v>
 </vnodes>
@@ -162,7 +169,7 @@ print("hello")
 <t tx="amd.20161004083800.166"></t>
 <t tx="amd.20161004083800.2">&lt;head&gt;
     &lt;meta charset="utf-8"&gt;
-    &lt;title&gt;    2016 Fall 計算機程式課程
+    &lt;title&gt;    40523132陳崴的計算機程式課程
     &lt;&lt; 投影片標題 &gt;&gt;
 &lt;/title&gt;
     &lt;meta name="description" content="A framework for easily creating beautiful presentations using HTML"&gt;
@@ -194,7 +201,6 @@ print("hello")
 &lt;/head&gt;
 
 </t>
-<t tx="amd.20161004083800.21"></t>
 <t tx="amd.20161004083800.27">&lt;!-- Example of nested vertical slides --&gt;
 &lt;section&gt;
 @others
@@ -493,13 +499,77 @@ PLUGINS = ['liquid_tags.notebook', 'summary']
 <t tx="leo.20151213230957.1"># 設定網誌以 md 檔案建立的 file system date 為準, 無需自行設定
 
 DEFAULT_DATE = 'fs'</t>
-<t tx="leo.20161115175310.2"></t>
-<t tx="leo.20161115175310.3">(uncached) amd.20161004083800.2
+<t tx="leo.20161113210536.10"># 2016Fall CPA 計算機程式課程
+
+### THE HTML PRESENTATION FRAMEWORK
+
+&lt;small&gt;
+Created by [Hakim El Hattab](http://hakim.se)
+[@hakimel](http://twitter.com/hakimel)
+&lt;/small&gt;
+
+[blog](blog/index.html)
+</t>
+<t tx="leo.20161113210536.11">#40523132陳崴的計算機程式課程
+
+### THE HTML PRESENTATION FRAMEWORK
+
+&lt;small&gt;
+Created by [Hakim El Hattab](http://hakim.se)
+[@hakimel](http://twitter.com/hakimel)
+&lt;/small&gt;
+
+[blog](blog/index.html)
+</t>
+<t tx="leo.20161113210536.12">(uncached) amd.20161004083800.8
+Diff...
+  &lt;section&gt;
+-     &lt;h1&gt;40523132陳崴的計算機程式課程&lt;/h1&gt;
++     &lt;h1&gt;2016Fall CPA 計算機程式課程&lt;/h1&gt;
+      &lt;h3&gt;The HTML Presentation Framework&lt;/h3&gt;
+      &lt;p&gt;
+      &lt;small&gt;
+      Created by &lt;a href="http://hakim.se"&gt;Hakim El Hattab&lt;/a&gt; / 
+      &lt;a href="http://twitter.com/hakimel"&gt;@hakimel&lt;/a&gt;
+      &lt;/small&gt;
+      &lt;/p&gt;
+      
+      &lt;a href="blog/index.html"&gt;blog&lt;/a&gt;
+  &lt;/section&gt;
+</t>
+<t tx="leo.20161113210536.13">&lt;section&gt;
+    &lt;h1&gt;2016Fall CPA 計算機程式課程&lt;/h1&gt;
+    &lt;h3&gt;The HTML Presentation Framework&lt;/h3&gt;
+    &lt;p&gt;
+    &lt;small&gt;
+    Created by &lt;a href="http://hakim.se"&gt;Hakim El Hattab&lt;/a&gt; / 
+    &lt;a href="http://twitter.com/hakimel"&gt;@hakimel&lt;/a&gt;
+    &lt;/small&gt;
+    &lt;/p&gt;
+    
+    &lt;a href="blog/index.html"&gt;blog&lt;/a&gt;
+&lt;/section&gt;
+</t>
+<t tx="leo.20161113210536.14">&lt;section&gt;
+    &lt;h1&gt;40523132陳崴的計算機程式課程&lt;/h1&gt;
+    &lt;h3&gt;The HTML Presentation Framework&lt;/h3&gt;
+    &lt;p&gt;
+    &lt;small&gt;
+    Created by &lt;a href="http://hakim.se"&gt;Hakim El Hattab&lt;/a&gt; / 
+    &lt;a href="http://twitter.com/hakimel"&gt;@hakimel&lt;/a&gt;
+    &lt;/small&gt;
+    &lt;/p&gt;
+    
+    &lt;a href="blog/index.html"&gt;blog&lt;/a&gt;
+&lt;/section&gt;
+</t>
+<t tx="leo.20161113210536.2"></t>
+<t tx="leo.20161113210536.3">(uncached) amd.20161004083800.2
 Diff...
   &lt;head&gt;
       &lt;meta charset="utf-8"&gt;
 +     &lt;title&gt;&lt;&lt; 投影片標題 &gt;&gt;&lt;/title&gt;
--     &lt;title&gt;    2016 Fall 計算機程式課程
+-     &lt;title&gt;    40523132陳崴的計算機程式課程
 -     &lt;&lt; 投影片標題 &gt;&gt;
 - &lt;/title&gt;
       &lt;meta name="description" content="A framework for easily creating beautiful presentations using HTML"&gt;
@@ -531,7 +601,7 @@ Diff...
   &lt;/head&gt;
   
 </t>
-<t tx="leo.20161115175310.4">&lt;head&gt;
+<t tx="leo.20161113210536.4">&lt;head&gt;
     &lt;meta charset="utf-8"&gt;
     &lt;title&gt;&lt;&lt; 投影片標題 &gt;&gt;&lt;/title&gt;
     &lt;meta name="description" content="A framework for easily creating beautiful presentations using HTML"&gt;
@@ -563,9 +633,9 @@ Diff...
 &lt;/head&gt;
 
 </t>
-<t tx="leo.20161115175310.5">&lt;head&gt;
+<t tx="leo.20161113210536.5">&lt;head&gt;
     &lt;meta charset="utf-8"&gt;
-    &lt;title&gt;    2016 Fall 計算機程式課程
+    &lt;title&gt;    40523132陳崴的計算機程式課程
     &lt;&lt; 投影片標題 &gt;&gt;
 &lt;/title&gt;
     &lt;meta name="description" content="A framework for easily creating beautiful presentations using HTML"&gt;
@@ -597,12 +667,26 @@ Diff...
 &lt;/head&gt;
 
 </t>
-<t tx="leo.20161115175310.6">(uncached) amd.20161004083800.3
+<t tx="leo.20161113210536.6">(uncached) amd.20161004083800.3
 Diff...
 + 2016 Fall 計算機程式課程
 </t>
-<t tx="leo.20161115175310.7">2016 Fall 計算機程式課程
+<t tx="leo.20161113210536.7">2016 Fall 計算機程式課程
 </t>
-<t tx="leo.20161115175310.8"></t>
+<t tx="leo.20161113210536.8"></t>
+<t tx="leo.20161113210536.9">(uncached) amd.20161004095719.2
+Diff...
+- #40523132陳崴的計算機程式課程
++ # 2016Fall CPA 計算機程式課程
+  
+  ### THE HTML PRESENTATION FRAMEWORK
+  
+  &lt;small&gt;
+  Created by [Hakim El Hattab](http://hakim.se)
+  [@hakimel](http://twitter.com/hakimel)
+  &lt;/small&gt;
+  
+  [blog](blog/index.html)
+</t>
 </tnodes>
 </leo_file>
