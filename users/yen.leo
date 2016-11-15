@@ -18,7 +18,7 @@
 <v t="leo.20151213173830.1" a="E"><vh>假如要在近端檢視, 使用下列按鈕</vh>
 <v t="leo.20151213085727.1"><vh>@button pelican-blog</vh></v>
 </v>
-<v t="amd.20151215180106.1"><vh>設定與開發</vh>
+<v t="amd.20151215180106.1" a="E"><vh>設定與開發</vh>
 <v t="amd.20151216151325.1" a="E"><vh>@clean index.html</vh>
 <v t="amd.20161004083800.1" a="E"><vh>html</vh>
 <v t="amd.20161004083800.2" a="E"><vh>head</vh>
@@ -30,23 +30,13 @@
 <v t="amd.20161004095719.1" a="E"><vh>封面投影片</vh>
 <v t="amd.20161004095719.2"><vh>封面投影片內容</vh></v>
 </v>
-<v t="amd.20161004083800.8"><vh>HTML 投影片 (標題)</vh></v>
-<v t="amd.20161004104820.1" a="E"><vh>三大主題教學</vh>
-<v t="amd.20161004104641.1" a="E"><vh>主題教學</vh>
-<v t="amd.20161004104641.2"><vh>機械設計主題教學</vh></v>
-</v>
-<v t="amd.20161004104904.1" a="E"><vh>創造力元素</vh>
-<v t="amd.20161004104904.2"><vh>創造能力三元素</vh></v>
-</v>
-<v t="amd.20161004105131.1" a="E"><vh>六種表達</vh>
-<v t="amd.20161004105131.2"><vh>創造能力三元素</vh></v>
-</v>
-<v t="amd.20161004105716.1" a="E"><vh>協同設計</vh>
-<v t="amd.20161004105716.2"><vh>融入協同設計</vh></v>
+<v t="amd.20161004104820.1" a="E"><vh>vimeo</vh>
+<v t="amd.20161004104641.1" a="E"><vh>投影片</vh>
+<v t="amd.20161004104641.2"><vh>git clone&amp;git push</vh></v>
 </v>
 </v>
-<v t="amd.20161004101327.1" a="E"><vh>MD 投影片 (標題)</vh>
-<v t="amd.20161004101327.2"><vh>利用 MD 寫內容</vh></v>
+<v t="amd.20161004101327.1" a="E"><vh>vimeo</vh>
+<v t="amd.20161004101327.2"><vh>Brython</vh></v>
 </v>
 <v t="amd.20161004112026.1" a="E"><vh>計算機程式課程內涵</vh>
 <v t="amd.20161004112026.2"><vh>利用 MD 寫內容</vh></v>
@@ -101,6 +91,7 @@
 <v t="amd.20160106093454.1" a="E"><vh>yen 所寫的網誌文章</vh>
 <v t="amd.20160727114506.1" a="E"><vh>201609</vh>
 <v t="amd.20160727120222.1"><vh>@edit 20160921.md</vh></v>
+<v t="leo.20161115180949.1"><vh>@edit 20161115.md</vh></v>
 </v>
 </v>
 </v>
@@ -211,16 +202,7 @@ print("hello")
 
 					
 </t>
-<t tx="amd.20161004083800.15">&lt;section&gt;
-    &lt;h2&gt;github_intro&lt;/h2&gt;
-    &lt;iframe src="https://player.vimeo.com/video/183950627" width="640" height="492" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen&gt;&lt;/iframe&gt;
-    &lt;p&gt;
-    &lt;a href="https://vimeo.com/183950627"&gt;2016-09-23_cpb_github_intro&lt;/a&gt; from 
-    &lt;a href="https://vimeo.com/user24079973"&gt;虎尾科大機械設計工程&lt;/a&gt; on 
-    &lt;a href="https://vimeo.com"&gt;Vimeo&lt;/a&gt;.
-    &lt;/p&gt;
-&lt;/section&gt;
-</t>
+<t tx="amd.20161004083800.15"></t>
 <t tx="amd.20161004083800.158">&lt;section&gt;
     &lt;h2&gt;Export to PDF&lt;/h2&gt;
     &lt;p&gt;
@@ -289,16 +271,7 @@ apply broader style changes, like switching the page background.
 &lt;/head&gt;
 
 </t>
-<t tx="amd.20161004083800.21">&lt;section&gt;
-    &lt;h2&gt;fork_pull_requests&lt;/h2&gt;
-    &lt;iframe src="https://player.vimeo.com/video/183954581" width="640" height="492" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen&gt;&lt;/iframe&gt;
-    &lt;p&gt;
-    &lt;a href="https://vimeo.com/183954581"&gt;2016-09-23_fork_pull_requests&lt;/a&gt; from 
-    &lt;a href="https://vimeo.com/user24079973"&gt;虎尾科大機械設計工程&lt;/a&gt; on 
-    &lt;a href="https://vimeo.com"&gt;Vimeo&lt;/a&gt;.
-    &lt;/p&gt;
-&lt;/section&gt;
-</t>
+<t tx="amd.20161004083800.21"></t>
 <t tx="amd.20161004083800.27">&lt;!-- Example of nested vertical slides --&gt;
 &lt;section&gt;
 @others
@@ -353,45 +326,8 @@ apply broader style changes, like switching the page background.
 &lt;/div&gt;
 
 </t>
-<t tx="amd.20161004083800.8">&lt;section&gt;
-    &lt;h1&gt;2016Fall CPA 計算機程式課程&lt;/h1&gt;
-    &lt;h3&gt;The HTML Presentation Framework&lt;/h3&gt;
-    &lt;p&gt;
-    &lt;small&gt;
-    Created by &lt;a href="http://hakim.se"&gt;Hakim El Hattab&lt;/a&gt; / 
-    &lt;a href="http://twitter.com/hakimel"&gt;@hakimel&lt;/a&gt;
-    &lt;/small&gt;
-    &lt;/p&gt;
-    
-    &lt;a href="blog/index.html"&gt;blog&lt;/a&gt;
-&lt;/section&gt;
-</t>
-<t tx="amd.20161004085439.1">&lt;section&gt;
-    &lt;h2&gt;Vertical Slides&lt;/h2&gt;
-    &lt;p&gt;Slides can be nested inside of each other.&lt;/p&gt;
-    &lt;p&gt;
-    Use the &lt;em&gt;Space&lt;/em&gt; key to navigate through all slides.
-    &lt;/p&gt;
-    &lt;br&gt;
-    &lt;a href="#" class="navigate-down"&gt;
-        &lt;img width="178" height="238" data-src="https://s3.amazonaws.com/hakim-static/reveal-js/arrow.png" alt="Down arrow"&gt;
-    &lt;/a&gt;
-&lt;/section&gt;
-</t>
-<t tx="amd.20161004092208.1">## Markdown support
-
-Write content using inline or external Markdown.
-Instructions and more info available in the [readme](https://github.com/hakimel/reveal.js#markdown).
-
-```
-&lt;section data-markdown&gt;
-  ## Markdown support
-
-  Write content using inline or external Markdown.
-  Instructions and more info available in the [readme](https://github.com/hakimel/reveal.js#markdown).
-&lt;/section&gt;
-```
-</t>
+<t tx="amd.20161004085439.1"></t>
+<t tx="amd.20161004092208.1"></t>
 <t tx="amd.20161004094125.1">&lt;section data-markdown&gt;
     &lt;script type="text/template"&gt;
 &lt;!-- 請注意, @others 不可以內縮 --&gt;
@@ -403,34 +339,7 @@ Instructions and more info available in the [readme](https://github.com/hakimel/
 
 						
 </t>
-<t tx="amd.20161004094125.2">## 利用 Markdown 寫投影片
-以下利用 Markdown 格式展示 Python 程式碼:
-```
-@language python
-# use threading and subprocess to threading the make process
-import os
-import subprocess
-import threading
-
-def domake():
-    
-    path = "../exposed/api/exposed"
-    ubuntu = "../Ubuntu"
-    
-    # create obj path
-    
-    if not os.path.exists(path+"/../obj"):
-        os.makedirs(path+"/../obj")
-    
-    subprocess.call(["make", "clean"], cwd=path)
-    subprocess.call("make", cwd=path)
-    subprocess.call(["cp", "{libslvs.so, _slvs.so, slvs.py}", ubuntu], cwd=path)
-    subprocess.call(["python3", "circle_ex.py"], cwd=path+"/"+ubuntu)
-    
-make = threading.Thread(target=domake)
-make.start()
-```
-</t>
+<t tx="amd.20161004094125.2"></t>
 <t tx="amd.20161004094800.1">&lt;section data-markdown&gt;
     &lt;script type="text/template"&gt;
 &lt;!-- 請注意, @others 不可以內縮 --&gt;
@@ -468,16 +377,20 @@ make.start()
 
 						
 </t>
-<t tx="amd.20161004095719.2"># 2016Fall CPA 計算機程式課程
+<t tx="amd.20161004095719.2"># 2016fall cpa 40523139 劉育彤
 
-### THE HTML PRESENTATION FRAMEWORK
+### 
+
 
 &lt;small&gt;
-Created by [Hakim El Hattab](http://hakim.se)
-[@hakimel](http://twitter.com/hakimel)
+Created by me
 &lt;/small&gt;
 
-[blog](blog/index.html)
+[vimeo](https://vimeo.com/user58915964)
+
+[wiki](https://github.com/s40523139/2016fallcp_hw/wiki)
+
+[blog](https://s40523139.github.io/2016fallcp_hw/blog/)
 </t>
 <t tx="amd.20161004100003.1">&lt;section data-markdown&gt;
     &lt;script type="text/template"&gt;
@@ -505,12 +418,13 @@ and images can be specified like so:
 
 						
 </t>
-<t tx="amd.20161004101327.2">## 使用 iframe 導入影片
-
-### Markdown 沒有 iframe
-
-&lt;iframe src="https://player.vimeo.com/video/183950627" width="640" height="492" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen&gt;&lt;/iframe&gt;
-</t>
+<t tx="amd.20161004101327.2">##利用Brython秀出學號
+&lt;iframe src="https://player.vimeo.com/video/191265690" width="640" height="343" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen&gt;&lt;/iframe&gt;
+&lt;p&gt;
+&lt;a href="https://vimeo.com/191265690"&gt;2016-11-12 19-31-16&lt;/a&gt; from 
+&lt;a href="https://vimeo.com/user58915964"&gt;劉育彤&lt;/a&gt; on
+ &lt;a href="https://vimeo.com"&gt;Vimeo&lt;/a&gt;.
+ &lt;/p&gt;</t>
 <t tx="amd.20161004101902.1">&lt;section data-markdown&gt;
     &lt;script type="text/template"&gt;
 @others
@@ -520,12 +434,7 @@ and images can be specified like so:
 
 						
 </t>
-<t tx="amd.20161004101902.2">## 使用 iframe 導入影片
-
-### Markdown 沒有 iframe
-
-&lt;iframe src="https://player.vimeo.com/video/183950627" width="640" height="492" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen&gt;&lt;/iframe&gt;
-</t>
+<t tx="amd.20161004101902.2"></t>
 <t tx="amd.20161004104641.1">&lt;section data-markdown&gt;
     &lt;script type="text/template"&gt;
 @others
@@ -535,75 +444,18 @@ and images can be specified like so:
 
 						
 </t>
-<t tx="amd.20161004104641.2"># 機械設計主題教學
-
-### 1. 強化創造能力 
-(Creative Competencies, CC1-3)
-### 2. 熟習六種表達 
-(Six Presentation Methods, SP1-6)
-### 3. 融入協同設計 
-(Collaborative Designs, CD1-4)
-
+<t tx="amd.20161004104641.2">&lt;section&gt;
+　&lt;h2&gt;git_clone&amp;git_push&lt;/h2&gt;
+　&lt;iframe src="https://player.vimeo.com/video/191251269" width="640" height="343" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen&gt;&lt;/iframe&gt;
+　&lt;p&gt;
+　&lt;a href="https://vimeo.com/191251269"&gt;2016-11-12 13-37-02&lt;/a&gt; from 
+&lt;a href="https://vimeo.com/user58915964"&gt;劉育彤&lt;/a&gt; on
+&lt;a href="https://vimeo.com"&gt;Vimeo&lt;/a&gt;.
+　&lt;/p&gt;
 </t>
 <t tx="amd.20161004104820.1">&lt;section&gt;
 @others
 &lt;/section&gt;
-</t>
-<t tx="amd.20161004104904.1">&lt;section data-markdown&gt;
-    &lt;script type="text/template"&gt;
-@others
-    &lt;/script&gt;
-&lt;/section&gt;
-
-
-						
-</t>
-<t tx="amd.20161004104904.2"># 強化創造能力
-
-創造力至少包含三種元素:
-### 1. 自學能力 (CC1, Self-learning)
-### 2. 程式能力 (CC2, Programming)
-### 3. 想像能力 (CC3, Imagination)
-
-</t>
-<t tx="amd.20161004105131.1">&lt;section data-markdown&gt;
-    &lt;script type="text/template"&gt;
-@others
-    &lt;/script&gt;
-&lt;/section&gt;
-
-
-						
-</t>
-<t tx="amd.20161004105131.2"># 機械設計六種表達
-
-### 1. 口語表達 (SP1, Oral Presentation)
-### 2. 文字表達 (SP2, Text Presentation)
-### 3. 2D 表達 (SP3, 2D Presentation)
-### 4. 3D 表達 (SP4, 3D Presentation)
-### 5. 理論表達 (SP5, Analytical Presentation)
-### 6. 實體表達 (SP6, Physical Presentation)
-
-</t>
-<t tx="amd.20161004105716.1">&lt;section data-markdown&gt;
-    &lt;script type="text/template"&gt;
-@others
-    &lt;/script&gt;
-&lt;/section&gt;
-
-
-						
-</t>
-<t tx="amd.20161004105716.2"># 融入協同設計
-
-如何融入協同產品設計?
-
-### 1. 了解電腦 (CD1, Computer)
-### 2. 了解網路 (CD2, Network)
-### 3. 了解協同設計適用之軟硬體工具 (CD3, Tools)
-### 4. 執行協同專案 (CD4, Project)
-
-
 </t>
 <t tx="amd.20161004112026.1">&lt;section data-markdown&gt;
     &lt;script type="text/template"&gt;
@@ -614,20 +466,7 @@ and images can be specified like so:
 
 						
 </t>
-<t tx="amd.20161004112026.2">## 計算機程式課程
-
-計算機程式課程的教學主題:
-
-  * CC1-自學能力 (Git, Github, Python)
-  * CC2-程式能力 (Python 讀檔, 排序, 2D 繪圖, 2D 動畫)
-  * SP1-口語表達 (自拍投影片 on Vimeo and Youtube)
-  * P2-文字表達 (Wiki 與 Blog on Github Pages)
-  * SP3-2D 表達 (2D 流程圖)
-  * SP4-3D 表達 (自拍操作影片 on Vimeo and Youtube)
-  * CD3-協同工具 (Git, Leo Editor 與 Github)
-  * CD4-協同專案 (網際遊戲 on Github Pages)
-
-</t>
+<t tx="amd.20161004112026.2"></t>
 <t tx="amd.20161004171423.1">&lt;section data-markdown&gt;
     &lt;script type="text/template"&gt;
 &lt;!-- 請注意, @others 不可以內縮 --&gt;
