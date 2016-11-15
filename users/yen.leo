@@ -169,7 +169,7 @@ print("hello")
 <t tx="amd.20161004083800.166"></t>
 <t tx="amd.20161004083800.2">&lt;head&gt;
     &lt;meta charset="utf-8"&gt;
-    &lt;title&gt;    40523132陳崴的計算機程式課程
+    &lt;title&gt;    40523139劉育彤的計算機程式課程
     &lt;&lt; 投影片標題 &gt;&gt;
 &lt;/title&gt;
     &lt;meta name="description" content="A framework for easily creating beautiful presentations using HTML"&gt;
