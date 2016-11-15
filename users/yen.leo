@@ -466,7 +466,7 @@ and images can be specified like so:
 
 						
 </t>
-<t tx="amd.20161004112026.2">#在近端開啟部落格
+<t tx="amd.20161004112026.2">##在近端開啟部落格
 &lt;iframe src="https://player.vimeo.com/video/191637926" width="640" height="343" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen&gt;&lt;/iframe&gt;
 &lt;p&gt;
 &lt;a href="https://vimeo.com/191637926"&gt;2016-11-15 21-23-08&lt;/a&gt; from
