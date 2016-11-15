@@ -41,8 +41,6 @@
 <v t="amd.20161004112026.1" a="E"><vh>計算機程式課程內涵</vh>
 <v t="amd.20161004112026.2"><vh>利用 MD 寫內容</vh></v>
 </v>
-<v t="amd.20161004083800.15"><vh>github intro</vh></v>
-<v t="amd.20161004083800.21"><vh>fork 與 pull requests</vh></v>
 <v t="amd.20161004083800.27" a="E"><vh>投影片</vh>
 <v t="amd.20161004101902.1" a="E"><vh>使用 iframe 嵌入影片連節</vh>
 <v t="amd.20161004101902.2"><vh>iframe 導入影片</vh></v>
@@ -109,6 +107,52 @@
 <v t="leo.20161115173743.6"><vh>Recovered node "&lt;&lt; 投影片標題 &gt;&gt;" from @clean index.html</vh>
 <v t="leo.20161115173743.7"><vh>old:&lt;&lt; 投影片標題 &gt;&gt;</vh></v>
 <v t="leo.20161115173743.8"><vh>new:&lt;&lt; 投影片標題 &gt;&gt;</vh></v>
+</v>
+</v>
+<v t="leo.20161115174825.1" a="E"><vh>Recovered Nodes</vh>
+<v t="leo.20161115174825.2"><vh>Recovered node "head" from @clean index.html</vh>
+<v t="leo.20161115174825.3"><vh>old:head</vh></v>
+<v t="leo.20161115174825.4"><vh>new:head</vh></v>
+</v>
+<v t="leo.20161115174825.5"><vh>Recovered node "vimeo" from @clean index.html</vh>
+<v t="leo.20161115174825.6"><vh>old:vimeo</vh></v>
+<v t="leo.20161115174825.7"><vh>new:vimeo</vh></v>
+</v>
+<v t="leo.20161115174825.8"><vh>Recovered node "計算機程式課程內涵" from @clean index.html</vh>
+<v t="leo.20161115174825.9"><vh>old:計算機程式課程內涵</vh></v>
+<v t="leo.20161115174825.10"><vh>new:計算機程式課程內涵</vh></v>
+</v>
+<v t="leo.20161115174825.11"><vh>Recovered node "利用 MD 寫內容" from @clean index.html</vh>
+<v t="leo.20161115174825.12"><vh>old:利用 MD 寫內容</vh></v>
+<v t="leo.20161115174825.13"><vh>new:利用 MD 寫內容</vh></v>
+</v>
+<v t="leo.20161115174825.14"><vh>Recovered node "github intro" from @clean index.html</vh>
+<v t="leo.20161115174825.15"><vh>old:github intro</vh></v>
+<v t="leo.20161115174825.16"><vh>new:github intro</vh></v>
+</v>
+<v t="leo.20161115174825.17"><vh>Recovered node "投影片" from @clean index.html</vh>
+<v t="leo.20161115174825.18"><vh>old:投影片</vh></v>
+<v t="leo.20161115174825.19"><vh>new:投影片</vh></v>
+</v>
+<v t="leo.20161115174825.20"><vh>Recovered node "使用 iframe 嵌入影片連節" from @clean index.html</vh>
+<v t="leo.20161115174825.21"><vh>old:使用 iframe 嵌入影片連節</vh></v>
+<v t="leo.20161115174825.22"><vh>new:使用 iframe 嵌入影片連節</vh></v>
+</v>
+<v t="leo.20161115174825.23"><vh>Recovered node "iframe 導入影片" from @clean index.html</vh>
+<v t="leo.20161115174825.24"><vh>old:iframe 導入影片</vh></v>
+<v t="leo.20161115174825.25"><vh>new:iframe 導入影片</vh></v>
+</v>
+<v t="leo.20161115174825.26"><vh>Recovered node "向下投影片" from @clean index.html</vh>
+<v t="leo.20161115174825.27"><vh>old:向下投影片</vh></v>
+<v t="leo.20161115174825.28"><vh>new:向下投影片</vh></v>
+</v>
+<v t="leo.20161115174825.29"><vh>Recovered node "Markdown 投影片" from @clean index.html</vh>
+<v t="leo.20161115174825.30"><vh>old:Markdown 投影片</vh></v>
+<v t="leo.20161115174825.31"><vh>new:Markdown 投影片</vh></v>
+</v>
+<v t="leo.20161115174825.32"><vh>Recovered node "利用 MD 寫內容" from @clean index.html</vh>
+<v t="leo.20161115174825.33"><vh>old:利用 MD 寫內容</vh></v>
+<v t="leo.20161115174825.34"><vh>new:利用 MD 寫內容</vh></v>
 </v>
 </v>
 </vnodes>
@@ -202,16 +246,6 @@ print("hello")
 
 					
 </t>
-<t tx="amd.20161004083800.15">&lt;section&gt;
-    &lt;h2&gt;github_intro&lt;/h2&gt;
-    &lt;iframe src="https://player.vimeo.com/video/183950627" width="640" height="492" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen&gt;&lt;/iframe&gt;
-    &lt;p&gt;
-    &lt;a href="https://vimeo.com/183950627"&gt;2016-09-23_cpb_github_intro&lt;/a&gt; from 
-    &lt;a href="https://vimeo.com/user24079973"&gt;虎尾科大機械設計工程&lt;/a&gt; on 
-    &lt;a href="https://vimeo.com"&gt;Vimeo&lt;/a&gt;.
-    &lt;/p&gt;
-&lt;/section&gt;
-</t>
 <t tx="amd.20161004083800.158">&lt;section&gt;
     &lt;h2&gt;Export to PDF&lt;/h2&gt;
     &lt;p&gt;
@@ -248,7 +282,8 @@ apply broader style changes, like switching the page background.
 </t>
 <t tx="amd.20161004083800.2">&lt;head&gt;
     &lt;meta charset="utf-8"&gt;
-    &lt;title&gt;    2016 Fall 計算機程式課程
+&lt;title&gt;    
+2016 2016Fall 計算機程式課程
     &lt;&lt; 投影片標題 &gt;&gt;
 &lt;/title&gt;
     &lt;meta name="description" content="A framework for easily creating beautiful presentations using HTML"&gt;
@@ -280,30 +315,10 @@ apply broader style changes, like switching the page background.
 &lt;/head&gt;
 
 </t>
-<t tx="amd.20161004083800.21">&lt;section&gt;
-    &lt;h2&gt;fork_pull_requests&lt;/h2&gt;
-    &lt;iframe src="https://player.vimeo.com/video/183954581" width="640" height="492" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen&gt;&lt;/iframe&gt;
-    &lt;p&gt;
-    &lt;a href="https://vimeo.com/183954581"&gt;2016-09-23_fork_pull_requests&lt;/a&gt; from 
-    &lt;a href="https://vimeo.com/user24079973"&gt;虎尾科大機械設計工程&lt;/a&gt; on 
-    &lt;a href="https://vimeo.com"&gt;Vimeo&lt;/a&gt;.
-    &lt;/p&gt;
-&lt;/section&gt;
-</t>
-<t tx="amd.20161004083800.27">&lt;!-- Example of nested vertical slides --&gt;
-&lt;section&gt;
-@others
-&lt;/section&gt;
+<t tx="amd.20161004083800.27">@others
 </t>
 <t tx="amd.20161004083800.3"></t>
-<t tx="amd.20161004083800.47">&lt;section data-markdown&gt;
-    &lt;script type="text/template"&gt;
-@others
-    &lt;/script&gt;
-&lt;/section&gt;
-
-
-						
+<t tx="amd.20161004083800.47">@others
 </t>
 <t tx="amd.20161004083800.5">&lt;body&gt;
 @others
@@ -344,32 +359,8 @@ apply broader style changes, like switching the page background.
 &lt;/div&gt;
 
 </t>
-<t tx="amd.20161004085439.1">&lt;section&gt;
-    &lt;h2&gt;Vertical Slides&lt;/h2&gt;
-    &lt;p&gt;Slides can be nested inside of each other.&lt;/p&gt;
-    &lt;p&gt;
-    Use the &lt;em&gt;Space&lt;/em&gt; key to navigate through all slides.
-    &lt;/p&gt;
-    &lt;br&gt;
-    &lt;a href="#" class="navigate-down"&gt;
-        &lt;img width="178" height="238" data-src="https://s3.amazonaws.com/hakim-static/reveal-js/arrow.png" alt="Down arrow"&gt;
-    &lt;/a&gt;
-&lt;/section&gt;
-</t>
-<t tx="amd.20161004092208.1">## Markdown support
-
-Write content using inline or external Markdown.
-Instructions and more info available in the [readme](https://github.com/hakimel/reveal.js#markdown).
-
-```
-&lt;section data-markdown&gt;
-  ## Markdown support
-
-  Write content using inline or external Markdown.
-  Instructions and more info available in the [readme](https://github.com/hakimel/reveal.js#markdown).
-&lt;/section&gt;
-```
-</t>
+<t tx="amd.20161004085439.1"></t>
+<t tx="amd.20161004092208.1"></t>
 <t tx="amd.20161004094125.1">&lt;section data-markdown&gt;
     &lt;script type="text/template"&gt;
 &lt;!-- 請注意, @others 不可以內縮 --&gt;
@@ -381,34 +372,7 @@ Instructions and more info available in the [readme](https://github.com/hakimel/
 
 						
 </t>
-<t tx="amd.20161004094125.2">## 利用 Markdown 寫投影片
-以下利用 Markdown 格式展示 Python 程式碼:
-```
-@language python
-# use threading and subprocess to threading the make process
-import os
-import subprocess
-import threading
-
-def domake():
-    
-    path = "../exposed/api/exposed"
-    ubuntu = "../Ubuntu"
-    
-    # create obj path
-    
-    if not os.path.exists(path+"/../obj"):
-        os.makedirs(path+"/../obj")
-    
-    subprocess.call(["make", "clean"], cwd=path)
-    subprocess.call("make", cwd=path)
-    subprocess.call(["cp", "{libslvs.so, _slvs.so, slvs.py}", ubuntu], cwd=path)
-    subprocess.call(["python3", "circle_ex.py"], cwd=path+"/"+ubuntu)
-    
-make = threading.Thread(target=domake)
-make.start()
-```
-</t>
+<t tx="amd.20161004094125.2"></t>
 <t tx="amd.20161004094800.1">&lt;section data-markdown&gt;
     &lt;script type="text/template"&gt;
 &lt;!-- 請注意, @others 不可以內縮 --&gt;
@@ -493,22 +457,11 @@ and images can be specified like so:
 &lt;a href="https://vimeo.com/191265690"&gt;2016-11-12 19-31-16&lt;/a&gt; from 
 &lt;a href="https://vimeo.com/user58915964"&gt;劉育彤&lt;/a&gt; on
  &lt;a href="https://vimeo.com"&gt;Vimeo&lt;/a&gt;.
- &lt;/p&gt;</t>
-<t tx="amd.20161004101902.1">&lt;section data-markdown&gt;
-    &lt;script type="text/template"&gt;
-@others
-    &lt;/script&gt;
-&lt;/section&gt;
-
-
-						
+ &lt;/p&gt;
 </t>
-<t tx="amd.20161004101902.2">## 使用 iframe 導入影片
-
-### Markdown 沒有 iframe
-
-&lt;iframe src="https://player.vimeo.com/video/183950627" width="640" height="492" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen&gt;&lt;/iframe&gt;
+<t tx="amd.20161004101902.1">@others
 </t>
+<t tx="amd.20161004101902.2"></t>
 <t tx="amd.20161004104641.1">&lt;section data-markdown&gt;
     &lt;script type="text/template"&gt;
 @others
@@ -530,30 +483,18 @@ and images can be specified like so:
 <t tx="amd.20161004104820.1">&lt;section&gt;
 @others
 &lt;/section&gt;
+&lt;section&gt;
 </t>
-<t tx="amd.20161004112026.1">&lt;section data-markdown&gt;
-    &lt;script type="text/template"&gt;
+<t tx="amd.20161004112026.1">&lt;/section&gt;
+&lt;section&gt;
 @others
-    &lt;/script&gt;
-&lt;/section&gt;
-
-
-						
-</t>
-<t tx="amd.20161004112026.2">## 計算機程式課程
-
-計算機程式課程的教學主題:
-
-  * CC1-自學能力 (Git, Github, Python)
-  * CC2-程式能力 (Python 讀檔, 排序, 2D 繪圖, 2D 動畫)
-  * SP1-口語表達 (自拍投影片 on Vimeo and Youtube)
-  * P2-文字表達 (Wiki 與 Blog on Github Pages)
-  * SP3-2D 表達 (2D 流程圖)
-  * SP4-3D 表達 (自拍操作影片 on Vimeo and Youtube)
-  * CD3-協同工具 (Git, Leo Editor 與 Github)
-  * CD4-協同專案 (網際遊戲 on Github Pages)
+&lt;section&gt;
+&lt;section data-markdown&gt;
+    &lt;script type="text/template"&gt;
+# Github 倉儲網頁
 
 </t>
+<t tx="amd.20161004112026.2"></t>
 <t tx="amd.20161004171423.1">&lt;section data-markdown&gt;
     &lt;script type="text/template"&gt;
 &lt;!-- 請注意, @others 不可以內縮 --&gt;
@@ -789,5 +730,677 @@ Diff...
 <t tx="leo.20161115173743.7">2016 Fall 計算機程式課程
 </t>
 <t tx="leo.20161115173743.8"></t>
+<t tx="leo.20161115174825.1"></t>
+<t tx="leo.20161115174825.10">&lt;/section&gt;
+&lt;section&gt;
+@others
+&lt;section&gt;
+&lt;section data-markdown&gt;
+    &lt;script type="text/template"&gt;
+# Github 倉儲網頁
+
+</t>
+<t tx="leo.20161115174825.11">(uncached) amd.20161004112026.2
+Diff...
++ ## 計算機程式課程
+- &lt;section data-markdown&gt;
+-     &lt;script type="text/template"&gt;
+- # 課程分組排座位
+  
++ 計算機程式課程的教學主題:
+- ##想像一下分組流程
+- ##請畫出流程圖
+- ##如何進行最好?
+-     &lt;/script&gt;
+- &lt;/section&gt;
+  
++   * CC1-自學能力 (Git, Github, Python)
++   * CC2-程式能力 (Python 讀檔, 排序, 2D 繪圖, 2D 動畫)
++   * SP1-口語表達 (自拍投影片 on Vimeo and Youtube)
++   * P2-文字表達 (Wiki 與 Blog on Github Pages)
++   * SP3-2D 表達 (2D 流程圖)
++   * SP4-3D 表達 (自拍操作影片 on Vimeo and Youtube)
++   * CD3-協同工具 (Git, Leo Editor 與 Github)
++   * CD4-協同專案 (網際遊戲 on Github Pages)
+  
+- 						
+- &lt;/section&gt;
+</t>
+<t tx="leo.20161115174825.12">## 計算機程式課程
+
+計算機程式課程的教學主題:
+
+  * CC1-自學能力 (Git, Github, Python)
+  * CC2-程式能力 (Python 讀檔, 排序, 2D 繪圖, 2D 動畫)
+  * SP1-口語表達 (自拍投影片 on Vimeo and Youtube)
+  * P2-文字表達 (Wiki 與 Blog on Github Pages)
+  * SP3-2D 表達 (2D 流程圖)
+  * SP4-3D 表達 (自拍操作影片 on Vimeo and Youtube)
+  * CD3-協同工具 (Git, Leo Editor 與 Github)
+  * CD4-協同專案 (網際遊戲 on Github Pages)
+
+</t>
+<t tx="leo.20161115174825.13">&lt;section data-markdown&gt;
+    &lt;script type="text/template"&gt;
+# 課程分組排座位
+
+##想像一下分組流程
+##請畫出流程圖
+##如何進行最好?
+    &lt;/script&gt;
+&lt;/section&gt;
+
+
+						
+&lt;/section&gt;
+</t>
+<t tx="leo.20161115174825.14">(uncached) amd.20161004083800.15
+Diff...
+- ####建立個人 Github 網頁 (帳號.github.io)
+- ####建立個人課程作業網頁 (納入投影片與網誌架構)
+- ####組長建立分組的評量網頁 (納入投影片與網誌架構)
+-     &lt;/script&gt;
+- &lt;/section&gt;
+- 
+- 
+- 						
+- &lt;section data-markdown&gt;
+-     &lt;script type="text/template"&gt;
+- # 學員作業網頁定版
+- 
+- ###個人作業網頁內容可以隨時改版
+- ###分組評量網頁必須在指定時間前定版
+- ###Github 倉儲 gh-pages分支與子模組應用
+-     &lt;/script&gt;
+- &lt;/section&gt;
+- 
+- 
+- 						
+- &lt;section data-markdown&gt;
+-     &lt;script type="text/template"&gt;
+- # Github 倉儲拉回請求
+- 
+- ####分組倉儲 Collaborators 設定
+- ####分組倉儲版本 Pull Requests 練習
+- ####各組員實際操作影片錄製
+- ####操作影片加字幕以及影片檔相加
+-     &lt;/script&gt;
+- &lt;/section&gt;
+- 
+- 
+- 						
+- &lt;/section&gt;
+  &lt;section&gt;
+- &lt;section data-markdown&gt;
+-     &lt;script type="text/template"&gt;
+- # Python3 語法
+- 
+- ####print()
+- ####input()
+- ####變數名稱與關鍵字
+-     &lt;/script&gt;
+- &lt;/section&gt;
+- 
+- 
+- 						
+- &lt;section data-markdown&gt;
+-     &lt;script type="text/template"&gt;
+- # for 迴圈用法
+- 
+- ###Python 程式縮排
+- ###for i in range(5)：
+- ###數列與 iterator
+- 
+-     &lt;/script&gt;
+- &lt;/section&gt;
+- 
+- 
+- 						
+- &lt;section data-markdown&gt;
+-     &lt;script type="text/template"&gt;
+- # 函式用法
+- 
+- ####函式定義
+- ####函式呼叫與傳值
+- ####函式載入順序
+-     &lt;/script&gt;
+- &lt;/section&gt;
+- 
+- 
+- 						
+- &lt;section data-markdown&gt;
+-     &lt;script type="text/template"&gt;
+- # 數列用法
+- 
+- ####數列與索引
+- ####數列與字串
+- ####數列排序
+-     &lt;/script&gt;
+- &lt;/section&gt;
+- 
+- 
+- 						
+- &lt;section data-markdown&gt;
+-     &lt;script type="text/template"&gt;
+- # 分組程式內容
+- 
+- ####讀取原始資料內容
+- ####設法分割資料, 納入數列
+- ####根據設計邏輯進行資料處理
+-     &lt;/script&gt;
+- &lt;/section&gt;
+- 
+- 
+- 						
+- &lt;section data-markdown&gt;
+-     &lt;script type="text/template"&gt;
+- # 遊戲邏輯
+- 
+- ####1-100 中隨機取一個數字作為答案
+- ####設法讓使用者猜這個數字 (接受輸入)
+- ####使用每猜一次都回答比答案大或小
+- ####能在一定次數中猜對者獲勝
+- ####在單機或網際執行程式?
+-     &lt;/script&gt;
+- &lt;/section&gt;
+- 
+- 
+- 						
+- &lt;section data-markdown&gt;
+-     &lt;script type="text/template"&gt;
+- # Python 網際繪圖
+- 
+- ####Brython 簡介
+- ####Brython 執行設定
+- ####基本繪圖練習 (五芒星、正齒輪與各國國旗)
+-     &lt;/script&gt;
+- &lt;/section&gt;
+- 
+- 
+- 						
+- &lt;section data-markdown&gt;
+-     &lt;script type="text/template"&gt;
+- # 網際動畫範例
+- 
+- ####機構模擬
+- ####猜顏色遊戲
+- ####網際對戰遊戲
+-     &lt;/script&gt;
+- &lt;/section&gt;
+- 
+- 
+- 						
+- &lt;/section&gt;
+- &lt;section data-markdown&gt;
+-     &lt;script type="text/template"&gt;
+- ## 使用 iframe 導入影片
+- 
+- ### Markdown 沒有 iframe
+- 
+- &lt;iframe src="https://player.vimeo.com/video/183950627" width="640" height="492" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen&gt;&lt;/iframe&gt;
+-     &lt;/script&gt;
+- &lt;/section&gt;
+- 
+- 
+- 						
+- &lt;section&gt;
+- 　&lt;h2&gt;github_intro&lt;/h2&gt;
+? ^
++     &lt;h2&gt;github_intro&lt;/h2&gt;
+? ^^^^
+      &lt;iframe src="https://player.vimeo.com/video/183950627" width="640" height="492" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen&gt;&lt;/iframe&gt;
+      &lt;p&gt;
+      &lt;a href="https://vimeo.com/183950627"&gt;2016-09-23_cpb_github_intro&lt;/a&gt; from 
+      &lt;a href="https://vimeo.com/user24079973"&gt;虎尾科大機械設計工程&lt;/a&gt; on 
+      &lt;a href="https://vimeo.com"&gt;Vimeo&lt;/a&gt;.
+      &lt;/p&gt;
+  &lt;/section&gt;
+</t>
+<t tx="leo.20161115174825.15">&lt;section&gt;
+    &lt;h2&gt;github_intro&lt;/h2&gt;
+    &lt;iframe src="https://player.vimeo.com/video/183950627" width="640" height="492" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen&gt;&lt;/iframe&gt;
+    &lt;p&gt;
+    &lt;a href="https://vimeo.com/183950627"&gt;2016-09-23_cpb_github_intro&lt;/a&gt; from 
+    &lt;a href="https://vimeo.com/user24079973"&gt;虎尾科大機械設計工程&lt;/a&gt; on 
+    &lt;a href="https://vimeo.com"&gt;Vimeo&lt;/a&gt;.
+    &lt;/p&gt;
+&lt;/section&gt;
+</t>
+<t tx="leo.20161115174825.16">####建立個人 Github 網頁 (帳號.github.io)
+####建立個人課程作業網頁 (納入投影片與網誌架構)
+####組長建立分組的評量網頁 (納入投影片與網誌架構)
+    &lt;/script&gt;
+&lt;/section&gt;
+
+
+						
+&lt;section data-markdown&gt;
+    &lt;script type="text/template"&gt;
+# 學員作業網頁定版
+
+###個人作業網頁內容可以隨時改版
+###分組評量網頁必須在指定時間前定版
+###Github 倉儲 gh-pages分支與子模組應用
+    &lt;/script&gt;
+&lt;/section&gt;
+
+
+						
+&lt;section data-markdown&gt;
+    &lt;script type="text/template"&gt;
+# Github 倉儲拉回請求
+
+####分組倉儲 Collaborators 設定
+####分組倉儲版本 Pull Requests 練習
+####各組員實際操作影片錄製
+####操作影片加字幕以及影片檔相加
+    &lt;/script&gt;
+&lt;/section&gt;
+
+
+						
+&lt;/section&gt;
+&lt;section&gt;
+&lt;section data-markdown&gt;
+    &lt;script type="text/template"&gt;
+# Python3 語法
+
+####print()
+####input()
+####變數名稱與關鍵字
+    &lt;/script&gt;
+&lt;/section&gt;
+
+
+						
+&lt;section data-markdown&gt;
+    &lt;script type="text/template"&gt;
+# for 迴圈用法
+
+###Python 程式縮排
+###for i in range(5)：
+###數列與 iterator
+
+    &lt;/script&gt;
+&lt;/section&gt;
+
+
+						
+&lt;section data-markdown&gt;
+    &lt;script type="text/template"&gt;
+# 函式用法
+
+####函式定義
+####函式呼叫與傳值
+####函式載入順序
+    &lt;/script&gt;
+&lt;/section&gt;
+
+
+						
+&lt;section data-markdown&gt;
+    &lt;script type="text/template"&gt;
+# 數列用法
+
+####數列與索引
+####數列與字串
+####數列排序
+    &lt;/script&gt;
+&lt;/section&gt;
+
+
+						
+&lt;section data-markdown&gt;
+    &lt;script type="text/template"&gt;
+# 分組程式內容
+
+####讀取原始資料內容
+####設法分割資料, 納入數列
+####根據設計邏輯進行資料處理
+    &lt;/script&gt;
+&lt;/section&gt;
+
+
+						
+&lt;section data-markdown&gt;
+    &lt;script type="text/template"&gt;
+# 遊戲邏輯
+
+####1-100 中隨機取一個數字作為答案
+####設法讓使用者猜這個數字 (接受輸入)
+####使用每猜一次都回答比答案大或小
+####能在一定次數中猜對者獲勝
+####在單機或網際執行程式?
+    &lt;/script&gt;
+&lt;/section&gt;
+
+
+						
+&lt;section data-markdown&gt;
+    &lt;script type="text/template"&gt;
+# Python 網際繪圖
+
+####Brython 簡介
+####Brython 執行設定
+####基本繪圖練習 (五芒星、正齒輪與各國國旗)
+    &lt;/script&gt;
+&lt;/section&gt;
+
+
+						
+&lt;section data-markdown&gt;
+    &lt;script type="text/template"&gt;
+# 網際動畫範例
+
+####機構模擬
+####猜顏色遊戲
+####網際對戰遊戲
+    &lt;/script&gt;
+&lt;/section&gt;
+
+
+						
+&lt;/section&gt;
+&lt;section data-markdown&gt;
+    &lt;script type="text/template"&gt;
+## 使用 iframe 導入影片
+
+### Markdown 沒有 iframe
+
+&lt;iframe src="https://player.vimeo.com/video/183950627" width="640" height="492" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen&gt;&lt;/iframe&gt;
+    &lt;/script&gt;
+&lt;/section&gt;
+
+
+						
+&lt;section&gt;
+　&lt;h2&gt;github_intro&lt;/h2&gt;
+    &lt;iframe src="https://player.vimeo.com/video/183950627" width="640" height="492" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen&gt;&lt;/iframe&gt;
+    &lt;p&gt;
+    &lt;a href="https://vimeo.com/183950627"&gt;2016-09-23_cpb_github_intro&lt;/a&gt; from 
+    &lt;a href="https://vimeo.com/user24079973"&gt;虎尾科大機械設計工程&lt;/a&gt; on 
+    &lt;a href="https://vimeo.com"&gt;Vimeo&lt;/a&gt;.
+    &lt;/p&gt;
+&lt;/section&gt;
+</t>
+<t tx="leo.20161115174825.17">(uncached) amd.20161004083800.27
+Diff...
++ &lt;!-- Example of nested vertical slides --&gt;
++ &lt;section&gt;
+  @others
++ &lt;/section&gt;
+</t>
+<t tx="leo.20161115174825.18">&lt;!-- Example of nested vertical slides --&gt;
+&lt;section&gt;
+@others
+&lt;/section&gt;
+</t>
+<t tx="leo.20161115174825.19">@others
+</t>
+<t tx="leo.20161115174825.2">(uncached) amd.20161004083800.2
+Diff...
+  &lt;head&gt;
+      &lt;meta charset="utf-8"&gt;
++     &lt;title&gt;    2016 Fall 計算機程式課程
+- &lt;title&gt;    
+- 2016 2016Fall 計算機程式課程
+      &lt;&lt; 投影片標題 &gt;&gt;
+  &lt;/title&gt;
+      &lt;meta name="description" content="A framework for easily creating beautiful presentations using HTML"&gt;
+      &lt;meta name="author" content="Hakim El Hattab"&gt;
+      
+      &lt;meta name="apple-mobile-web-app-capable" content="yes"&gt;
+      &lt;meta name="apple-mobile-web-app-status-bar-style" content="black-translucent"&gt;
+      
+      &lt;meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"&gt;
+      
+      &lt;link rel="stylesheet" href="https://cad-lab.github.io/cadlab_data/reveal/css/reveal.css"&gt;
+      &lt;link rel="stylesheet" href="https://cad-lab.github.io/cadlab_data/reveal/css/theme/black.css" id="theme"&gt;
+      
+      &lt;!-- Theme used for syntax highlighting of code --&gt;
+      &lt;link rel="stylesheet" href="https://cad-lab.github.io/cadlab_data/reveal/lib/css/zenburn.css"&gt;
+  
+      &lt;!-- Printing and PDF exports --&gt;
+      &lt;script&gt;
+          var link = document.createElement( 'link' );
+          link.rel = 'stylesheet';
+          link.type = 'text/css';
+          link.href = window.location.search.match( /print-pdf/gi ) ? 'https://cad-lab.github.io/cadlab_data/reveal/css/print/pdf.css' : 'https://cad-lab.github.io/cadlab_data/reveal/css/print/paper.css';
+          document.getElementsByTagName( 'head' )[0].appendChild( link );
+      &lt;/script&gt;
+  
+      &lt;!--[if lt IE 9]&gt;
+      &lt;script src="https://cad-lab.github.io/cadlab_data/reveal/lib/js/html5shiv.js"&gt;&lt;/script&gt;
+      &lt;![endif]--&gt;
+  &lt;/head&gt;
+  
+</t>
+<t tx="leo.20161115174825.20">(uncached) amd.20161004101902.1
+Diff...
++ &lt;section data-markdown&gt;
++     &lt;script type="text/template"&gt;
+  @others
++     &lt;/script&gt;
++ &lt;/section&gt;
++ 
++ 
++ 						
+</t>
+<t tx="leo.20161115174825.21">&lt;section data-markdown&gt;
+    &lt;script type="text/template"&gt;
+@others
+    &lt;/script&gt;
+&lt;/section&gt;
+
+
+						
+</t>
+<t tx="leo.20161115174825.22">@others
+</t>
+<t tx="leo.20161115174825.23">(uncached) amd.20161004101902.2
+Diff...
++ ## 使用 iframe 導入影片
++ 
++ ### Markdown 沒有 iframe
++ 
++ &lt;iframe src="https://player.vimeo.com/video/183950627" width="640" height="492" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen&gt;&lt;/iframe&gt;
+</t>
+<t tx="leo.20161115174825.24">## 使用 iframe 導入影片
+
+### Markdown 沒有 iframe
+
+&lt;iframe src="https://player.vimeo.com/video/183950627" width="640" height="492" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen&gt;&lt;/iframe&gt;
+</t>
+<t tx="leo.20161115174825.25"></t>
+<t tx="leo.20161115174825.26">(uncached) amd.20161004085439.1
+Diff...
++ &lt;section&gt;
++     &lt;h2&gt;Vertical Slides&lt;/h2&gt;
++     &lt;p&gt;Slides can be nested inside of each other.&lt;/p&gt;
++     &lt;p&gt;
++     Use the &lt;em&gt;Space&lt;/em&gt; key to navigate through all slides.
++     &lt;/p&gt;
++     &lt;br&gt;
++     &lt;a href="#" class="navigate-down"&gt;
++         &lt;img width="178" height="238" data-src="https://s3.amazonaws.com/hakim-static/reveal-js/arrow.png" alt="Down arrow"&gt;
++     &lt;/a&gt;
++ &lt;/section&gt;
+</t>
+<t tx="leo.20161115174825.27">&lt;section&gt;
+    &lt;h2&gt;Vertical Slides&lt;/h2&gt;
+    &lt;p&gt;Slides can be nested inside of each other.&lt;/p&gt;
+    &lt;p&gt;
+    Use the &lt;em&gt;Space&lt;/em&gt; key to navigate through all slides.
+    &lt;/p&gt;
+    &lt;br&gt;
+    &lt;a href="#" class="navigate-down"&gt;
+        &lt;img width="178" height="238" data-src="https://s3.amazonaws.com/hakim-static/reveal-js/arrow.png" alt="Down arrow"&gt;
+    &lt;/a&gt;
+&lt;/section&gt;
+</t>
+<t tx="leo.20161115174825.28"></t>
+<t tx="leo.20161115174825.29">(uncached) amd.20161004083800.47
+Diff...
++ &lt;section data-markdown&gt;
++     &lt;script type="text/template"&gt;
+  @others
++     &lt;/script&gt;
++ &lt;/section&gt;
++ 
++ 
++ 						
+</t>
+<t tx="leo.20161115174825.3">&lt;head&gt;
+    &lt;meta charset="utf-8"&gt;
+    &lt;title&gt;    2016 Fall 計算機程式課程
+    &lt;&lt; 投影片標題 &gt;&gt;
+&lt;/title&gt;
+    &lt;meta name="description" content="A framework for easily creating beautiful presentations using HTML"&gt;
+    &lt;meta name="author" content="Hakim El Hattab"&gt;
+    
+    &lt;meta name="apple-mobile-web-app-capable" content="yes"&gt;
+    &lt;meta name="apple-mobile-web-app-status-bar-style" content="black-translucent"&gt;
+    
+    &lt;meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"&gt;
+    
+    &lt;link rel="stylesheet" href="https://cad-lab.github.io/cadlab_data/reveal/css/reveal.css"&gt;
+    &lt;link rel="stylesheet" href="https://cad-lab.github.io/cadlab_data/reveal/css/theme/black.css" id="theme"&gt;
+    
+    &lt;!-- Theme used for syntax highlighting of code --&gt;
+    &lt;link rel="stylesheet" href="https://cad-lab.github.io/cadlab_data/reveal/lib/css/zenburn.css"&gt;
+
+    &lt;!-- Printing and PDF exports --&gt;
+    &lt;script&gt;
+        var link = document.createElement( 'link' );
+        link.rel = 'stylesheet';
+        link.type = 'text/css';
+        link.href = window.location.search.match( /print-pdf/gi ) ? 'https://cad-lab.github.io/cadlab_data/reveal/css/print/pdf.css' : 'https://cad-lab.github.io/cadlab_data/reveal/css/print/paper.css';
+        document.getElementsByTagName( 'head' )[0].appendChild( link );
+    &lt;/script&gt;
+
+    &lt;!--[if lt IE 9]&gt;
+    &lt;script src="https://cad-lab.github.io/cadlab_data/reveal/lib/js/html5shiv.js"&gt;&lt;/script&gt;
+    &lt;![endif]--&gt;
+&lt;/head&gt;
+
+</t>
+<t tx="leo.20161115174825.30">&lt;section data-markdown&gt;
+    &lt;script type="text/template"&gt;
+@others
+    &lt;/script&gt;
+&lt;/section&gt;
+
+
+						
+</t>
+<t tx="leo.20161115174825.31">@others
+</t>
+<t tx="leo.20161115174825.32">(uncached) amd.20161004092208.1
+Diff...
++ ## Markdown support
++ 
++ Write content using inline or external Markdown.
++ Instructions and more info available in the [readme](https://github.com/hakimel/reveal.js#markdown).
++ 
++ ```
++ &lt;section data-markdown&gt;
++   ## Markdown support
++ 
++   Write content using inline or external Markdown.
++   Instructions and more info available in the [readme](https://github.com/hakimel/reveal.js#markdown).
++ &lt;/section&gt;
++ ```
+</t>
+<t tx="leo.20161115174825.33">## Markdown support
+
+Write content using inline or external Markdown.
+Instructions and more info available in the [readme](https://github.com/hakimel/reveal.js#markdown).
+
+```
+&lt;section data-markdown&gt;
+  ## Markdown support
+
+  Write content using inline or external Markdown.
+  Instructions and more info available in the [readme](https://github.com/hakimel/reveal.js#markdown).
+&lt;/section&gt;
+```
+</t>
+<t tx="leo.20161115174825.34"></t>
+<t tx="leo.20161115174825.4">&lt;head&gt;
+    &lt;meta charset="utf-8"&gt;
+&lt;title&gt;    
+2016 2016Fall 計算機程式課程
+    &lt;&lt; 投影片標題 &gt;&gt;
+&lt;/title&gt;
+    &lt;meta name="description" content="A framework for easily creating beautiful presentations using HTML"&gt;
+    &lt;meta name="author" content="Hakim El Hattab"&gt;
+    
+    &lt;meta name="apple-mobile-web-app-capable" content="yes"&gt;
+    &lt;meta name="apple-mobile-web-app-status-bar-style" content="black-translucent"&gt;
+    
+    &lt;meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"&gt;
+    
+    &lt;link rel="stylesheet" href="https://cad-lab.github.io/cadlab_data/reveal/css/reveal.css"&gt;
+    &lt;link rel="stylesheet" href="https://cad-lab.github.io/cadlab_data/reveal/css/theme/black.css" id="theme"&gt;
+    
+    &lt;!-- Theme used for syntax highlighting of code --&gt;
+    &lt;link rel="stylesheet" href="https://cad-lab.github.io/cadlab_data/reveal/lib/css/zenburn.css"&gt;
+
+    &lt;!-- Printing and PDF exports --&gt;
+    &lt;script&gt;
+        var link = document.createElement( 'link' );
+        link.rel = 'stylesheet';
+        link.type = 'text/css';
+        link.href = window.location.search.match( /print-pdf/gi ) ? 'https://cad-lab.github.io/cadlab_data/reveal/css/print/pdf.css' : 'https://cad-lab.github.io/cadlab_data/reveal/css/print/paper.css';
+        document.getElementsByTagName( 'head' )[0].appendChild( link );
+    &lt;/script&gt;
+
+    &lt;!--[if lt IE 9]&gt;
+    &lt;script src="https://cad-lab.github.io/cadlab_data/reveal/lib/js/html5shiv.js"&gt;&lt;/script&gt;
+    &lt;![endif]--&gt;
+&lt;/head&gt;
+
+</t>
+<t tx="leo.20161115174825.5">(uncached) amd.20161004104820.1
+Diff...
+  &lt;section&gt;
+  @others
+  &lt;/section&gt;
+- &lt;section&gt;
+</t>
+<t tx="leo.20161115174825.6">&lt;section&gt;
+@others
+&lt;/section&gt;
+</t>
+<t tx="leo.20161115174825.7">&lt;section&gt;
+@others
+&lt;/section&gt;
+&lt;section&gt;
+</t>
+<t tx="leo.20161115174825.8">(uncached) amd.20161004112026.1
+Diff...
+- &lt;/section&gt;
+- &lt;section&gt;
+- @others
+- &lt;section&gt;
+  &lt;section data-markdown&gt;
+      &lt;script type="text/template"&gt;
+- # Github 倉儲網頁
++ @others
++     &lt;/script&gt;
++ &lt;/section&gt;
+  
++ 
++ 						
+</t>
+<t tx="leo.20161115174825.9">&lt;section data-markdown&gt;
+    &lt;script type="text/template"&gt;
+@others
+    &lt;/script&gt;
+&lt;/section&gt;
+
+
+						
+</t>
 </tnodes>
 </leo_file>
