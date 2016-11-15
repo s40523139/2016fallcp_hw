@@ -29,7 +29,7 @@ for m in registered:
 
 &lt;/pre&gt;
 
-&lt;p&gt;&amp;nbsp;&lt;/p&gt;</summary><category term="Python"></category></entry><entry><title>上課練習</title><link href="./shang-ke-lian-xi.html" rel="alternate"></link><published>2016-11-14T12:00:00+08:00</published><updated>2016-11-14T12:00:00+08:00</updated><author><name>劉育彤</name></author><id>tag:,2016-11-14:./shang-ke-lian-xi.html</id><summary type="html">&lt;h2&gt;用for迴圈列出各組名單&lt;/h2&gt;
+&lt;p&gt;&amp;nbsp;&lt;/p&gt;</summary><category term="Python"></category></entry><entry><title>上課練習(2)</title><link href="./shang-ke-lian-xi-2.html" rel="alternate"></link><published>2016-11-14T12:00:00+08:00</published><updated>2016-11-14T12:00:00+08:00</updated><author><name>劉育彤</name></author><id>tag:,2016-11-14:./shang-ke-lian-xi-2.html</id><summary type="html">&lt;h2&gt;用for迴圈列出各組名單&lt;/h2&gt;
 
 &lt;pre class="brush:py;auto-links:false;toolbar:false" contenteditable="false"&gt;content = open("cpa.txt").read()
 #print(content)
