@@ -2,7 +2,7 @@
 <html lang="en"
 >
 <head>
-    <title>Articles by yen - 2016Fall 課程網誌 (虎尾科大MDE)</title>
+    <title>Python - 2016Fall 課程網誌 (虎尾科大MDE)</title>
     <!-- Using the latest rendering mode for IE -->
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta charset="utf-8">
@@ -167,7 +167,8 @@ init_mathjax();
 </script>
 
 
-        <meta name="author" content="KMOL" />
+    <meta name="author" content="KMOL" />
+    <meta name="keywords" content="Python" />
 
     <!-- Open Graph tags -->
         <meta property="og:site_name" content="2016Fall 課程網誌 (虎尾科大MDE)" />
@@ -278,18 +279,26 @@ init_mathjax();
         <div class="col-sm-9">
 
             <article>
-                <h2><a href="../2016fall-ji-jie-she-ji-zhu-ti-jiao-xue-2.html">2016Fall 機械設計主題教學(2)</a></h2>
-                <div class="summary"><p>知識管理與最佳化應用實驗室試圖利用計算機程式、網際內容管理、電腦輔助設計實習與協同產品設計實習等課程, 進行與機械設計相關的主題式教學, 其中包含強化創造力的教學、令學員熟習六種工程表達方式, 並且俱備融入協同設計所需要的四大面向知識與技能.</p>
-
-                    <a class="btn btn-default btn-xs" href="../2016fall-ji-jie-she-ji-zhu-ti-jiao-xue-2.html">more ...</a>
-                </div>
-            </article>
-            <hr/>
-            <article>
-                <h2><a href="../2016fall-ji-jie-she-ji-zhu-ti-jiao-xue.html">2016Fall 機械設計主題教學</a></h2>
-                <div class="summary"><p>知識管理與最佳化應用實驗室試圖利用計算機程式、網際內容管理、電腦輔助設計實習與協同產品設計實習等課程, 進行與機械設計相關的主題式教學, 其中包含強化創造力的教學、令學員熟習六種工程表達方式, 並且俱備融入協同設計所需要的四大面向知識與技能.</p>
-
-                    <a class="btn btn-default btn-xs" href="../2016fall-ji-jie-she-ji-zhu-ti-jiao-xue.html">more ...</a>
+                <h2><a href="../pythonyu-fa.html">Python語法</a></h2>
+                <div class="summary"><h1>找出未分組的名單</h1>
+<p>data3 = open("w6_group.txt").read()</p>
+<h1>data3 = open("w6_list.txt").read()</h1>
+<h1>print(data3)</h1>
+<p>group = data3.splitlines()</p>
+<h1>print(len(group))</h1>
+<h1>希望將分組資料轉為學員數列, 令為變數名稱 result_g</h1>
+<p>result_g = []</p>
+<h1>已經註冊者數列設為 registered</h1>
+<p>registered = open("w6_list.txt").read()
+registered = registered.splitlines()</p>
+<h1>print(registered)</h1>
+<p>for line in group:
+    # 去除每一行最後的空白成員
+    sline = line.split(",")[:-1]
+    #print (sline)
+    # 再將各組拆成個別組員後, 串成 result_g
+    for ...</p>
+                    <a class="btn btn-default btn-xs" href="../pythonyu-fa.html">more ...</a>
                 </div>
             </article>
             <hr/>
@@ -304,13 +313,8 @@ init_mathjax();
             <li class="list-group-item"><h4><i class="fa fa-home fa-lg"></i><span class="icon-label">Recent Posts</span></h4>
                 <ul class="list-group" id="recentposts">
                     <li class="list-group-item">
-                        <a href="../2016fall-ji-jie-she-ji-zhu-ti-jiao-xue-2.html">
-                            2016Fall 機械設計主題教學(2)
-                        </a>
-                    </li>
-                    <li class="list-group-item">
-                        <a href="../2016fall-ji-jie-she-ji-zhu-ti-jiao-xue.html">
-                            2016Fall 機械設計主題教學
+                        <a href="../pythonyu-fa.html">
+                            Python語法
                         </a>
                     </li>
                 </ul>
