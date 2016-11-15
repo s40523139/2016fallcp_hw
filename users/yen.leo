@@ -21,7 +21,9 @@
 <v t="amd.20151215180106.1" a="E"><vh>設定與開發</vh>
 <v t="amd.20151216151325.1" a="E"><vh>@clean index.html</vh>
 <v t="amd.20161004083800.1" a="E"><vh>html</vh>
-<v t="amd.20161004083800.2"><vh>head</vh></v>
+<v t="amd.20161004083800.2" a="E"><vh>head</vh>
+<v t="amd.20161004083800.3"><vh>&lt;&lt; 投影片標題 &gt;&gt;</vh></v>
+</v>
 <v t="amd.20161004083800.5" a="E"><vh>body</vh>
 <v t="amd.20161004083800.6" a="E"><vh>reveal div</vh>
 <v t="amd.20161004083800.7" a="E"><vh>slides div</vh>
@@ -33,58 +35,23 @@
 <v t="amd.20161004104641.2"><vh>git clone&amp;git push</vh></v>
 </v>
 </v>
-<v t="yen.20161011122932.1" a="E"><vh>vimeo</vh>
-<v t="yen.20161011122601.1" a="E"><vh>投影片</vh>
-<v t="yen.20161011122601.2"><vh>自學 Python3</vh></v>
+<v t="amd.20161004101327.1" a="E"><vh>vimeo</vh>
+<v t="amd.20161004101327.2"><vh>Brython</vh></v>
 </v>
-</v>
-<v t="yen.20161011125115.1"><vh>執行力訓練</vh>
-<v t="yen.20161011125115.2" a="E"><vh>分組排座位</vh>
-<v t="yen.20161011125115.3"><vh>課程分組排座位</vh></v>
-</v>
-</v>
-<v t="yen.20161011143808.1"><vh>協同力訓練</vh>
-<v t="yen.20161011143808.2" a="E"><vh>Github 帳號</vh>
-<v t="yen.20161011143808.3"><vh>Github 倉儲網頁</vh></v>
-</v>
-<v t="yen.20161011144113.1"><vh>倉儲子模組串連</vh>
-<v t="yen.20161011144113.2"><vh>學員作業網頁定版</vh></v>
-</v>
-<v t="yen.20161011144715.1"><vh>倉儲版本拉回請求</vh>
-<v t="yen.20161011144715.2"><vh>Github 倉儲拉回請求</vh></v>
-</v>
-</v>
-<v t="yen.20161011145156.1" a="E"><vh>開始學 Python</vh>
-<v t="yen.20161011145156.2" a="E"><vh>Python 基本語法</vh>
-<v t="yen.20161011145156.3"><vh>Python3 語法</vh></v>
-</v>
-<v t="yen.20161011145156.4" a="E"><vh>Python 迴圈</vh>
-<v t="yen.20161011145156.5"><vh>for 迴圈用法</vh></v>
-</v>
-<v t="yen.20161011145156.6"><vh>Python 函式</vh>
-<v t="yen.20161011145156.7"><vh>函式用法</vh></v>
-</v>
-<v t="yen.20161011145755.1"><vh>Python 數列</vh>
-<v t="yen.20161011145755.2"><vh>數列用法</vh></v>
-</v>
-<v t="yen.20161011145952.1"><vh>分組程式</vh>
-<v t="yen.20161011145952.2"><vh>分組程式內容</vh></v>
-</v>
-<v t="yen.20161011150316.1"><vh>猜數字遊戲</vh>
-<v t="yen.20161011150316.2"><vh>遊戲邏輯</vh></v>
-</v>
-<v t="yen.20161011150126.1"><vh>2 D 繪圖</vh>
-<v t="yen.20161011150126.2"><vh>Python 網際繪圖</vh></v>
-</v>
-<v t="yen.20161011150901.1"><vh>2 D 動畫</vh>
-<v t="yen.20161011150901.2"><vh>網際動畫範例</vh></v>
-</v>
-</v>
-<v t="amd.20161004101327.1" a="E"><vh>MD 投影片 (標題)</vh>
-<v t="amd.20161004101327.2"><vh>利用 MD 寫內容</vh></v>
+<v t="amd.20161004112026.1" a="E"><vh>計算機程式課程內涵</vh>
+<v t="amd.20161004112026.2"><vh>利用 MD 寫內容</vh></v>
 </v>
 <v t="amd.20161004083800.15"><vh>github intro</vh></v>
 <v t="amd.20161004083800.21"><vh>fork 與 pull requests</vh></v>
+<v t="amd.20161004083800.27" a="E"><vh>投影片</vh>
+<v t="amd.20161004101902.1" a="E"><vh>使用 iframe 嵌入影片連節</vh>
+<v t="amd.20161004101902.2"><vh>iframe 導入影片</vh></v>
+</v>
+<v t="amd.20161004085439.1"><vh>向下投影片</vh></v>
+</v>
+<v t="amd.20161004083800.47" a="E"><vh>Markdown 投影片</vh>
+<v t="amd.20161004092208.1"><vh>利用 MD 寫內容</vh></v>
+</v>
 <v t="amd.20161004094125.1" a="E"><vh>Markdown 投影片</vh>
 <v t="amd.20161004094125.2"><vh>MD 投影片內容</vh></v>
 </v>
@@ -124,6 +91,7 @@
 <v t="amd.20160106093454.1" a="E"><vh>yen 所寫的網誌文章</vh>
 <v t="amd.20160727114506.1" a="E"><vh>201609</vh>
 <v t="amd.20160727120222.1"><vh>@edit 20160921.md</vh></v>
+<v t="leo.20161115174122.1"><vh>@edit 20161115.md</vh></v>
 </v>
 </v>
 </v>
@@ -133,24 +101,14 @@
 </v>
 </v>
 <v t="amd.20161004202833.1"><vh>@edit ../README.md</vh></v>
-<v t="yen.20161011110116.2" a="E"><vh>Recovered Nodes</vh>
-<v t="yen.20161011110116.3"><vh>Recovered node "head" from @clean index.html</vh>
-<v t="yen.20161011110116.4"><vh>old:head</vh></v>
-<v t="yen.20161011110116.5"><vh>new:head</vh></v>
+<v t="leo.20161115173743.2" a="E"><vh>Recovered Nodes</vh>
+<v t="leo.20161115173743.3"><vh>Recovered node "head" from @clean index.html</vh>
+<v t="leo.20161115173743.4"><vh>old:head</vh></v>
+<v t="leo.20161115173743.5"><vh>new:head</vh></v>
 </v>
-<v t="yen.20161011110116.6"><vh>Recovered node "&lt;&lt; 投影片標題 &gt;&gt;" from @clean index.html</vh>
-<v t="yen.20161011110116.7"><vh>old:&lt;&lt; 投影片標題 &gt;&gt;</vh></v>
-<v t="yen.20161011110116.8"><vh>new:&lt;&lt; 投影片標題 &gt;&gt;</vh></v>
-</v>
-</v>
-<v t="leo.20161112140804.1" a="E"><vh>Recovered Nodes</vh>
-<v t="leo.20161112140804.2"><vh>Recovered node "head" from @clean index.html</vh>
-<v t="leo.20161112140804.3"><vh>old:head</vh></v>
-<v t="leo.20161112140804.4"><vh>new:head</vh></v>
-</v>
-<v t="leo.20161112140804.5"><vh>Recovered node "封面投影片內容" from @clean index.html</vh>
-<v t="leo.20161112140804.6"><vh>old:封面投影片內容</vh></v>
-<v t="leo.20161112140804.7"><vh>new:封面投影片內容</vh></v>
+<v t="leo.20161115173743.6"><vh>Recovered node "&lt;&lt; 投影片標題 &gt;&gt;" from @clean index.html</vh>
+<v t="leo.20161115173743.7"><vh>old:&lt;&lt; 投影片標題 &gt;&gt;</vh></v>
+<v t="leo.20161115173743.8"><vh>new:&lt;&lt; 投影片標題 &gt;&gt;</vh></v>
 </v>
 </v>
 </vnodes>
@@ -245,7 +203,7 @@ print("hello")
 					
 </t>
 <t tx="amd.20161004083800.15">&lt;section&gt;
-　&lt;h2&gt;github_intro&lt;/h2&gt;
+    &lt;h2&gt;github_intro&lt;/h2&gt;
     &lt;iframe src="https://player.vimeo.com/video/183950627" width="640" height="492" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen&gt;&lt;/iframe&gt;
     &lt;p&gt;
     &lt;a href="https://vimeo.com/183950627"&gt;2016-09-23_cpb_github_intro&lt;/a&gt; from 
@@ -290,8 +248,8 @@ apply broader style changes, like switching the page background.
 </t>
 <t tx="amd.20161004083800.2">&lt;head&gt;
     &lt;meta charset="utf-8"&gt;
-&lt;title&gt;    
-2016 2016Fall 計算機程式課程
+    &lt;title&gt;    2016 Fall 計算機程式課程
+    &lt;&lt; 投影片標題 &gt;&gt;
 &lt;/title&gt;
     &lt;meta name="description" content="A framework for easily creating beautiful presentations using HTML"&gt;
     &lt;meta name="author" content="Hakim El Hattab"&gt;
@@ -332,6 +290,21 @@ apply broader style changes, like switching the page background.
     &lt;/p&gt;
 &lt;/section&gt;
 </t>
+<t tx="amd.20161004083800.27">&lt;!-- Example of nested vertical slides --&gt;
+&lt;section&gt;
+@others
+&lt;/section&gt;
+</t>
+<t tx="amd.20161004083800.3"></t>
+<t tx="amd.20161004083800.47">&lt;section data-markdown&gt;
+    &lt;script type="text/template"&gt;
+@others
+    &lt;/script&gt;
+&lt;/section&gt;
+
+
+						
+</t>
 <t tx="amd.20161004083800.5">&lt;body&gt;
 @others
 &lt;script src="https://cad-lab.github.io/cadlab_data/reveal/lib/js/head.min.js"&gt;&lt;/script&gt;
@@ -370,6 +343,32 @@ apply broader style changes, like switching the page background.
 @others
 &lt;/div&gt;
 
+</t>
+<t tx="amd.20161004085439.1">&lt;section&gt;
+    &lt;h2&gt;Vertical Slides&lt;/h2&gt;
+    &lt;p&gt;Slides can be nested inside of each other.&lt;/p&gt;
+    &lt;p&gt;
+    Use the &lt;em&gt;Space&lt;/em&gt; key to navigate through all slides.
+    &lt;/p&gt;
+    &lt;br&gt;
+    &lt;a href="#" class="navigate-down"&gt;
+        &lt;img width="178" height="238" data-src="https://s3.amazonaws.com/hakim-static/reveal-js/arrow.png" alt="Down arrow"&gt;
+    &lt;/a&gt;
+&lt;/section&gt;
+</t>
+<t tx="amd.20161004092208.1">## Markdown support
+
+Write content using inline or external Markdown.
+Instructions and more info available in the [readme](https://github.com/hakimel/reveal.js#markdown).
+
+```
+&lt;section data-markdown&gt;
+  ## Markdown support
+
+  Write content using inline or external Markdown.
+  Instructions and more info available in the [readme](https://github.com/hakimel/reveal.js#markdown).
+&lt;/section&gt;
+```
 </t>
 <t tx="amd.20161004094125.1">&lt;section data-markdown&gt;
     &lt;script type="text/template"&gt;
@@ -488,7 +487,23 @@ and images can be specified like so:
 
 						
 </t>
-<t tx="amd.20161004101327.2">## 使用 iframe 導入影片
+<t tx="amd.20161004101327.2">##利用Brython秀出學號
+&lt;iframe src="https://player.vimeo.com/video/191265690" width="640" height="343" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen&gt;&lt;/iframe&gt;
+&lt;p&gt;
+&lt;a href="https://vimeo.com/191265690"&gt;2016-11-12 19-31-16&lt;/a&gt; from 
+&lt;a href="https://vimeo.com/user58915964"&gt;劉育彤&lt;/a&gt; on
+ &lt;a href="https://vimeo.com"&gt;Vimeo&lt;/a&gt;.
+ &lt;/p&gt;</t>
+<t tx="amd.20161004101902.1">&lt;section data-markdown&gt;
+    &lt;script type="text/template"&gt;
+@others
+    &lt;/script&gt;
+&lt;/section&gt;
+
+
+						
+</t>
+<t tx="amd.20161004101902.2">## 使用 iframe 導入影片
 
 ### Markdown 沒有 iframe
 
@@ -515,6 +530,29 @@ and images can be specified like so:
 <t tx="amd.20161004104820.1">&lt;section&gt;
 @others
 &lt;/section&gt;
+</t>
+<t tx="amd.20161004112026.1">&lt;section data-markdown&gt;
+    &lt;script type="text/template"&gt;
+@others
+    &lt;/script&gt;
+&lt;/section&gt;
+
+
+						
+</t>
+<t tx="amd.20161004112026.2">## 計算機程式課程
+
+計算機程式課程的教學主題:
+
+  * CC1-自學能力 (Git, Github, Python)
+  * CC2-程式能力 (Python 讀檔, 排序, 2D 繪圖, 2D 動畫)
+  * SP1-口語表達 (自拍投影片 on Vimeo and Youtube)
+  * P2-文字表達 (Wiki 與 Blog on Github Pages)
+  * SP3-2D 表達 (2D 流程圖)
+  * SP4-3D 表達 (自拍操作影片 on Vimeo and Youtube)
+  * CD3-協同工具 (Git, Leo Editor 與 Github)
+  * CD4-協同專案 (網際遊戲 on Github Pages)
+
 </t>
 <t tx="amd.20161004171423.1">&lt;section data-markdown&gt;
     &lt;script type="text/template"&gt;
@@ -640,159 +678,8 @@ PLUGINS = ['liquid_tags.notebook', 'summary']
 <t tx="leo.20151213230957.1"># 設定網誌以 md 檔案建立的 file system date 為準, 無需自行設定
 
 DEFAULT_DATE = 'fs'</t>
-<t tx="leo.20161112140804.1"></t>
-<t tx="leo.20161112140804.2">(uncached) amd.20161004083800.2
-Diff...
-  &lt;head&gt;
-      &lt;meta charset="utf-8"&gt;
-  &lt;title&gt;    
-- 2016 2016Fall 計算機程式課程
-?      ----
-+ 2016 Fall 計算機程式課程
-  &lt;/title&gt;
-      &lt;meta name="description" content="A framework for easily creating beautiful presentations using HTML"&gt;
-      &lt;meta name="author" content="Hakim El Hattab"&gt;
-      
-      &lt;meta name="apple-mobile-web-app-capable" content="yes"&gt;
-      &lt;meta name="apple-mobile-web-app-status-bar-style" content="black-translucent"&gt;
-      
-      &lt;meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"&gt;
-      
-      &lt;link rel="stylesheet" href="https://cad-lab.github.io/cadlab_data/reveal/css/reveal.css"&gt;
-      &lt;link rel="stylesheet" href="https://cad-lab.github.io/cadlab_data/reveal/css/theme/black.css" id="theme"&gt;
-      
-      &lt;!-- Theme used for syntax highlighting of code --&gt;
-      &lt;link rel="stylesheet" href="https://cad-lab.github.io/cadlab_data/reveal/lib/css/zenburn.css"&gt;
-  
-      &lt;!-- Printing and PDF exports --&gt;
-      &lt;script&gt;
-          var link = document.createElement( 'link' );
-          link.rel = 'stylesheet';
-          link.type = 'text/css';
-          link.href = window.location.search.match( /print-pdf/gi ) ? 'https://cad-lab.github.io/cadlab_data/reveal/css/print/pdf.css' : 'https://cad-lab.github.io/cadlab_data/reveal/css/print/paper.css';
-          document.getElementsByTagName( 'head' )[0].appendChild( link );
-      &lt;/script&gt;
-  
-      &lt;!--[if lt IE 9]&gt;
-      &lt;script src="https://cad-lab.github.io/cadlab_data/reveal/lib/js/html5shiv.js"&gt;&lt;/script&gt;
-      &lt;![endif]--&gt;
-  &lt;/head&gt;
-  
-</t>
-<t tx="leo.20161112140804.3">&lt;head&gt;
-    &lt;meta charset="utf-8"&gt;
-&lt;title&gt;    
-2016 Fall 計算機程式課程
-&lt;/title&gt;
-    &lt;meta name="description" content="A framework for easily creating beautiful presentations using HTML"&gt;
-    &lt;meta name="author" content="Hakim El Hattab"&gt;
-    
-    &lt;meta name="apple-mobile-web-app-capable" content="yes"&gt;
-    &lt;meta name="apple-mobile-web-app-status-bar-style" content="black-translucent"&gt;
-    
-    &lt;meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"&gt;
-    
-    &lt;link rel="stylesheet" href="https://cad-lab.github.io/cadlab_data/reveal/css/reveal.css"&gt;
-    &lt;link rel="stylesheet" href="https://cad-lab.github.io/cadlab_data/reveal/css/theme/black.css" id="theme"&gt;
-    
-    &lt;!-- Theme used for syntax highlighting of code --&gt;
-    &lt;link rel="stylesheet" href="https://cad-lab.github.io/cadlab_data/reveal/lib/css/zenburn.css"&gt;
-
-    &lt;!-- Printing and PDF exports --&gt;
-    &lt;script&gt;
-        var link = document.createElement( 'link' );
-        link.rel = 'stylesheet';
-        link.type = 'text/css';
-        link.href = window.location.search.match( /print-pdf/gi ) ? 'https://cad-lab.github.io/cadlab_data/reveal/css/print/pdf.css' : 'https://cad-lab.github.io/cadlab_data/reveal/css/print/paper.css';
-        document.getElementsByTagName( 'head' )[0].appendChild( link );
-    &lt;/script&gt;
-
-    &lt;!--[if lt IE 9]&gt;
-    &lt;script src="https://cad-lab.github.io/cadlab_data/reveal/lib/js/html5shiv.js"&gt;&lt;/script&gt;
-    &lt;![endif]--&gt;
-&lt;/head&gt;
-
-</t>
-<t tx="leo.20161112140804.4">&lt;head&gt;
-    &lt;meta charset="utf-8"&gt;
-&lt;title&gt;    
-2016 2016Fall 計算機程式課程
-&lt;/title&gt;
-    &lt;meta name="description" content="A framework for easily creating beautiful presentations using HTML"&gt;
-    &lt;meta name="author" content="Hakim El Hattab"&gt;
-    
-    &lt;meta name="apple-mobile-web-app-capable" content="yes"&gt;
-    &lt;meta name="apple-mobile-web-app-status-bar-style" content="black-translucent"&gt;
-    
-    &lt;meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"&gt;
-    
-    &lt;link rel="stylesheet" href="https://cad-lab.github.io/cadlab_data/reveal/css/reveal.css"&gt;
-    &lt;link rel="stylesheet" href="https://cad-lab.github.io/cadlab_data/reveal/css/theme/black.css" id="theme"&gt;
-    
-    &lt;!-- Theme used for syntax highlighting of code --&gt;
-    &lt;link rel="stylesheet" href="https://cad-lab.github.io/cadlab_data/reveal/lib/css/zenburn.css"&gt;
-
-    &lt;!-- Printing and PDF exports --&gt;
-    &lt;script&gt;
-        var link = document.createElement( 'link' );
-        link.rel = 'stylesheet';
-        link.type = 'text/css';
-        link.href = window.location.search.match( /print-pdf/gi ) ? 'https://cad-lab.github.io/cadlab_data/reveal/css/print/pdf.css' : 'https://cad-lab.github.io/cadlab_data/reveal/css/print/paper.css';
-        document.getElementsByTagName( 'head' )[0].appendChild( link );
-    &lt;/script&gt;
-
-    &lt;!--[if lt IE 9]&gt;
-    &lt;script src="https://cad-lab.github.io/cadlab_data/reveal/lib/js/html5shiv.js"&gt;&lt;/script&gt;
-    &lt;![endif]--&gt;
-&lt;/head&gt;
-
-</t>
-<t tx="leo.20161112140804.5">(uncached) amd.20161004095719.2
-Diff...
-- # 2016Fallcp_hw 劉育彤的簡報
-+ # 2016Fall 計算機程式課程
-  
-+ ### 虎科大機械設計工程系
-- ### THE HTML PRESENTATION FRAMEWORK
-- 
-  
-  &lt;small&gt;
-+ Created by [KMOLab](http://chiamingyen.github.io/kmolab/blog/)
-- Created by [Hakim El Hattab](http://hakim.se)
-- [@hakimel](http://twitter.com/hakimel)
-  &lt;/small&gt;
-  
-- [blog](https://s40523139.github.io/2016fallcp_hw/blog/)
-+ [甲班計算機程式課程網誌](blog/index.html)
-+ 
-+ [乙班計算機程式課程網誌](https://mdecourse.github.io/2016fallcpb/blog)
-</t>
-<t tx="leo.20161112140804.6"># 2016Fall 計算機程式課程
-
-### 虎科大機械設計工程系
-
-&lt;small&gt;
-Created by [KMOLab](http://chiamingyen.github.io/kmolab/blog/)
-&lt;/small&gt;
-
-[甲班計算機程式課程網誌](blog/index.html)
-
-[乙班計算機程式課程網誌](https://mdecourse.github.io/2016fallcpb/blog)
-</t>
-<t tx="leo.20161112140804.7"># 2016Fallcp_hw 劉育彤的簡報
-
-### THE HTML PRESENTATION FRAMEWORK
-
-
-&lt;small&gt;
-Created by [Hakim El Hattab](http://hakim.se)
-[@hakimel](http://twitter.com/hakimel)
-&lt;/small&gt;
-
-[blog](https://s40523139.github.io/2016fallcp_hw/blog/)
-</t>
-<t tx="yen.20161011110116.2"></t>
-<t tx="yen.20161011110116.3">(uncached) amd.20161004083800.2
+<t tx="leo.20161115173743.2"></t>
+<t tx="leo.20161115173743.3">(uncached) amd.20161004083800.2
 Diff...
   &lt;head&gt;
       &lt;meta charset="utf-8"&gt;
@@ -829,7 +716,7 @@ Diff...
   &lt;/head&gt;
   
 </t>
-<t tx="yen.20161011110116.4">&lt;head&gt;
+<t tx="leo.20161115173743.4">&lt;head&gt;
     &lt;meta charset="utf-8"&gt;
     &lt;title&gt;&lt;&lt; 投影片標題 &gt;&gt;&lt;/title&gt;
     &lt;meta name="description" content="A framework for easily creating beautiful presentations using HTML"&gt;
@@ -861,7 +748,7 @@ Diff...
 &lt;/head&gt;
 
 </t>
-<t tx="yen.20161011110116.5">&lt;head&gt;
+<t tx="leo.20161115173743.5">&lt;head&gt;
     &lt;meta charset="utf-8"&gt;
     &lt;title&gt;    2016 Fall 計算機程式課程
     &lt;&lt; 投影片標題 &gt;&gt;
@@ -895,228 +782,12 @@ Diff...
 &lt;/head&gt;
 
 </t>
-<t tx="yen.20161011110116.6">(uncached) amd.20161004083800.3
+<t tx="leo.20161115173743.6">(uncached) amd.20161004083800.3
 Diff...
 + 2016 Fall 計算機程式課程
 </t>
-<t tx="yen.20161011110116.7">2016 Fall 計算機程式課程
+<t tx="leo.20161115173743.7">2016 Fall 計算機程式課程
 </t>
-<t tx="yen.20161011110116.8"></t>
-<t tx="yen.20161011122601.1">&lt;section data-markdown&gt;
-    &lt;script type="text/template"&gt;
-@others
-    &lt;/script&gt;
-&lt;/section&gt;
-
-
-						
-</t>
-<t tx="yen.20161011122601.2">##利用Brython秀出學號
-&lt;iframe src="https://player.vimeo.com/video/191265690" width="640" height="343" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen&gt;&lt;/iframe&gt;
-&lt;p&gt;
-&lt;a href="https://vimeo.com/191265690"&gt;2016-11-12 19-31-16&lt;/a&gt; from 
-&lt;a href="https://vimeo.com/user58915964"&gt;劉育彤&lt;/a&gt; on
- &lt;a href="https://vimeo.com"&gt;Vimeo&lt;/a&gt;.
- &lt;/p&gt;</t>
-<t tx="yen.20161011122932.1">&lt;section&gt;
-@others
-&lt;/section&gt;
-</t>
-<t tx="yen.20161011125115.1">&lt;section&gt;
-@others
-&lt;/section&gt;
-</t>
-<t tx="yen.20161011125115.2">&lt;section data-markdown&gt;
-    &lt;script type="text/template"&gt;
-@others
-    &lt;/script&gt;
-&lt;/section&gt;
-
-
-						
-</t>
-<t tx="yen.20161011125115.3"># 課程分組排座位
-
-##想像一下分組流程
-##請畫出流程圖
-##如何進行最好?
-</t>
-<t tx="yen.20161011143808.1">&lt;section&gt;
-@others
-&lt;/section&gt;
-</t>
-<t tx="yen.20161011143808.2">&lt;section data-markdown&gt;
-    &lt;script type="text/template"&gt;
-@others
-    &lt;/script&gt;
-&lt;/section&gt;
-
-
-						
-</t>
-<t tx="yen.20161011143808.3"># Github 倉儲網頁
-
-####建立個人 Github 網頁 (帳號.github.io)
-####建立個人課程作業網頁 (納入投影片與網誌架構)
-####組長建立分組的評量網頁 (納入投影片與網誌架構)
-</t>
-<t tx="yen.20161011144113.1">&lt;section data-markdown&gt;
-    &lt;script type="text/template"&gt;
-@others
-    &lt;/script&gt;
-&lt;/section&gt;
-
-
-						
-</t>
-<t tx="yen.20161011144113.2"># 學員作業網頁定版
-
-###個人作業網頁內容可以隨時改版
-###分組評量網頁必須在指定時間前定版
-###Github 倉儲 gh-pages分支與子模組應用
-</t>
-<t tx="yen.20161011144715.1">&lt;section data-markdown&gt;
-    &lt;script type="text/template"&gt;
-@others
-    &lt;/script&gt;
-&lt;/section&gt;
-
-
-						
-</t>
-<t tx="yen.20161011144715.2"># Github 倉儲拉回請求
-
-####分組倉儲 Collaborators 設定
-####分組倉儲版本 Pull Requests 練習
-####各組員實際操作影片錄製
-####操作影片加字幕以及影片檔相加
-</t>
-<t tx="yen.20161011145156.1">&lt;section&gt;
-@others
-&lt;/section&gt;
-</t>
-<t tx="yen.20161011145156.2">&lt;section data-markdown&gt;
-    &lt;script type="text/template"&gt;
-@others
-    &lt;/script&gt;
-&lt;/section&gt;
-
-
-						
-</t>
-<t tx="yen.20161011145156.3"># Python3 語法
-
-####print()
-####input()
-####變數名稱與關鍵字
-</t>
-<t tx="yen.20161011145156.4">&lt;section data-markdown&gt;
-    &lt;script type="text/template"&gt;
-@others
-    &lt;/script&gt;
-&lt;/section&gt;
-
-
-						
-</t>
-<t tx="yen.20161011145156.5"># for 迴圈用法
-
-###Python 程式縮排
-###for i in range(5)：
-###數列與 iterator
-
-</t>
-<t tx="yen.20161011145156.6">&lt;section data-markdown&gt;
-    &lt;script type="text/template"&gt;
-@others
-    &lt;/script&gt;
-&lt;/section&gt;
-
-
-						
-</t>
-<t tx="yen.20161011145156.7"># 函式用法
-
-####函式定義
-####函式呼叫與傳值
-####函式載入順序
-</t>
-<t tx="yen.20161011145755.1">&lt;section data-markdown&gt;
-    &lt;script type="text/template"&gt;
-@others
-    &lt;/script&gt;
-&lt;/section&gt;
-
-
-						
-</t>
-<t tx="yen.20161011145755.2"># 數列用法
-
-####數列與索引
-####數列與字串
-####數列排序
-</t>
-<t tx="yen.20161011145952.1">&lt;section data-markdown&gt;
-    &lt;script type="text/template"&gt;
-@others
-    &lt;/script&gt;
-&lt;/section&gt;
-
-
-						
-</t>
-<t tx="yen.20161011145952.2"># 分組程式內容
-
-####讀取原始資料內容
-####設法分割資料, 納入數列
-####根據設計邏輯進行資料處理
-</t>
-<t tx="yen.20161011150126.1">&lt;section data-markdown&gt;
-    &lt;script type="text/template"&gt;
-@others
-    &lt;/script&gt;
-&lt;/section&gt;
-
-
-						
-</t>
-<t tx="yen.20161011150126.2"># Python 網際繪圖
-
-####Brython 簡介
-####Brython 執行設定
-####基本繪圖練習 (五芒星、正齒輪與各國國旗)
-</t>
-<t tx="yen.20161011150316.1">&lt;section data-markdown&gt;
-    &lt;script type="text/template"&gt;
-@others
-    &lt;/script&gt;
-&lt;/section&gt;
-
-
-						
-</t>
-<t tx="yen.20161011150316.2"># 遊戲邏輯
-
-####1-100 中隨機取一個數字作為答案
-####設法讓使用者猜這個數字 (接受輸入)
-####使用每猜一次都回答比答案大或小
-####能在一定次數中猜對者獲勝
-####在單機或網際執行程式?
-</t>
-<t tx="yen.20161011150901.1">&lt;section data-markdown&gt;
-    &lt;script type="text/template"&gt;
-@others
-    &lt;/script&gt;
-&lt;/section&gt;
-
-
-						
-</t>
-<t tx="yen.20161011150901.2"># 網際動畫範例
-
-####機構模擬
-####猜顏色遊戲
-####網際對戰遊戲
-</t>
+<t tx="leo.20161115173743.8"></t>
 </tnodes>
 </leo_file>
