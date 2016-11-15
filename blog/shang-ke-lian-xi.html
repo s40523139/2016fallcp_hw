@@ -2,7 +2,7 @@
 <html lang="en"
 >
 <head>
-    <title>Python語法 - 2016Fall 課程網誌 (虎尾科大MDE)</title>
+    <title>上課練習 - 2016Fall 課程網誌 (虎尾科大MDE)</title>
     <!-- Using the latest rendering mode for IE -->
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta charset="utf-8">
@@ -166,17 +166,17 @@ init_mathjax = function() {
 init_mathjax();
 </script>
 
-<link rel="canonical" href="./pythonyu-fa.html">
+<link rel="canonical" href="./shang-ke-lian-xi.html">
 
         <meta name="author" content="劉育彤" />
         <meta name="keywords" content="Python" />
-        <meta name="description" content="找出未分組的名單 data3 = open(&#34;w6_group.txt&#34;).read() data3 = open(&#34;w6_list.txt&#34;).read() print(data3) group = data3.splitlines() print(len(group)) 希望將分組資料轉為學員數列, 令為變數名稱 result_g result_g = [] 已經註冊者數列設為 registered registered = open(&#34;w6_list.txt&#34;).read() registered = registered.splitlines() print(registered) for line in group: # 去除每一行最後的空白成員 sline = line.split(&#34;,&#34;)[:-1] #print (sline) # 再將各組拆成個別組員後, 串成 result_g for ..." />
+        <meta name="description" content="找出未分組的名單 data3 = open(&#34;w6_group.txt&#34;).read() #data3 = open(&#34;w6_list.txt&#34;).read() #print(data3) group = data3.splitlines() #print(len(group)) # 希望將分組資料轉為學員數列, 令為變數名稱 result_g result_g = [] # 已經註冊者數列設為 registered registered = open(&#34;w6_list.txt&#34;).read() registered = registered.splitlines() #print(registered) for line in group: # 去除每一行最後的空白成員 sline = line.split(&#34;,&#34;)[:-1] #print (sline) # 再將各組拆成個別組員後, 串成 result_g for ..." />
 
         <meta property="og:site_name" content="2016Fall 課程網誌 (虎尾科大MDE)" />
         <meta property="og:type" content="article"/>
-        <meta property="og:title" content="Python語法"/>
-        <meta property="og:url" content="./pythonyu-fa.html"/>
-        <meta property="og:description" content="找出未分組的名單 data3 = open(&#34;w6_group.txt&#34;).read() data3 = open(&#34;w6_list.txt&#34;).read() print(data3) group = data3.splitlines() print(len(group)) 希望將分組資料轉為學員數列, 令為變數名稱 result_g result_g = [] 已經註冊者數列設為 registered registered = open(&#34;w6_list.txt&#34;).read() registered = registered.splitlines() print(registered) for line in group: # 去除每一行最後的空白成員 sline = line.split(&#34;,&#34;)[:-1] #print (sline) # 再將各組拆成個別組員後, 串成 result_g for ..."/>
+        <meta property="og:title" content="上課練習"/>
+        <meta property="og:url" content="./shang-ke-lian-xi.html"/>
+        <meta property="og:description" content="找出未分組的名單 data3 = open(&#34;w6_group.txt&#34;).read() #data3 = open(&#34;w6_list.txt&#34;).read() #print(data3) group = data3.splitlines() #print(len(group)) # 希望將分組資料轉為學員數列, 令為變數名稱 result_g result_g = [] # 已經註冊者數列設為 registered registered = open(&#34;w6_list.txt&#34;).read() registered = registered.splitlines() #print(registered) for line in group: # 去除每一行最後的空白成員 sline = line.split(&#34;,&#34;)[:-1] #print (sline) # 再將各組拆成個別組員後, 串成 result_g for ..."/>
         <meta property="article:published_time" content="2016-11-15" />
             <meta property="article:section" content="Misc" />
             <meta property="article:tag" content="Python" />
@@ -287,10 +287,10 @@ init_mathjax();
         <article>
             <header class="page-header">
                 <h1>
-                    <a href="./pythonyu-fa.html"
+                    <a href="./shang-ke-lian-xi.html"
                        rel="bookmark"
-                       title="Permalink to Python語法">
-                        Python語法
+                       title="Permalink to 上課練習">
+                        上課練習
                     </a>
                 </h1>
             </header>
@@ -309,37 +309,42 @@ init_mathjax();
 
 <span class="label label-default">Tags</span>
 	<a href="./tag/python.html">Python</a>
-    
+    <span class="label label-default">Lang</span>
+	<a href="./shang-ke-lian-xi.html">en</a>
+
 </footer><!-- /.post-info -->                    </div>
                 </div>
                 <h1>找出未分組的名單</h1>
-<p><pre class="brush:py;auto-links:false;toolbar:false" contenteditable="false">
-data3 = open("w6_group.txt").read()</p>
-<h1>data3 = open("w6_list.txt").read()</h1>
-<h1>print(data3)</h1>
-<p>group = data3.splitlines()</p>
-<h1>print(len(group))</h1>
-<h1>希望將分組資料轉為學員數列, 令為變數名稱 result_g</h1>
-<p>result_g = []</p>
-<h1>已經註冊者數列設為 registered</h1>
-<p>registered = open("w6_list.txt").read()
-registered = registered.splitlines()</p>
-<h1>print(registered)</h1>
-<p>for line in group:
+
+<pre class="brush:py;auto-links:false;toolbar:false" contenteditable="false">data3 = open("w6_group.txt").read()
+#data3 = open("w6_list.txt").read()
+#print(data3)
+group = data3.splitlines()
+#print(len(group))
+
+# 希望將分組資料轉為學員數列, 令為變數名稱 result_g
+result_g = []
+# 已經註冊者數列設為 registered
+registered = open("w6_list.txt").read()
+registered = registered.splitlines()
+#print(registered)
+for line in group:
     # 去除每一行最後的空白成員
     sline = line.split(",")[:-1]
     #print (sline)
     # 再將各組拆成個別組員後, 串成 result_g
     for m in sline:
-        result_g.append(m)</p>
-<h1>print(result_g )</h1>
-<h1>not_in_group = [c for c in registered if c not in result_g]</h1>
-<h1>print(not_in_group)</h1>
-<p>for m in registered:
+        result_g.append(m)
+#print(result_g )
+#not_in_group = [c for c in registered if c not in result_g]
+#print(not_in_group)
+for m in registered:
     if m not in result_g:
-        print(m)</p>
-<p></pre>
-<p>&nbsp;</p></p>
+        print(m)
+
+</pre>
+
+<p>&nbsp;</p>
             </div>
             <!-- /.entry-content -->
         </article>
@@ -355,13 +360,13 @@ registered = registered.splitlines()</p>
             <li class="list-group-item"><h4><i class="fa fa-home fa-lg"></i><span class="icon-label">Recent Posts</span></h4>
                 <ul class="list-group" id="recentposts">
                     <li class="list-group-item">
-                        <a href="./pythonyu-fa.html">
-                            Python語法
+                        <a href="./shang-ke-lian-xi.html">
+                            上課練習
                         </a>
                     </li>
                     <li class="list-group-item">
-                        <a href="./2016fall-ji-jie-she-ji-zhu-ti-jiao-xue.html">
-                            2016Fall 機械設計主題教學
+                        <a href="./shang-ke-lian-xi.html">
+                            上課練習
                         </a>
                     </li>
                 </ul>

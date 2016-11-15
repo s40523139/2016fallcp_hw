@@ -1,41 +1,56 @@
 <?xml version="1.0" encoding="utf-8"?>
-<feed xmlns="http://www.w3.org/2005/Atom"><title>2016Fall 課程網誌 (虎尾科大MDE)</title><link href="./" rel="alternate"></link><link href="./feeds/misc.atom.xml" rel="self"></link><id>./</id><updated>2016-11-15T12:00:00+08:00</updated><entry><title>Python語法</title><link href="./pythonyu-fa.html" rel="alternate"></link><published>2016-11-15T12:00:00+08:00</published><updated>2016-11-15T12:00:00+08:00</updated><author><name>劉育彤</name></author><id>tag:,2016-11-15:./pythonyu-fa.html</id><summary type="html">&lt;h1&gt;找出未分組的名單&lt;/h1&gt;
-&lt;p&gt;&lt;pre class="brush:py;auto-links:false;toolbar:false" contenteditable="false"&gt;
-data3 = open("w6_group.txt").read()&lt;/p&gt;
-&lt;h1&gt;data3 = open("w6_list.txt").read()&lt;/h1&gt;
-&lt;h1&gt;print(data3)&lt;/h1&gt;
-&lt;p&gt;group = data3.splitlines()&lt;/p&gt;
-&lt;h1&gt;print(len(group))&lt;/h1&gt;
-&lt;h1&gt;希望將分組資料轉為學員數列, 令為變數名稱 result_g&lt;/h1&gt;
-&lt;p&gt;result_g = []&lt;/p&gt;
-&lt;h1&gt;已經註冊者數列設為 registered&lt;/h1&gt;
-&lt;p&gt;registered = open("w6_list.txt").read()
-registered = registered.splitlines()&lt;/p&gt;
-&lt;h1&gt;print(registered)&lt;/h1&gt;
-&lt;p&gt;for line in group:
+<feed xmlns="http://www.w3.org/2005/Atom"><title>2016Fall 課程網誌 (虎尾科大MDE)</title><link href="./" rel="alternate"></link><link href="./feeds/misc.atom.xml" rel="self"></link><id>./</id><updated>2016-11-15T12:00:00+08:00</updated><entry><title>上課練習</title><link href="./shang-ke-lian-xi.html" rel="alternate"></link><published>2016-11-15T12:00:00+08:00</published><updated>2016-11-15T12:00:00+08:00</updated><author><name>劉育彤</name></author><id>tag:,2016-11-15:./shang-ke-lian-xi.html</id><summary type="html">&lt;h1&gt;找出未分組的名單&lt;/h1&gt;
+
+&lt;pre class="brush:py;auto-links:false;toolbar:false" contenteditable="false"&gt;data3 = open("w6_group.txt").read()
+#data3 = open("w6_list.txt").read()
+#print(data3)
+group = data3.splitlines()
+#print(len(group))
+
+# 希望將分組資料轉為學員數列, 令為變數名稱 result_g
+result_g = []
+# 已經註冊者數列設為 registered
+registered = open("w6_list.txt").read()
+registered = registered.splitlines()
+#print(registered)
+for line in group:
     # 去除每一行最後的空白成員
     sline = line.split(",")[:-1]
     #print (sline)
     # 再將各組拆成個別組員後, 串成 result_g
     for m in sline:
-        result_g.append(m)&lt;/p&gt;
-&lt;h1&gt;print(result_g )&lt;/h1&gt;
-&lt;h1&gt;not_in_group = [c for c in registered if c not in result_g]&lt;/h1&gt;
-&lt;h1&gt;print(not_in_group)&lt;/h1&gt;
-&lt;p&gt;for m in registered:
+        result_g.append(m)
+#print(result_g )
+#not_in_group = [c for c in registered if c not in result_g]
+#print(not_in_group)
+for m in registered:
     if m not in result_g:
-        print(m)&lt;/p&gt;
-&lt;p&gt;&lt;/pre&gt;
-&lt;p&gt;&amp;nbsp;&lt;/p&gt;&lt;/p&gt;</summary><category term="Python"></category></entry><entry><title>2016Fall 機械設計主題教學</title><link href="./2016fall-ji-jie-she-ji-zhu-ti-jiao-xue.html" rel="alternate"></link><published>2016-09-02T12:00:00+08:00</published><updated>2016-09-02T12:00:00+08:00</updated><author><name>yen</name></author><id>tag:,2016-09-02:./2016fall-ji-jie-she-ji-zhu-ti-jiao-xue.html</id><summary type="html">&lt;p&gt;知識管理與最佳化應用實驗室試圖利用計算機程式、網際內容管理、電腦輔助設計實習與協同產品設計實習等課程, 進行與機械設計相關的主題式教學, 其中包含強化創造力的教學、令學員熟習六種工程表達方式, 並且俱備融入協同設計所需要的四大面向知識與技能.&lt;/p&gt;
+        print(m)
 
+&lt;/pre&gt;
 
-&lt;h1&gt;機械設計主題教學&lt;/h1&gt;
-&lt;p&gt;創造力三元素, 機械設計的六種表達, 協同設計的四大面向.&lt;/p&gt;
-&lt;ol&gt;
-&lt;li&gt;強化創造能力 - 自學力、程式力與想像力
-(Creative Competencies)&lt;/li&gt;
-&lt;li&gt;熟習六種表達  - 口語、文字、2D、3D、理論與實體表達
-(Six Presentation Methods)&lt;/li&gt;
-&lt;li&gt;融入協同設計 - 電腦、網路、軟硬體工具與協同專案
-(Collaborative Designs)&lt;/li&gt;
-&lt;/ol&gt;</summary><category term="使用導引"></category><category term="創造力"></category><category term="表達能力"></category><category term="協同設計"></category></entry></feed>
+&lt;p&gt;&amp;nbsp;&lt;/p&gt;</summary><category term="Python"></category></entry><entry><title>上課練習</title><link href="./shang-ke-lian-xi.html" rel="alternate"></link><published>2016-09-21T12:00:00+08:00</published><updated>2016-09-21T12:00:00+08:00</updated><author><name>劉育彤</name></author><id>tag:,2016-09-21:./shang-ke-lian-xi.html</id><summary type="html">&lt;h2&gt;用for迴圈列出各組名單&lt;/h2&gt;
+
+&lt;pre class="brush:py;auto-links:false;toolbar:false" contenteditable="false"&gt;content = open("cpa.txt").read()
+#print(content)
+# 這是單行註解
+result = content.splitlines()
+# result 變數資料形變為 list
+#print(result)
+# 針對 list 資料，可以利用 for 迴圈列出其數列成員
+num = 1
+for g in result:
+    g_list = g.split(",")
+    g_list = g_list[:-1]
+    for m in g_list:
+          print("group:", num, "member:", m)
+    num = num + 1
+
+'''
+for line in content.splitlines():
+result.append(list(line.split(",")))
+'''
+
+&lt;/pre&gt;
+
+&lt;p&gt;&amp;nbsp;&lt;/p&gt;</summary><category term="Python"></category></entry></feed>
