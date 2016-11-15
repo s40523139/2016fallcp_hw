@@ -153,91 +153,13 @@ print("hello")
 @others
 &lt;/html&gt;
 </t>
-<t tx="amd.20161004083800.110">&lt;section&gt;
-    &lt;h2&gt;Pretty Code&lt;/h2&gt;
-    &lt;pre&gt;
-        &lt;code class="hljs" data-trim contenteditable&gt;
-        function linkify( selector ) {
-          if( supports3DTransforms ) {
-        
-            var nodes = document.querySelectorAll( selector );
-        
-            for( var i = 0, len = nodes.length; i &amp;lt; len; i++ ) {
-              var node = nodes[i];
-        
-              if( !node.className ) {
-                node.className += ' roll';
-              }
-            }
-          }
-        }
-        &lt;/code&gt;
-    &lt;/pre&gt;
-    &lt;p&gt;
-    Code syntax highlighting courtesy of &lt;a href="http://softwaremaniacs.org/soft/highlight/en/description/"&gt;highlight.js&lt;/a&gt;.
-    &lt;/p&gt;
-&lt;/section&gt;
-			
-</t>
-<t tx="amd.20161004083800.115">&lt;section&gt;	
-    &lt;h2&gt;Marvelous List&lt;/h2&gt;
-    &lt;ul&gt;
-    &lt;li&gt;No order here&lt;/li&gt;
-    &lt;li&gt;Or here&lt;/li&gt;
-    &lt;li&gt;Or here&lt;/li&gt;
-    &lt;li&gt;Or here&lt;/li&gt;
-    &lt;/ul&gt;
-&lt;/section&gt;
-
-					
-</t>
-<t tx="amd.20161004083800.121">&lt;section&gt;
-    &lt;h2&gt;Fantastic Ordered List&lt;/h2&gt;
-    &lt;ol&gt;
-    &lt;li&gt;One is smaller than...&lt;/li&gt;
-    &lt;li&gt;Two is smaller than...&lt;/li&gt;
-    &lt;li&gt;Three!&lt;/li&gt;
-    &lt;/ol&gt;
-&lt;/section&gt;
-
-
-					
-</t>
+<t tx="amd.20161004083800.110"></t>
+<t tx="amd.20161004083800.115"></t>
+<t tx="amd.20161004083800.121"></t>
 <t tx="amd.20161004083800.15"></t>
-<t tx="amd.20161004083800.158">&lt;section&gt;
-    &lt;h2&gt;Export to PDF&lt;/h2&gt;
-    &lt;p&gt;
-    Presentations can be &lt;a href="https://github.com/hakimel/reveal.js#pdf-export"&gt;exported to PDF&lt;/a&gt;, here's an example:
-    &lt;/p&gt;	
-    &lt;iframe data-src="https://www.slideshare.net/slideshow/embed_code/42840540" width="445" height="355" frameborder="0" marginwidth="0" marginheight="0" scrolling="no" style="border:3px solid #666; margin-bottom:5px; max-width: 100%;" allowfullscreen&gt; &lt;/iframe&gt;
-&lt;/section&gt;				
-</t>
-<t tx="amd.20161004083800.162">&lt;section&gt;
-&lt;h2&gt;Global State&lt;/h2&gt;
-&lt;p&gt;
-Set &lt;code&gt;data-state="something"&lt;/code&gt; on a slide and 
-&lt;code&gt;"something"&lt;/code&gt;
-will be added as a class to the document element when the slide is open. This lets you
-apply broader style changes, like switching the page background.
-&lt;/p&gt;
-&lt;/section&gt;
-
-		
-</t>
-<t tx="amd.20161004083800.166">&lt;section data-state="customevent"&gt;	
-    &lt;h2&gt;State Events&lt;/h2&gt;
-    &lt;p&gt;
-    Additionally custom events can be triggered on a per slide basis by binding to the &lt;code&gt;data-state&lt;/code&gt; name.
-    &lt;/p&gt;
-    &lt;pre&gt;
-        &lt;code class="javascript" data-trim contenteditable style="font-size: 18px;"&gt;
-        Reveal.addEventListener( 'customevent', function() {
-            console.log( '"customevent" has fired' );
-        } );
-        &lt;/code&gt;
-    &lt;/pre&gt;
-&lt;/section&gt;					
-</t>
+<t tx="amd.20161004083800.158"></t>
+<t tx="amd.20161004083800.162"></t>
+<t tx="amd.20161004083800.166"></t>
 <t tx="amd.20161004083800.2">&lt;head&gt;
     &lt;meta charset="utf-8"&gt;
     &lt;title&gt;    2016 Fall 計算機程式課程
@@ -352,23 +274,7 @@ apply broader style changes, like switching the page background.
 
 						
 </t>
-<t tx="amd.20161004094800.2"># h1 標題
-
-段落用空白行隔開
-
-第2段. *斜體*, **粗體**, 條列:
-
-  * 第1項
-  * 第2項
-  * 第3項
-
-上述條列, 星號前有3個空白
-
-&gt; 引言則前面加上大於的符號
-&gt; 其中也可以包含空白行
-&gt;
-&gt; 這是最後一行
-</t>
+<t tx="amd.20161004094800.2"></t>
 <t tx="amd.20161004095719.1">&lt;section data-markdown&gt;
     &lt;script type="text/template"&gt;
 @others
@@ -404,12 +310,7 @@ Created by me
 
 						
 </t>
-<t tx="amd.20161004100003.2"># 影像檔案引用
-
-and images can be specified like so:
-
-![Image of Yaktocat](https://octodex.github.com/images/yaktocat.png)
-</t>
+<t tx="amd.20161004100003.2"></t>
 <t tx="amd.20161004101327.1">&lt;section data-markdown&gt;
     &lt;script type="text/template"&gt;
 @others
@@ -485,13 +386,7 @@ and images can be specified like so:
 
 						
 </t>
-<t tx="amd.20161004171423.2"># 數學符號與方程式
-
-Inline math equations go in like so: $\omega = d\phi / dt$. Display
-math should get its own line and be put in in double-dollarsigns:
-
-$$I = \int \rho R^{2} dV$$
-</t>
+<t tx="amd.20161004171423.2"></t>
 <t tx="leo.20151212173315.1"></t>
 <t tx="leo.20151212173315.2">QTreeWidget {
     /* These apply to the selected item, but not to editing items.*/
