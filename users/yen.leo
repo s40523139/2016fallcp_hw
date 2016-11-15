@@ -38,8 +38,8 @@
 <v t="amd.20161004101327.1" a="E"><vh>vimeo</vh>
 <v t="amd.20161004101327.2"><vh>Brython</vh></v>
 </v>
-<v t="amd.20161004112026.1" a="E"><vh>計算機程式課程內涵</vh>
-<v t="amd.20161004112026.2"><vh>利用 MD 寫內容</vh></v>
+<v t="amd.20161004112026.1" a="E"><vh>vimeo</vh>
+<v t="amd.20161004112026.2"><vh>在近端開啟部落格</vh></v>
 </v>
 <v t="amd.20161004083800.15"><vh>github intro</vh></v>
 <v t="amd.20161004083800.21"><vh>fork 與 pull requests</vh></v>
