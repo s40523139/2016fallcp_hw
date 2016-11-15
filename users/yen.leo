@@ -43,8 +43,8 @@
 </v>
 <v t="amd.20161004083800.15"><vh>github intro</vh></v>
 <v t="amd.20161004083800.27" a="E"><vh>vimeo</vh>
-<v t="amd.20161004101902.1" a="E"><vh>修改blog</vh>
-<v t="amd.20161004101902.2"><vh>iframe 導入影片</vh></v>
+<v t="amd.20161004101902.1" a="E"><vh>投影片</vh>
+<v t="amd.20161004101902.2"><vh>修改blog</vh></v>
 </v>
 <v t="amd.20161004085439.1"><vh>向下投影片</vh></v>
 </v>
@@ -332,7 +332,8 @@ Created by me
 &lt;a href="https://vimeo.com/user58915964"&gt;劉育彤&lt;/a&gt; on
  &lt;a href="https://vimeo.com"&gt;Vimeo&lt;/a&gt;.
  &lt;/p&gt;</t>
-<t tx="amd.20161004101902.1">&lt;section&gt;
+<t tx="amd.20161004101902.1"></t>
+<t tx="amd.20161004101902.2">&lt;section&gt;
 ##&lt;h1&gt;修改blog與推回遠端&lt;/h1&gt;
 &lt;iframe src="https://player.vimeo.com/video/191648411" width="640" height="360" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen&gt;&lt;/iframe&gt;
 &lt;p&gt;&lt;a href="https://vimeo.com/191648411"&gt;2016-11-15 22-50-02&lt;/a&gt; from
@@ -341,7 +342,6 @@ Created by me
  &lt;/p&gt;
  
  &lt;/section&gt;</t>
-<t tx="amd.20161004101902.2"></t>
 <t tx="amd.20161004104641.1">&lt;section data-markdown&gt;
     &lt;script type="text/template"&gt;
 @others
