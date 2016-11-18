@@ -90,6 +90,7 @@
 <v t="amd.20160727114506.1" a="E"><vh>201609</vh>
 <v t="leo.20161115223929.1"><vh>@edit 20161115.md</vh></v>
 <v t="leo.20161115223947.1"><vh>@edit 20161114.md</vh></v>
+<v t="leo.20161118141017.1"><vh>@edit 20161118.md</vh></v>
 </v>
 </v>
 </v>
@@ -99,6 +100,7 @@
 </v>
 </v>
 <v t="amd.20161004202833.1"><vh>@edit ../README.md</vh></v>
+<v t="leo.20161118133811.1"><vh>@button https server</vh></v>
 <v t="leo.20161113210536.2" a="E"><vh>Recovered Nodes</vh>
 <v t="leo.20161113210536.3"><vh>Recovered node "head" from @clean index.html</vh>
 <v t="leo.20161113210536.4"><vh>old:head</vh></v>
@@ -693,5 +695,27 @@ Diff...
   
   [blog](blog/index.html)
 </t>
+<t tx="leo.20161118133811.1">@language python
+import os
+import subprocess
+import threading
+import http.server, ssl
+
+def domake():
+    # build directory
+    os.chdir("./../")
+    server_address = ('localhost', 5443)
+    httpd = http.server.HTTPServer(server_address, http.server.SimpleHTTPRequestHandler)
+    httpd.socket = ssl.wrap_socket(httpd.socket,
+                                   server_side=True,
+                                   certfile='localhost.crt',
+                                   keyfile='localhost.key',
+                                   ssl_version=ssl.PROTOCOL_TLSv1)
+    print("5443 https server started")
+    httpd.serve_forever()
+
+# 利用執行緒執行 https 伺服器
+make = threading.Thread(target=domake)
+make.start()</t>
 </tnodes>
 </leo_file>

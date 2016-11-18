@@ -2,7 +2,7 @@
 <html lang="en"
 >
 <head>
-    <title>上課練習 - 2016Fall 課程網誌 (虎尾科大MDE)</title>
+    <title>W10 Brython 繪圖範例 - 2016Fall 課程網誌 (虎尾科大MDE)</title>
     <!-- Using the latest rendering mode for IE -->
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta charset="utf-8">
@@ -166,20 +166,20 @@ init_mathjax = function() {
 init_mathjax();
 </script>
 
-<link rel="canonical" href="./shang-ke-lian-xi.html">
+<link rel="canonical" href="./w10-brython-hui-tu-fan-li.html">
 
         <meta name="author" content="劉育彤" />
-        <meta name="keywords" content="Python" />
-        <meta name="description" content="找出未分組的名單 data3 = open(&#34;w6_group.txt&#34;).read() #data3 = open(&#34;w6_list.txt&#34;).read() #print(data3) group = data3.splitlines() #print(len(group)) # 希望將分組資料轉為學員數列, 令為變數名稱 result_g result_g = [] # 已經註冊者數列設為 registered registered = open(&#34;w6_list.txt&#34;).read() registered = registered.splitlines() #print(registered) for line in group: # 去除每一行最後的空白成員 sline = line.split(&#34;,&#34;)[:-1] #print (sline) # 再將各組拆成個別組員後, 串成 result_g for ..." />
+        <meta name="keywords" content="Brython" />
+        <meta name="description" content="Brython 繪圖" />
 
         <meta property="og:site_name" content="2016Fall 課程網誌 (虎尾科大MDE)" />
         <meta property="og:type" content="article"/>
-        <meta property="og:title" content="上課練習"/>
-        <meta property="og:url" content="./shang-ke-lian-xi.html"/>
-        <meta property="og:description" content="找出未分組的名單 data3 = open(&#34;w6_group.txt&#34;).read() #data3 = open(&#34;w6_list.txt&#34;).read() #print(data3) group = data3.splitlines() #print(len(group)) # 希望將分組資料轉為學員數列, 令為變數名稱 result_g result_g = [] # 已經註冊者數列設為 registered registered = open(&#34;w6_list.txt&#34;).read() registered = registered.splitlines() #print(registered) for line in group: # 去除每一行最後的空白成員 sline = line.split(&#34;,&#34;)[:-1] #print (sline) # 再將各組拆成個別組員後, 串成 result_g for ..."/>
-        <meta property="article:published_time" content="2016-11-15" />
-            <meta property="article:section" content="Misc" />
-            <meta property="article:tag" content="Python" />
+        <meta property="og:title" content="W10 Brython 繪圖範例"/>
+        <meta property="og:url" content="./w10-brython-hui-tu-fan-li.html"/>
+        <meta property="og:description" content="Brython 繪圖"/>
+        <meta property="article:published_time" content="2016-11-18" />
+            <meta property="article:section" content="Course" />
+            <meta property="article:tag" content="Brython" />
             <meta property="article:author" content="劉育彤" />
 
 
@@ -261,10 +261,10 @@ init_mathjax();
                          <li><a href="./pages/about/">
                              About
                           </a></li>
-                        <li >
+                        <li class="active">
                             <a href="./category/course.html">Course</a>
                         </li>
-                        <li class="active">
+                        <li >
                             <a href="./category/misc.html">Misc</a>
                         </li>
             </ul>
@@ -290,10 +290,10 @@ init_mathjax();
         <article>
             <header class="page-header">
                 <h1>
-                    <a href="./shang-ke-lian-xi.html"
+                    <a href="./w10-brython-hui-tu-fan-li.html"
                        rel="bookmark"
-                       title="Permalink to 上課練習">
-                        上課練習
+                       title="Permalink to W10 Brython 繪圖範例">
+                        W10 Brython 繪圖範例
                     </a>
                 </h1>
             </header>
@@ -303,7 +303,7 @@ init_mathjax();
 <footer class="post-info">
     <span class="label label-default">Date</span>
     <span class="published">
-        <i class="fa fa-calendar"></i><time datetime="2016-11-15T12:00:00+08:00"> 週二 15 十一月 2016</time>
+        <i class="fa fa-calendar"></i><time datetime="2016-11-18T12:00:00+08:00"> 週五 18 十一月 2016</time>
     </span>
             <span class="label label-default">By</span>
             <a href="./author/liu-yu-tong.html"><i class="fa fa-user"></i> 劉育彤</a>
@@ -311,41 +311,50 @@ init_mathjax();
 
 
 <span class="label label-default">Tags</span>
-	<a href="./tag/python.html">Python</a>
+	<a href="./tag/brython.html">Brython</a>
     
 </footer><!-- /.post-info -->                    </div>
                 </div>
-                <h1>找出未分組的名單</h1>
+                <p>Brython 繪圖</p>
 
-<pre class="brush:py;auto-links:false;toolbar:false" contenteditable="false">data3 = open("w6_group.txt").read()
-#data3 = open("w6_list.txt").read()
-#print(data3)
-group = data3.splitlines()
-#print(len(group))
 
-# 希望將分組資料轉為學員數列, 令為變數名稱 result_g
-result_g = []
-# 已經註冊者數列設為 registered
-registered = open("w6_list.txt").read()
-registered = registered.splitlines()
-#print(registered)
-for line in group:
-    # 去除每一行最後的空白成員
-    sline = line.split(",")[:-1]
-    #print (sline)
-    # 再將各組拆成個別組員後, 串成 result_g
-    for m in sline:
-        result_g.append(m)
-#print(result_g )
-#not_in_group = [c for c in registered if c not in result_g]
-#print(not_in_group)
-for m in registered:
-    if m not in result_g:
-        print(m)
+<p>繪圖流程, 導入程式庫, 啟動, 然後引用各種模組開始繪圖</p>
+<!-- 導入 Brython 標準程式庫 -->
 
-</pre>
+<script type="text/javascript" 
+    src="https://cdn.rawgit.com/brython-dev/brython/master/www/src/brython_dist.js">
+</script>
 
-<p>&nbsp;</p>
+<!-- 啟動 Brython -->
+
+<script>
+window.onload=function(){
+brython(1);
+}
+</script>
+
+<!-- 以下實際利用  Brython 畫兩條直線 -->
+
+<canvas id="guitarchord" width="600" height="200"></canvas>
+
+<script type="text/python3">
+from browser import document as doc
+import math
+
+canvas = doc["guitarchord"]
+ctx = canvas.getContext("2d")
+ctx.beginPath()
+ctx.lineWidth = 1
+inc=1
+for i in range(100):
+    ctx.moveTo(100+i*inc, 100)
+    ctx.lineTo(100, 100+i*inc)
+
+# 設定顏色為藍色, 也可以使用 "rgb(0, 0, 255)" 字串設定顏色值
+ctx.strokeStyle = "blue"
+ctx.stroke()
+ctx.closePath()
+</script>
             </div>
             <!-- /.entry-content -->
         </article>

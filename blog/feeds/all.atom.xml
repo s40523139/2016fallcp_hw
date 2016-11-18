@@ -1,5 +1,44 @@
 <?xml version="1.0" encoding="utf-8"?>
-<feed xmlns="http://www.w3.org/2005/Atom"><title>2016Fall 課程網誌 (虎尾科大MDE)</title><link href="./" rel="alternate"></link><link href="./feeds/all.atom.xml" rel="self"></link><id>./</id><updated>2016-11-15T12:00:00+08:00</updated><entry><title>上課練習</title><link href="./shang-ke-lian-xi.html" rel="alternate"></link><published>2016-11-15T12:00:00+08:00</published><updated>2016-11-15T12:00:00+08:00</updated><author><name>劉育彤</name></author><id>tag:,2016-11-15:./shang-ke-lian-xi.html</id><summary type="html">&lt;h1&gt;找出未分組的名單&lt;/h1&gt;
+<feed xmlns="http://www.w3.org/2005/Atom"><title>2016Fall 課程網誌 (虎尾科大MDE)</title><link href="./" rel="alternate"></link><link href="./feeds/all.atom.xml" rel="self"></link><id>./</id><updated>2016-11-18T12:00:00+08:00</updated><entry><title>W10 Brython 繪圖範例</title><link href="./w10-brython-hui-tu-fan-li.html" rel="alternate"></link><published>2016-11-18T12:00:00+08:00</published><updated>2016-11-18T12:00:00+08:00</updated><author><name>劉育彤</name></author><id>tag:,2016-11-18:./w10-brython-hui-tu-fan-li.html</id><summary type="html">&lt;p&gt;Brython 繪圖&lt;/p&gt;
+
+
+&lt;p&gt;繪圖流程, 導入程式庫, 啟動, 然後引用各種模組開始繪圖&lt;/p&gt;
+&lt;!-- 導入 Brython 標準程式庫 --&gt;
+
+&lt;script type="text/javascript" 
+    src="https://cdn.rawgit.com/brython-dev/brython/master/www/src/brython_dist.js"&gt;
+&lt;/script&gt;
+
+&lt;!-- 啟動 Brython --&gt;
+
+&lt;script&gt;
+window.onload=function(){
+brython(1);
+}
+&lt;/script&gt;
+
+&lt;!-- 以下實際利用  Brython 畫兩條直線 --&gt;
+
+&lt;canvas id="guitarchord" width="600" height="200"&gt;&lt;/canvas&gt;
+
+&lt;script type="text/python3"&gt;
+from browser import document as doc
+import math
+
+canvas = doc["guitarchord"]
+ctx = canvas.getContext("2d")
+ctx.beginPath()
+ctx.lineWidth = 1
+inc=1
+for i in range(100):
+    ctx.moveTo(100+i*inc, 100)
+    ctx.lineTo(100, 100+i*inc)
+
+# 設定顏色為藍色, 也可以使用 "rgb(0, 0, 255)" 字串設定顏色值
+ctx.strokeStyle = "blue"
+ctx.stroke()
+ctx.closePath()
+&lt;/script&gt;</summary><category term="Brython"></category></entry><entry><title>上課練習</title><link href="./shang-ke-lian-xi.html" rel="alternate"></link><published>2016-11-15T12:00:00+08:00</published><updated>2016-11-15T12:00:00+08:00</updated><author><name>劉育彤</name></author><id>tag:,2016-11-15:./shang-ke-lian-xi.html</id><summary type="html">&lt;h1&gt;找出未分組的名單&lt;/h1&gt;
 
 &lt;pre class="brush:py;auto-links:false;toolbar:false" contenteditable="false"&gt;data3 = open("w6_group.txt").read()
 #data3 = open("w6_list.txt").read()
