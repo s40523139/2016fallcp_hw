@@ -29,7 +29,7 @@ canvas = doc["guitarchord"]
 ctx = canvas.getContext("2d")
 ctx.beginPath()
 ctx.lineWidth = 1
-inc=1
+inc=10
 for i in range(100):
     ctx.moveTo(100+i*inc, 100)
     ctx.lineTo(100+i*inc, 100)
