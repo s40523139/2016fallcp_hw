@@ -39,6 +39,25 @@ ctx.lineTo(100, 100)
 ctx.strokeStyle = "blue"
 ctx.stroke()
 ctx.closePath()
+&lt;/script&gt;
+
+&lt;canvas id="guitarchord2" width="600" height="200"&gt;&lt;/canvas&gt;
+
+&lt;script type="text/python3"&gt;
+from browser import document as doc
+import math
+
+canvas = doc["guitarchord2"]
+ctx = canvas.getContext("2d")
+ctx.beginPath()
+ctx.lineWidth = 1
+for i in range(5):
+    ctx.moveTo(100+i*10, 100)
+    ctx.lineTo(100+i*10, 200)
+
+ctx.strokeStyle = "blue"
+ctx.stroke()
+ctx.closePath()
 &lt;/script&gt;</summary><category term="Brython"></category></entry><entry><title>上課練習</title><link href="./shang-ke-lian-xi.html" rel="alternate"></link><published>2016-11-15T12:00:00+08:00</published><updated>2016-11-15T12:00:00+08:00</updated><author><name>劉育彤</name></author><id>tag:,2016-11-15:./shang-ke-lian-xi.html</id><summary type="html">&lt;!-- PELICAN_END_SUMMARY --&gt;
 
 &lt;h1&gt;找出未分組的名單&lt;/h1&gt;
