@@ -92,6 +92,7 @@
 <v t="leo.20161115223947.1"><vh>@edit 20161114.md</vh></v>
 <v t="leo.20161202143546.1"><vh>@edit 20161202.md</vh></v>
 <v t="leo.20161118141017.1"><vh>@edit 20161118.md</vh></v>
+<v t="leo.20161209140938.1"><vh>@edit 20161209.md</vh></v>
 </v>
 </v>
 </v>
@@ -102,6 +103,7 @@
 </v>
 <v t="amd.20161004202833.1"><vh>@edit ../README.md</vh></v>
 <v t="leo.20161118133811.1"><vh>@button https server</vh></v>
+<v t="leo.20161209142413.1"><vh>@button ipv6 https server</vh></v>
 <v t="leo.20161113210536.2" a="E"><vh>Recovered Nodes</vh>
 <v t="leo.20161113210536.3"><vh>Recovered node "head" from @clean index.html</vh>
 <v t="leo.20161113210536.4"><vh>old:head</vh></v>
@@ -713,6 +715,34 @@ def domake():
                                    keyfile='localhost.key',
                                    ssl_version=ssl.PROTOCOL_TLSv1)
     print("5443 https server started")
+    httpd.serve_forever()
+
+# 利用執行緒執行 https 伺服器
+make = threading.Thread(target=domake)
+make.start()</t>
+<t tx="leo.20161209142413.1">@language python
+import os
+import subprocess
+import threading
+import socket
+import http.server, ssl
+
+class HTTPServerV6(http.server.HTTPServer):
+    address_family = socket.AF_INET6
+  
+def domake():
+    # build directory
+    os.chdir("./../")
+    ipv6_address = '2001:288:6004:17:3004::808'
+    server_address = (ipv6_address, 6443)
+    #httpd = http.server.HTTPServer(server_address, http.server.SimpleHTTPRequestHandler)
+    httpd = HTTPServerV6(server_address, http.server.SimpleHTTPRequestHandler)
+    httpd.socket = ssl.wrap_socket(httpd.socket,
+                                   server_side=True,
+                                   certfile='localhost.crt',
+                                   keyfile='localhost.key',
+                                   ssl_version=ssl.PROTOCOL_TLSv1)
+    print("6443 https server started")
     httpd.serve_forever()
 
 # 利用執行緒執行 https 伺服器

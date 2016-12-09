@@ -25,31 +25,33 @@ import math
 canvas = doc["chord1"]
 ctx = canvas.getContext("2d")
 
-for i in range(5):
-    ctx.beginPath()
-# 設定線的寬度為 1 個單位
-    if i == 0:
-        ctx.lineWidth = 7
-    else:
-        ctx.lineWidth = 1
-    ctx.moveTo(99, 100+i*30)
-    ctx.lineTo(201, 100+i*30)
-    # 設定顏色為藍色, 也可以使用 "rgb(0, 0, 255)" 字串設定顏色值
-    ctx.strokeStyle = "blue"
-    ctx.stroke()
-    ctx.closePath()
+def background(x, y, xinc, yinc, xnum, ynum, ctx):
+    # 水平線
+    for i in range(ynum+1):
+        ctx.beginPath()
+    # 設定線的寬度為 1 個單位
+        if i == 0:
+            ctx.lineWidth = 7
+        else:
+            ctx.lineWidth = 1
+        ctx.moveTo(x-1, y+i*yinc)
+        ctx.lineTo(x+xnum*xinc+1, y+i*yinc)
+        # 設定顏色為藍色, 也可以使用 "rgb(0, 0, 255)" 字串設定顏色值
+        ctx.strokeStyle = "blue"
+        ctx.stroke()
+        ctx.closePath()
 
-# 垂直線
-for i in range(6):
-    ctx.beginPath()
-# 設定線的寬度為 1 個單位
-    ctx.lineWidth = 1
-    ctx.moveTo(100+i*20, 100)
-    ctx.lineTo(100+i*20, 220)
-    # 設定顏色為藍色, 也可以使用 "rgb(0, 0, 255)" 字串設定顏色值
-    ctx.strokeStyle = "blue"
-    ctx.stroke()
-    ctx.closePath()
+    # 垂直線
+    for i in range(xnum+1):
+        ctx.beginPath()
+    # 設定線的寬度為 1 個單位
+        ctx.lineWidth = 1
+        ctx.moveTo(x+i*xinc, y)
+        ctx.lineTo(x+i*xinc, y+ynum*yinc)
+        # 設定顏色為藍色, 也可以使用 "rgb(0, 0, 255)" 字串設定顏色值
+        ctx.strokeStyle = "blue"
+        ctx.stroke()
+        ctx.closePath()
 
 def canvasText(x, y, fontSize, string, sup, sub, color, ctx):
     # 標定各弦音符號, 以及把位編號
@@ -66,7 +68,7 @@ def canvasText(x, y, fontSize, string, sup, sub, color, ctx):
         ctx.fillText(sup, x+fontSize/1.6, y)
     ctx.fill()
     ctx.stroke()
-    ctx.closePath()
+    ctx.closePath()        
 
 w = 20
 h = 30
@@ -74,8 +76,8 @@ background(100, 100, w, h, 5, 5, ctx)
 mylist = ["E", "A", "D", "G", "B", "E"]
 num = 0
 for s in mylist:
-    #canvasText(100, 80, 20,"A", "b", "","black", ctx)
-    canvasText(100+num*w,  80, 20,s , "", "", "","black",ctx)
+    #canvasText(100, 80, 20, "A", "B", "", "black", ctx)
+    canvasText(100+num*w, 80, 20, s, "", "", "black", ctx)
     num = num + 1
 &lt;/script&gt;</summary><category term="Brython"></category></entry><entry><title>W10 Brython 繪圖範例</title><link href="./w10-brython-hui-tu-fan-li.html" rel="alternate"></link><published>2016-11-18T12:00:00+08:00</published><updated>2016-11-18T12:00:00+08:00</updated><author><name>劉育彤</name></author><id>tag:,2016-11-18:./w10-brython-hui-tu-fan-li.html</id><summary type="html">&lt;p&gt;Brython 繪圖&lt;/p&gt;
 
@@ -137,4 +139,49 @@ ctx.strokeStyle = "blue"
 ctx.stroke()
 ctx.closePath()
 
-&lt;/script&gt;</summary><category term="Brython"></category></entry></feed>
+&lt;/script&gt;
+
+&lt;p&gt;上述繪圖的程式碼
+&lt;pre class="brush: python"&gt;
+&lt;canvas id="guitarchord" width="600" height="200"&gt;&lt;/canvas&gt;&lt;/p&gt;
+&lt;script type="text/python3"&gt;
+from browser import document as doc
+import math
+
+canvas = doc["guitarchord"]
+ctx = canvas.getContext("2d")
+ctx.beginPath()
+ctx.lineWidth = 1
+ctx.moveTo(100, 100)
+ctx.lineTo(150, 100)
+ctx.lineTo(150, 200)
+ctx.lineTo(100, 200)
+ctx.lineTo(100, 100)
+
+# 設定顏色為藍色, 也可以使用 "rgb(0, 0, 255)" 字串設定顏色值
+ctx.strokeStyle = "blue"
+ctx.stroke()
+ctx.closePath()
+&lt;/script&gt;
+
+&lt;canvas id="guitarchord2" width="600" height="200"&gt;&lt;/canvas&gt;
+
+&lt;script type="text/python3"&gt;
+from browser import document as doc
+import math
+
+canvas = doc["guitarchord2"]
+ctx = canvas.getContext("2d")
+ctx.beginPath()
+ctx.lineWidth = 1
+for i in range(5):
+    ctx.moveTo(100+i*10, 100)
+    ctx.lineTo(100+i*10, 200)
+
+ctx.strokeStyle = "blue"
+ctx.stroke()
+ctx.closePath()
+
+&lt;/script&gt;
+
+&lt;/pre&gt;</summary><category term="Brython"></category></entry></feed>
