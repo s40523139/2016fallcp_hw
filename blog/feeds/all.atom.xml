@@ -31,7 +31,78 @@ def get_input(ev):
 document['ch01'].bind('click',get_input)
 &lt;/script&gt;
 
-&lt;p&gt;&lt;button id="ch01"&gt;40523139&lt;/button&gt;&lt;/p&gt;</summary><category term="W14"></category></entry><entry><title>CP W13練習</title><link href="./cp-w13lian-xi.html" rel="alternate"></link><published>2016-12-09T12:00:00+08:00</published><updated>2016-12-09T12:00:00+08:00</updated><author><name>yen</name></author><id>tag:,2016-12-09:./cp-w13lian-xi.html</id><summary type="html">&lt;p&gt;將&lt;a href="http://mde.tw/2016fallcp/course/Python3Programs.txt"&gt;http://mde.tw/2016fallcp/course/Python3Programs.txt &lt;/a&gt; 整理成brython&lt;/p&gt;
+&lt;p&gt;&lt;button id="ch01"&gt;40523139&lt;/button&gt;&lt;/p&gt;</summary><category term="W14"></category></entry><entry><title>CP W15練習</title><link href="./cp-w15lian-xi.html" rel="alternate"></link><published>2016-12-16T12:00:00+08:00</published><updated>2016-12-16T12:00:00+08:00</updated><author><name>yen</name></author><id>tag:,2016-12-16:./cp-w15lian-xi.html</id><summary type="html">&lt;!-- PELICAN_END_SUMMARY --&gt;
+
+&lt;!-- 導入 FileSaver --&gt;
+
+&lt;script type="text/javascript" src="./../FileSaver.min.js"&gt;&lt;/script&gt;
+
+&lt;!-- 導入 Brython 標準程式庫 --&gt;
+
+&lt;script type="text/javascript" 
+    src="https://cdn.rawgit.com/brython-dev/brython/master/www/src/brython_dist.js"&gt;
+&lt;/script&gt;
+
+&lt;!-- 啟動 Brython --&gt;
+
+&lt;script&gt;
+window.onload=function(){
+brython(1);
+}
+&lt;/script&gt;
+
+&lt;div id="con"&gt;&lt;/div&gt;
+
+&lt;script type="text/python3"&gt;
+from browser import document as do
+from browser import html
+c = do["con"]
+def compa(e):
+    your_input = input("請輸入一個整數!")
+    # 如何判斷所輸入的整數比 10 大
+    try:
+        if int(your_input) &gt; 10:
+            c &lt;= "所輸入的整數:" + your_input + "比 10 大" + html.BR()
+        else:
+            c &lt;= "所輸入的整數:" + your_input + "比 10 小" + html.BR()
+    except:
+        c &lt;= "請輸入整數!!" + html.BR()
+
+#print("test")
+'''
+for i in range(5):
+    c &lt;= "test" + html.BR()
+'''
+do["b1"].bind("click", compa)
+&lt;/script&gt;
+
+&lt;p&gt;&lt;button id="b1"&gt;compa&lt;/button&gt;&lt;/p&gt;
+&lt;pre class="brush python"&gt;
+&lt;div id="con"&gt;&lt;/div&gt;
+&lt;script type="text/python3"&gt;
+from browser import document as do
+from browser import html
+c = do["con"]
+def compa(e):
+    your_input = input("請輸入一個整數!")
+    # 如何判斷所輸入的整數比 10 大
+    try:
+        if int(your_input) &gt; 10:
+            c &lt;= "所輸入的整數:" + your_input + "比 10 大" + html.BR()
+        else:
+            c &lt;= "所輸入的整數:" + your_input + "比 10 小" + html.BR()
+    except:
+        c &lt;= "請輸入整數!!" + html.BR()
+
+#print("test")
+'''
+for i in range(5):
+    c &lt;= "test" + html.BR()
+'''
+do["b1"].bind("click", compa)
+&lt;/script&gt;
+&lt;button id="b1"&gt;compa&lt;/button&gt;
+&lt;/pre&gt;</summary><category term="W15"></category></entry><entry><title>CP W13練習</title><link href="./cp-w13lian-xi.html" rel="alternate"></link><published>2016-12-09T12:00:00+08:00</published><updated>2016-12-09T12:00:00+08:00</updated><author><name>yen</name></author><id>tag:,2016-12-09:./cp-w13lian-xi.html</id><summary type="html">&lt;p&gt;將&lt;a href="http://mde.tw/2016fallcp/course/Python3Programs.txt"&gt;http://mde.tw/2016fallcp/course/Python3Programs.txt &lt;/a&gt; 整理成brython&lt;/p&gt;
 
 
 &lt;!-- 導入 Brython 標準程式庫 --&gt;
