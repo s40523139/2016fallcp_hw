@@ -76,8 +76,8 @@ num = input("請輸入重複執行次數")
 for i in range(1, int(num)+1):
     mystring += str(i)  + ": hello mde"  + html.BR()
 container &lt;= mystring
- &lt;/script&gt;
- &lt;/pre&gt;
+&lt;/script&gt;
+&lt;/pre&gt;
 
 &lt;div id="temperature"&gt;&lt;/div&gt;
 
@@ -93,6 +93,7 @@ container &lt;= output_string
 &lt;/script&gt;
 
 &lt;pre class="brush: python"&gt;
+
 &lt;div id="temperature"&gt;&lt;/div&gt;
 &lt;script type="text/python3"&gt;
 from browser import document as doc
@@ -104,6 +105,7 @@ fdegree = float(cdegree)*9/5 + 32
 output_string = "攝氏" + str(cdegree) + "度=華式" + str(fdegree) + "度"
 container &lt;= output_string
 &lt;/script&gt; 
+
 &lt;/pre&gt;
 
 &lt;p&gt;開始進行範例分類:&lt;/p&gt;
