@@ -528,7 +528,7 @@ for line in content.splitlines():
 result.append(list(line.split(",")))
 '''
 
-&lt;/pre&gt;</summary><category term="Python"></category></entry><entry><title>W17 練習</title><link href="./w17-lian-xi.html" rel="alternate"></link><published>2016-01-06T12:00:00+08:00</published><updated>2016-01-06T12:00:00+08:00</updated><author><name>yen</name></author><id>tag:,2016-01-06:./w17-lian-xi.html</id><summary type="html">&lt;!-- PELICAN_END_SUMMARY --&gt;
+&lt;/pre&gt;</summary><category term="Python"></category></entry><entry><title>W17 練習</title><link href="./w17-lian-xi.html" rel="alternate"></link><published>2016-01-06T12:00:00+08:00</published><updated>2016-01-06T12:00:00+08:00</updated><author><name>me</name></author><id>tag:,2016-01-06:./w17-lian-xi.html</id><summary type="html">&lt;!-- PELICAN_END_SUMMARY --&gt;
 
 &lt;!-- 導入 Brython 標準程式庫 --&gt;
 
