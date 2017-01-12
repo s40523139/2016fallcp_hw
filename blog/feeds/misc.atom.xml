@@ -88,7 +88,73 @@ def animate():
 
 timer.set_interval(animate, 50)
 
-&lt;/script&gt;</summary><category term="Python"></category></entry><entry><title>元旦快樂</title><link href="./yuan-dan-kuai-le.html" rel="alternate"></link><published>2016-12-30T12:00:00+08:00</published><updated>2016-12-30T12:00:00+08:00</updated><author><name>劉育彤</name></author><id>tag:,2016-12-30:./yuan-dan-kuai-le.html</id><summary type="html">&lt;p&gt;2017年元旦快樂&lt;/p&gt;
+&lt;/script&gt;
+
+&lt;p&gt;以下為指令碼
+&lt;pre class = "brush : python"&gt;
+&lt;canvas id="onebar" width="400" height="400"&gt;&lt;/canvas&gt;
+&lt;script type="text/python3"&gt;
+from browser import document
+from browser import window
+from browser import timer
+import math
+canvas = document["onebar"]
+ctx = canvas.getContext("2d")&lt;/p&gt;
+&lt;p&gt;#取畫布的寬與高度&lt;/p&gt;
+&lt;p&gt;width = canvas.width
+height = canvas.height&lt;/p&gt;
+&lt;h1&gt;畫圓函式&lt;/h1&gt;
+&lt;p&gt;def circle(x,y,r):
+    ctx.beginPath()
+    ctx.arc(x, y, r, 0, math.pi*2, True)
+    ctx.fill()
+    ctx.closePath()&lt;/p&gt;
+&lt;p&gt;def line(x1,y1,x2,y2):
+    # 以下可以利用 ctx 物件進行畫圖
+    # 先畫一條直線
+    ctx.beginPath()
+    # 設定線的寬度為 1 個單位
+    ctx.lineWidth = 1
+    # 將畫筆移動到 (x1, y1) 座標點
+    ctx.moveTo(x1,y1)
+    # 然後畫直線到(x2 , y2) 座標點
+    ctx.lineTo(x2, y2)
+    # 設定顏色為藍色, 也可以使用 "rgb(0, 0, 255)" 字串設定顏色值
+    ctx.strokeStyle = "blue"
+    # 實際執行畫線
+    ctx.stroke()
+    ctx.closePath()
+line(200, 200, 200, 300)
+circle(200, 200, 5)&lt;/p&gt;
+&lt;p&gt;x1 = 200
+y1 = 200
+r = 100
+deg = math.pi/180&lt;/p&gt;
+&lt;p&gt;theta = 0&lt;/p&gt;
+&lt;p&gt;'''
+for i in range(36):
+    x2 = x1 + r&lt;em&gt;math.cos(i&lt;/em&gt;10&lt;em&gt;deg)
+    y2 = y1 + r&lt;/em&gt;math.sin(i&lt;em&gt;10&lt;/em&gt;deg)
+    line(x1, y1,x2,y2)
+'''&lt;/p&gt;
+&lt;h1&gt;每隔特定時間,進行動畫繪製&lt;/h1&gt;
+&lt;p&gt;def animate():
+    global theta
+    ctx.clearRect(0, 0, width, height)
+    #逐一重新繪製直線與圓心線
+    ctx.fillstyle = "#000000"
+    x2 = x1 + r&lt;em&gt;math.cos(theta&lt;/em&gt;deg)
+    y2 = y1 +r&lt;em&gt;math.sin(theta&lt;/em&gt;deg)
+    line(x1 ,y1, x2, y2)
+    #再加一條小線段
+    x3 = x2 + 50&lt;em&gt;math.cos(10&lt;/em&gt;theta&lt;em&gt;deg)
+    y3 = y2 + 50&lt;/em&gt;math.sin(10&lt;em&gt;theta&lt;/em&gt;deg)
+    line(x2 ,y2, x3, y3)
+    circle(x1, y1, 5)
+    theta +=1&lt;/p&gt;
+&lt;p&gt;timer.set_interval(animate, 50)&lt;/p&gt;
+&lt;p&gt;&lt;/script&gt;
+&lt;/pre&gt;&lt;/p&gt;</summary><category term="Python"></category></entry><entry><title>元旦快樂</title><link href="./yuan-dan-kuai-le.html" rel="alternate"></link><published>2016-12-30T12:00:00+08:00</published><updated>2016-12-30T12:00:00+08:00</updated><author><name>劉育彤</name></author><id>tag:,2016-12-30:./yuan-dan-kuai-le.html</id><summary type="html">&lt;p&gt;2017年元旦快樂&lt;/p&gt;
 
 
 &lt;p&gt;首先了解random 亂數模組的用法&lt;/p&gt;
@@ -158,8 +224,6 @@ document["but1"].bind("click", lottery)
 &lt;/script&gt;
 &lt;button id="but1"&gt;產生整數亂數&lt;/button&gt;
 &lt;/pre&gt;
-
-&lt;p&gt;因為上述程式可能會產生相同的號碼, 改用&lt;a href="https://docs.python.org/3/library/random.html#random.sample"&gt; random.sample()&lt;/a&gt;, 使其產生六個不同的整數!!&lt;/p&gt;
 
 &lt;script type="text/python3"&gt;
 from browser import document
@@ -240,7 +304,7 @@ do["b1"].bind("click", compa)
 &lt;/script&gt;
 
 &lt;p&gt;&lt;button id="b1"&gt;compa&lt;/button&gt;&lt;/p&gt;
-&lt;pre class="brush python"&gt;
+&lt;pre class="brush: python"&gt;
 &lt;div id="con"&gt;&lt;/div&gt;
 &lt;script type="text/python3"&gt;
 from browser import document as do
@@ -264,7 +328,7 @@ for i in range(5):
 '''
 do["b1"].bind("click", compa)
 &lt;/script&gt;
-
+&lt;button id="b1"&gt;compa&lt;/button&gt;
 &lt;/pre&gt;</summary><category term="W15"></category></entry><entry><title>W14練習</title><link href="./w14lian-xi.html" rel="alternate"></link><published>2016-12-16T12:00:00+08:00</published><updated>2016-12-16T12:00:00+08:00</updated><author><name>劉育彤</name></author><id>tag:,2016-12-16:./w14lian-xi.html</id><summary type="html">&lt;!-- PELICAN_END_SUMMARY --&gt;
 
 &lt;!-- 導入 FileSaver --&gt;
