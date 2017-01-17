@@ -2,7 +2,7 @@
 <html lang="en"
 >
 <head>
-    <title>W17 練習 - 2016Fall 課程網誌 (虎尾科大MDE)</title>
+    <title>重覆與溫度 - 2016Fall 課程網誌 (虎尾科大MDE)</title>
     <!-- Using the latest rendering mode for IE -->
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta charset="utf-8">
@@ -166,19 +166,20 @@ init_mathjax = function() {
 init_mathjax();
 </script>
 
-<link rel="canonical" href="./w17-lian-xi.html">
+<link rel="canonical" href="./zhong-fu-yu-wen-du.html">
 
         <meta name="author" content="劉育彤" />
-        <meta name="keywords" content="Python" />
+        <meta name="keywords" content="W13" />
+        <meta name="description" content="將http://mde.tw/2016fallcp/course/Python3Programs.txt 整理成brython" />
 
         <meta property="og:site_name" content="2016Fall 課程網誌 (虎尾科大MDE)" />
         <meta property="og:type" content="article"/>
-        <meta property="og:title" content="W17 練習"/>
-        <meta property="og:url" content="./w17-lian-xi.html"/>
-        <meta property="og:description" content=""/>
-        <meta property="article:published_time" content="2017-01-06" />
+        <meta property="og:title" content="重覆與溫度"/>
+        <meta property="og:url" content="./zhong-fu-yu-wen-du.html"/>
+        <meta property="og:description" content="將http://mde.tw/2016fallcp/course/Python3Programs.txt 整理成brython"/>
+        <meta property="article:published_time" content="2016-12-09" />
             <meta property="article:section" content="Misc" />
-            <meta property="article:tag" content="Python" />
+            <meta property="article:tag" content="W13" />
             <meta property="article:author" content="劉育彤" />
 
 
@@ -289,10 +290,10 @@ init_mathjax();
         <article>
             <header class="page-header">
                 <h1>
-                    <a href="./w17-lian-xi.html"
+                    <a href="./zhong-fu-yu-wen-du.html"
                        rel="bookmark"
-                       title="Permalink to W17 練習">
-                        W17 練習
+                       title="Permalink to 重覆與溫度">
+                        重覆與溫度
                     </a>
                 </h1>
             </header>
@@ -302,7 +303,7 @@ init_mathjax();
 <footer class="post-info">
     <span class="label label-default">Date</span>
     <span class="published">
-        <i class="fa fa-calendar"></i><time datetime="2017-01-06T12:00:00+08:00"> 週五 06 一月 2017</time>
+        <i class="fa fa-calendar"></i><time datetime="2016-12-09T12:00:00+08:00"> 週五 09 十二月 2016</time>
     </span>
             <span class="label label-default">By</span>
             <a href="./author/liu-yu-tong.html"><i class="fa fa-user"></i> 劉育彤</a>
@@ -310,11 +311,12 @@ init_mathjax();
 
 
 <span class="label label-default">Tags</span>
-	<a href="./tag/python.html">Python</a>
+	<a href="./tag/w13.html">W13</a>
     
 </footer><!-- /.post-info -->                    </div>
                 </div>
-                <!-- PELICAN_END_SUMMARY -->
+                <p>將<a href="http://mde.tw/2016fallcp/course/Python3Programs.txt">http://mde.tw/2016fallcp/course/Python3Programs.txt </a> 整理成brython</p>
+
 
 <!-- 導入 Brython 標準程式庫 -->
 
@@ -330,146 +332,81 @@ brython(1);
 }
 </script>
 
-<!-- 以下可以執行  Brython 程式 -->
+<!-- 以下實際利用  Brython 畫圖 -->
 
-<canvas id="onebar" width="400" height="400"></canvas>
+<div id="container"></div>
 
 <script type="text/python3">
-from browser import document
-from browser import window
-from browser import timer
-import math
-canvas = document["onebar"]
-ctx = canvas.getContext("2d")
-
- #取畫布的寬與高度
-
-width = canvas.width
-height = canvas.height
-
-# 畫圓函式
-def circle(x,y,r):
-    ctx.beginPath()
-    ctx.arc(x, y, r, 0, math.pi*2, True)
-    ctx.fill()
-    ctx.closePath()
-
-def line(x1,y1,x2,y2):
-    # 以下可以利用 ctx 物件進行畫圖
-    # 先畫一條直線
-    ctx.beginPath()
-    # 設定線的寬度為 1 個單位
-    ctx.lineWidth = 1
-    # 將畫筆移動到 (x1, y1) 座標點
-    ctx.moveTo(x1,y1)
-    # 然後畫直線到(x2 , y2) 座標點
-    ctx.lineTo(x2, y2)
-    # 設定顏色為藍色, 也可以使用 "rgb(0, 0, 255)" 字串設定顏色值
-    ctx.strokeStyle = "blue"
-    # 實際執行畫線
-    ctx.stroke()
-    ctx.closePath()
-line(200, 200, 200, 300)
-circle(200, 200, 5)
-
-x1 = 200
-y1 = 200
-r = 100
-deg = math.pi/180
-
-theta = 0
-
-'''
-for i in range(36):
-    x2 = x1 + r*math.cos(i*10*deg)
-    y2 = y1 + r*math.sin(i*10*deg)
-    line(x1, y1,x2,y2)
-'''
-#每隔特定時間,進行動畫繪製
-def animate():
-    global theta
-    ctx.clearRect(0, 0, width, height)
-    #逐一重新繪製直線與圓心線
-    ctx.fillstyle = "#000000"
-    x2 = x1 + r*math.cos(theta*deg)
-    y2 = y1 +r*math.sin(theta*deg)
-    line(x1 ,y1, x2, y2)
-    #再加一條小線段
-    x3 = x2 + 50*math.cos(10*theta*deg)
-    y3 = y2 + 50*math.sin(10*theta*deg)
-    line(x2 ,y2, x3, y3)
-    circle(x1, y1, 5)
-    theta +=1
-
-timer.set_interval(animate, 50)
-
+from browser import document as doc
+from browser import html
+container = doc['container']
+def repeat(e):
+    mystring = ""
+    num = input("請輸入重複執行次數")
+    #for i in range(1 , 11):
+    for i in range(1, int(num)+1):
+        mystring += str(i)  + ": hello mde"  + html.BR()
+    container <= mystring
+doc['but1'].bind('click', repeat)
 </script>
 
-<p>以下為指令碼
-<pre class = "brush : python">
-<canvas id="onebar" width="400" height="400"></canvas>
+<p><button id="but1">輸入想重複執行次數</button></p>
+<pre class="brush: python">
+<div id="container"></div>
 <script type="text/python3">
-from browser import document
-from browser import window
-from browser import timer
-import math
-canvas = document["onebar"]
-ctx = canvas.getContext("2d")</p>
-<p>#取畫布的寬與高度</p>
-<p>width = canvas.width
-height = canvas.height</p>
-<h1>畫圓函式</h1>
-<p>def circle(x,y,r):
-    ctx.beginPath()
-    ctx.arc(x, y, r, 0, math.pi*2, True)
-    ctx.fill()
-    ctx.closePath()</p>
-<p>def line(x1,y1,x2,y2):
-    # 以下可以利用 ctx 物件進行畫圖
-    # 先畫一條直線
-    ctx.beginPath()
-    # 設定線的寬度為 1 個單位
-    ctx.lineWidth = 1
-    # 將畫筆移動到 (x1, y1) 座標點
-    ctx.moveTo(x1,y1)
-    # 然後畫直線到(x2 , y2) 座標點
-    ctx.lineTo(x2, y2)
-    # 設定顏色為藍色, 也可以使用 "rgb(0, 0, 255)" 字串設定顏色值
-    ctx.strokeStyle = "blue"
-    # 實際執行畫線
-    ctx.stroke()
-    ctx.closePath()
-line(200, 200, 200, 300)
-circle(200, 200, 5)</p>
-<p>x1 = 200
-y1 = 200
-r = 100
-deg = math.pi/180</p>
-<p>theta = 0</p>
-<p>'''
-for i in range(36):
-    x2 = x1 + r<em>math.cos(i</em>10<em>deg)
-    y2 = y1 + r</em>math.sin(i<em>10</em>deg)
-    line(x1, y1,x2,y2)
-'''</p>
-<h1>每隔特定時間,進行動畫繪製</h1>
-<p>def animate():
-    global theta
-    ctx.clearRect(0, 0, width, height)
-    #逐一重新繪製直線與圓心線
-    ctx.fillstyle = "#000000"
-    x2 = x1 + r<em>math.cos(theta</em>deg)
-    y2 = y1 +r<em>math.sin(theta</em>deg)
-    line(x1 ,y1, x2, y2)
-    #再加一條小線段
-    x3 = x2 + 50<em>math.cos(10</em>theta<em>deg)
-    y3 = y2 + 50</em>math.sin(10<em>theta</em>deg)
-    line(x2 ,y2, x3, y3)
-    circle(x1, y1, 5)
-    theta +=1</p>
-<p>timer.set_interval(animate, 50)</p>
-<p></script>
-</pre></p>
+from browser import document as doc
+from browser import html
+container = doc['container']
+def repeat(e):
+    mystring = ""
+    num = input("請輸入重複執行次數")
+    #for i in range(1 , 11):
+    for i in range(1, int(num)+1):
+        mystring += str(i)  + ": hello mde"  + html.BR()
+    container <= mystring
+doc['but1'].bind('click',repeat)
+</script>
+<button id="but1">輸入想重複執行次數</button>
+</pre>
+
+<div id="temperature"></div>
+
+<script type="text/python3">
+from browser import document as doc
+from browser import html
+container = doc['temperature']
+def temperature(e):
+    mystring = ""
+    cdegree = input("請輸入攝氏溫度:")
+    fdegree = float(cdegree)*9/5 + 32
+    output_string = "攝氏" + str(cdegree) + "度=華式" + str(fdegree) + "度" + html.BR()
+    container <= output_string
+doc['but2'].bind('click',temperature)
+</script>
+
+<p><button id="but2">輸入攝氏溫度，轉成華氏溫度</button></p>
+<pre class="brush: python">
+<div id="temperature"></div>
+<script type="text/python3">
+from browser import document as doc
+from browser import html
+container = doc['temperature']
+def temperature(e):
+    mystring = ""
+    cdegree = input("請輸入攝氏溫度:")
+    fdegree = float(cdegree)*9/5 + 32
+    output_string = "攝氏" + str(cdegree) + "度=華式" + str(fdegree) + "度" + html.BR()
+    container <= output_string
+doc['but2'].bind('click',temperature)
+</script> 
+<button id="but2">輸入攝氏溫度，轉成華氏溫度</button>
+</pre>
+
+<p>開始進行範例分類:</p>
+<p>接受使用者的輸入</p>
+<p>利用alert() 顯示結束</p>
+<p>直接列印結果</p>
+<p>心得:將原本只能show在console的程式利用 &lt;= 語法將此show在網頁上，並結合button做連結</p>
             </div>
             <!-- /.entry-content -->
         </article>
@@ -485,28 +422,28 @@ for i in range(36):
             <li class="list-group-item"><h4><i class="fa fa-home fa-lg"></i><span class="icon-label">Recent Posts</span></h4>
                 <ul class="list-group" id="recentposts">
                     <li class="list-group-item">
-                        <a href="./w17-lian-xi.html">
-                            W17 練習
+                        <a href="./si-lian-gan.html">
+                            四連桿
                         </a>
                     </li>
                     <li class="list-group-item">
-                        <a href="./yuan-dan-kuai-le.html">
-                            元旦快樂
+                        <a href="./zhi-xian-yu-yuan-de-zhuan-dong.html">
+                            直線與圓的轉動
                         </a>
                     </li>
                     <li class="list-group-item">
-                        <a href="./sheng-dan-kuai-le.html">
-                            聖誕快樂
+                        <a href="./yuan-dan-kuai-le-shu-zi-chan-sheng.html">
+                            元旦快樂 - 數字產生
                         </a>
                     </li>
                     <li class="list-group-item">
-                        <a href="./w14lian-xi.html">
-                            W14練習
+                        <a href="./sheng-dan-kuai-le-pan-bie-shu-zi-da-xiao.html">
+                            聖誕快樂 - 判別數字大小
                         </a>
                     </li>
                     <li class="list-group-item">
-                        <a href="./w13lian-xi.html">
-                            W13練習
+                        <a href="./jian-li-an-niu.html">
+                            建立按鈕
                         </a>
                     </li>
                 </ul>

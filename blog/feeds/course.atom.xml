@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<feed xmlns="http://www.w3.org/2005/Atom"><title>2016Fall 課程網誌 (虎尾科大MDE)</title><link href="./" rel="alternate"></link><link href="./feeds/course.atom.xml" rel="self"></link><id>./</id><updated>2016-12-02T12:00:00+08:00</updated><entry><title>W12 Brython 繪圖練習</title><link href="./w12-brython-hui-tu-lian-xi.html" rel="alternate"></link><published>2016-12-02T12:00:00+08:00</published><updated>2016-12-02T12:00:00+08:00</updated><author><name>劉育彤</name></author><id>tag:,2016-12-02:./w12-brython-hui-tu-lian-xi.html</id><summary type="html">&lt;!-- PELICAN_END_SUMMARY --&gt;
+<feed xmlns="http://www.w3.org/2005/Atom"><title>2016Fall 課程網誌 (虎尾科大MDE)</title><link href="./" rel="alternate"></link><link href="./feeds/course.atom.xml" rel="self"></link><id>./</id><updated>2016-12-02T12:00:00+08:00</updated><entry><title>吉他和弦</title><link href="./ji-ta-he-xian.html" rel="alternate"></link><published>2016-12-02T12:00:00+08:00</published><updated>2016-12-02T12:00:00+08:00</updated><author><name>劉育彤</name></author><id>tag:,2016-12-02:./ji-ta-he-xian.html</id><summary type="html">&lt;!-- PELICAN_END_SUMMARY --&gt;
 
 &lt;!-- 導入 Brython 標準程式庫 --&gt;
 
@@ -37,7 +37,7 @@ def background(x, y, xinc, yinc, xnum, ynum, ctx):
         ctx.moveTo(x-1, y+i*yinc)
         ctx.lineTo(x+xnum*xinc+1, y+i*yinc)
         # 設定顏色為藍色, 也可以使用 "rgb(0, 0, 255)" 字串設定顏色值
-        ctx.strokeStyle = "blue"
+        ctx.strokeStyle = "black"
         ctx.stroke()
         ctx.closePath()
 
@@ -49,7 +49,7 @@ def background(x, y, xinc, yinc, xnum, ynum, ctx):
         ctx.moveTo(x+i*xinc, y)
         ctx.lineTo(x+i*xinc, y+ynum*yinc)
         # 設定顏色為藍色, 也可以使用 "rgb(0, 0, 255)" 字串設定顏色值
-        ctx.strokeStyle = "blue"
+        ctx.strokeStyle = "black"
         ctx.stroke()
         ctx.closePath()
 
@@ -77,13 +77,13 @@ mylist = ["E", "A", "D", "G", "B", "E"]
 num = 0
 for s in mylist:
     #canvasText(100, 80, 20, "A", "B", "", "black", ctx)
-    canvasText(100+num*w, 80, 20, s, "", "", "black", ctx)
+    canvasText(100+num*w, 80, 20, s, "", "", "blue", ctx)
     num = num + 1
 &lt;/script&gt;
 
+&lt;p&gt;心得:利用 for 迴圈將垂直線與水平線畫好，有粗細不同的地方再用 if 和 else 區別，最後在設定弦音，就完成了
 &lt;pre class ="brush : python" &gt;
-&lt;canvas id="chord1" width="600" height="400"&gt;&lt;/canvas&gt;
-
+&lt;canvas id="chord1" width="600" height="400"&gt;&lt;/canvas&gt;&lt;/p&gt;
 &lt;script type="text/python3"&gt;
 from browser import document as doc
 import math
@@ -102,7 +102,7 @@ def background(x, y, xinc, yinc, xnum, ynum, ctx):
         ctx.moveTo(x-1, y+i*yinc)
         ctx.lineTo(x+xnum*xinc+1, y+i*yinc)
         # 設定顏色為藍色, 也可以使用 "rgb(0, 0, 255)" 字串設定顏色值
-        ctx.strokeStyle = "blue"
+        ctx.strokeStyle = "black"
         ctx.stroke()
         ctx.closePath()
 
@@ -114,7 +114,7 @@ def background(x, y, xinc, yinc, xnum, ynum, ctx):
         ctx.moveTo(x+i*xinc, y)
         ctx.lineTo(x+i*xinc, y+ynum*yinc)
         # 設定顏色為藍色, 也可以使用 "rgb(0, 0, 255)" 字串設定顏色值
-        ctx.strokeStyle = "blue"
+        ctx.strokeStyle = "black"
         ctx.stroke()
         ctx.closePath()
 
@@ -142,11 +142,11 @@ mylist = ["E", "A", "D", "G", "B", "E"]
 num = 0
 for s in mylist:
     #canvasText(100, 80, 20, "A", "B", "", "black", ctx)
-    canvasText(100+num*w, 80, 20, s, "", "", "black", ctx)
+    canvasText(100+num*w, 80, 20, s, "", "", "blue", ctx)
     num = num + 1
 &lt;/script&gt;
 
-&lt;/pre&gt;</summary><category term="Brython"></category></entry><entry><title>W10 Brython 繪圖範例</title><link href="./w10-brython-hui-tu-fan-li.html" rel="alternate"></link><published>2016-11-18T12:00:00+08:00</published><updated>2016-11-18T12:00:00+08:00</updated><author><name>劉育彤</name></author><id>tag:,2016-11-18:./w10-brython-hui-tu-fan-li.html</id><summary type="html">&lt;p&gt;Brython 繪圖&lt;/p&gt;
+&lt;/pre&gt;</summary><category term="Brython"></category></entry><entry><title>直線、方形繪製</title><link href="./zhi-xian-fang-xing-hui-zhi.html" rel="alternate"></link><published>2016-11-18T12:00:00+08:00</published><updated>2016-11-18T12:00:00+08:00</updated><author><name>劉育彤</name></author><id>tag:,2016-11-18:./zhi-xian-fang-xing-hui-zhi.html</id><summary type="html">&lt;p&gt;Brython 繪圖&lt;/p&gt;
 
 
 &lt;p&gt;繪圖流程, 導入程式庫, 啟動, 然後引用各種模組開始繪圖&lt;/p&gt;
@@ -205,9 +205,9 @@ for i in range(5):
 ctx.strokeStyle = "blue"
 ctx.stroke()
 ctx.closePath()
-
 &lt;/script&gt;
 
+&lt;p&gt;心得:我學到怎麼在網站上繪製簡單線條，先設定畫布名稱和高、寬 canvas id = ""width="" height=""&amp;gt;，在設定點的起點 ctx.moveTo( a, b )與終點 ctx.lineTo( c , d )，就可以畫出直線與方形&lt;/p&gt;
 &lt;p&gt;上述繪圖的程式碼
 &lt;pre class="brush: python"&gt;
 &lt;canvas id="guitarchord" width="600" height="200"&gt;&lt;/canvas&gt;&lt;/p&gt;

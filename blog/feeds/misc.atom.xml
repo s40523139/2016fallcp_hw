@@ -1,5 +1,237 @@
 <?xml version="1.0" encoding="utf-8"?>
-<feed xmlns="http://www.w3.org/2005/Atom"><title>2016Fall 課程網誌 (虎尾科大MDE)</title><link href="./" rel="alternate"></link><link href="./feeds/misc.atom.xml" rel="self"></link><id>./</id><updated>2017-01-06T12:00:00+08:00</updated><entry><title>W17 練習</title><link href="./w17-lian-xi.html" rel="alternate"></link><published>2017-01-06T12:00:00+08:00</published><updated>2017-01-06T12:00:00+08:00</updated><author><name>劉育彤</name></author><id>tag:,2017-01-06:./w17-lian-xi.html</id><summary type="html">&lt;!-- PELICAN_END_SUMMARY --&gt;
+<feed xmlns="http://www.w3.org/2005/Atom"><title>2016Fall 課程網誌 (虎尾科大MDE)</title><link href="./" rel="alternate"></link><link href="./feeds/misc.atom.xml" rel="self"></link><id>./</id><updated>2017-01-16T12:00:00+08:00</updated><entry><title>四連桿</title><link href="./si-lian-gan.html" rel="alternate"></link><published>2017-01-16T12:00:00+08:00</published><updated>2017-01-16T12:00:00+08:00</updated><author><name>劉育彤</name></author><id>tag:,2017-01-16:./si-lian-gan.html</id><summary type="html">&lt;!-- PELICAN_END_SUMMARY --&gt;
+
+&lt;!-- 導入 Brython 標準程式庫 --&gt;
+
+&lt;script type="text/javascript" 
+    src="https://cdn.rawgit.com/brython-dev/brython/master/www/src/brython_dist.js"&gt;
+&lt;/script&gt;
+
+&lt;!-- 啟動 Brython --&gt;
+
+&lt;script&gt;
+window.onload=function(){
+brython(1);
+}
+&lt;/script&gt;
+
+&lt;!-- 以下可以執行  Brython 程式 --&gt;
+
+&lt;canvas id="onebar" width="600" height="600"&gt;&lt;/canvas&gt;
+
+&lt;script type="text/python3"&gt;
+from browser import document
+from browser import window
+from browser import timer
+import math
+canvas = document["onebar"]
+ctx = canvas.getContext("2d")
+
+ #取畫布的寬與高度
+
+width = canvas.width
+height = canvas.height
+
+# 畫圓函式
+def circle(x,y,r):
+    ctx.beginPath()
+    ctx.arc(x, y, r, 0, math.pi*2, True)
+    ctx.fill()
+    ctx.closePath()
+
+def line(x1,y1,x2,y2):
+    # 以下可以利用 ctx 物件進行畫圖
+    # 先畫一條直線
+    ctx.beginPath()
+    # 設定線的寬度為 1 個單位
+    ctx.lineWidth = 1
+    # 將畫筆移動到 (x1, y1) 座標點
+    ctx.moveTo(x1,y1)
+    # 然後畫直線到(x2 , y2) 座標點
+    ctx.lineTo(x2, y2)
+    # 設定顏色為藍色, 也可以使用 "rgb(0, 0, 255)" 字串設定顏色值
+    ctx.strokeStyle = "blue"
+    # 實際執行畫線
+    ctx.stroke()
+    ctx.closePath()
+line(200, 200, 200, 75)
+circle(200, 200, 5)
+
+def acircle(x,y,r):
+    ctx.beginPath()
+    ctx.arc(x, y, r, 0, math.pi*2, True)
+    ctx.fill()
+    ctx.closePath()
+
+def aline(x3,y3,x4,y4):
+    # 以下可以利用 ctx 物件進行畫圖
+    # 先畫一條直線
+    ctx.beginPath()
+    # 設定線的寬度為 1 個單位
+    ctx.lineWidth = 1
+    # 將畫筆移動到 (x1, y1) 座標點
+    ctx.moveTo(x3,y3)
+    # 然後畫直線到(x2 , y2) 座標點
+    ctx.lineTo(x4, y4)
+    # 設定顏色為藍色, 也可以使用 "rgb(0, 0, 255)" 字串設定顏色值
+    ctx.strokeStyle = "blue"
+    # 實際執行畫線
+    ctx.stroke()
+    ctx.closePath()
+aline(400,200,400,150)
+acircle(400,200,5)
+
+def bline(x2,y2,x4,y4):
+    # 以下可以利用 ctx 物件進行畫圖
+    # 先畫一條直線
+    ctx.beginPath()
+    # 設定線的寬度為 1 個單位
+    ctx.lineWidth = 1
+    # 將畫筆移動到 (x1, y1) 座標點
+    ctx.moveTo(x2,y2)
+    # 然後畫直線到(x2 , y2) 座標點
+    ctx.lineTo(x4, y4)
+    # 設定顏色為藍色, 也可以使用 "rgb(0, 0, 255)" 字串設定顏色值
+    ctx.strokeStyle = "blue"
+    # 實際執行畫線
+    ctx.stroke()
+    ctx.closePath()
+bline(200,75,400,150)
+
+x1 = 200
+y1 = 200
+x3 = 400
+y3 = 200
+x4 = 400
+y4 = 150
+r = 100
+deg = math.pi/180
+
+theta = 0
+
+def animate():
+    global theta
+    ctx.clearRect(0, 0, width, height)
+    #逐一重新繪製直線與圓心線
+    ctx.fillstyle = "#000000"
+    x2 = x1 + r*math.cos(theta*deg)
+    y2 = y1 +r*math.sin(theta*deg)
+    line(x1 ,y1, x2, y2)
+    #再加一條小線段
+    circle(x1, y1, 5)
+    x4 = x3 + r*math.cos(3*theta*deg)
+    y4 = y3 +r*math.sin(3*theta*deg)
+    aline(x3,y3,x4,y4)
+    acircle(x3,y3,5)
+    bline(x2,y2,x4,y4)
+    theta +=1
+
+timer.set_interval(animate, 50)
+&lt;/script&gt;
+
+&lt;p&gt;心得:依照老師上課教的自己繪製了一個四連桿機構，雖然其中有一些不是很懂，但還是被我胡亂拼湊了起來&lt;/p&gt;
+&lt;p&gt;以下為程式碼
+&lt;pre class = "brush : python"&gt;
+&lt;canvas id="onebar" width="600" height="600"&gt;&lt;/canvas&gt;
+&lt;script type="text/python3"&gt;
+from browser import document
+from browser import window
+from browser import timer
+import math
+canvas = document["onebar"]
+ctx = canvas.getContext("2d")&lt;/p&gt;
+&lt;p&gt;#取畫布的寬與高度&lt;/p&gt;
+&lt;p&gt;width = canvas.width
+height = canvas.height&lt;/p&gt;
+&lt;h1&gt;畫圓函式&lt;/h1&gt;
+&lt;p&gt;def circle(x,y,r):
+    ctx.beginPath()
+    ctx.arc(x, y, r, 0, math.pi*2, True)
+    ctx.fill()
+    ctx.closePath()&lt;/p&gt;
+&lt;p&gt;def line(x1,y1,x2,y2):
+    # 以下可以利用 ctx 物件進行畫圖
+    # 先畫一條直線
+    ctx.beginPath()
+    # 設定線的寬度為 1 個單位
+    ctx.lineWidth = 1
+    # 將畫筆移動到 (x1, y1) 座標點
+    ctx.moveTo(x1,y1)
+    # 然後畫直線到(x2 , y2) 座標點
+    ctx.lineTo(x2, y2)
+    # 設定顏色為藍色, 也可以使用 "rgb(0, 0, 255)" 字串設定顏色值
+    ctx.strokeStyle = "blue"
+    # 實際執行畫線
+    ctx.stroke()
+    ctx.closePath()
+line(200, 200, 200, 75)
+circle(200, 200, 5)&lt;/p&gt;
+&lt;p&gt;def acircle(x,y,r):
+    ctx.beginPath()
+    ctx.arc(x, y, r, 0, math.pi*2, True)
+    ctx.fill()
+    ctx.closePath()&lt;/p&gt;
+&lt;p&gt;def aline(x3,y3,x4,y4):
+    # 以下可以利用 ctx 物件進行畫圖
+    # 先畫一條直線
+    ctx.beginPath()
+    # 設定線的寬度為 1 個單位
+    ctx.lineWidth = 1
+    # 將畫筆移動到 (x1, y1) 座標點
+    ctx.moveTo(x3,y3)
+    # 然後畫直線到(x2 , y2) 座標點
+    ctx.lineTo(x4, y4)
+    # 設定顏色為藍色, 也可以使用 "rgb(0, 0, 255)" 字串設定顏色值
+    ctx.strokeStyle = "blue"
+    # 實際執行畫線
+    ctx.stroke()
+    ctx.closePath()
+aline(400,200,400,150)
+acircle(400,200,5)&lt;/p&gt;
+&lt;p&gt;def bline(x2,y2,x4,y4):
+    # 以下可以利用 ctx 物件進行畫圖
+    # 先畫一條直線
+    ctx.beginPath()
+    # 設定線的寬度為 1 個單位
+    ctx.lineWidth = 1
+    # 將畫筆移動到 (x1, y1) 座標點
+    ctx.moveTo(x2,y2)
+    # 然後畫直線到(x2 , y2) 座標點
+    ctx.lineTo(x4, y4)
+    # 設定顏色為藍色, 也可以使用 "rgb(0, 0, 255)" 字串設定顏色值
+    ctx.strokeStyle = "blue"
+    # 實際執行畫線
+    ctx.stroke()
+    ctx.closePath()
+bline(200,75,400,150)&lt;/p&gt;
+&lt;p&gt;x1 = 200
+y1 = 200
+x3 = 400
+y3 = 200
+x4 = 400
+y4 = 150
+r = 100
+deg = math.pi/180&lt;/p&gt;
+&lt;p&gt;theta = 0&lt;/p&gt;
+&lt;p&gt;def animate():
+    global theta
+    ctx.clearRect(0, 0, width, height)
+    #逐一重新繪製直線與圓心線
+    ctx.fillstyle = "#000000"
+    x2 = x1 + r&lt;em&gt;math.cos(theta&lt;/em&gt;deg)
+    y2 = y1 +r&lt;em&gt;math.sin(theta&lt;/em&gt;deg)
+    line(x1 ,y1, x2, y2)
+    #再加一條小線段
+    circle(x1, y1, 5)
+    x4 = x3 + r&lt;em&gt;math.cos(3&lt;/em&gt;theta&lt;em&gt;deg)
+    y4 = y3 +r&lt;/em&gt;math.sin(3&lt;em&gt;theta&lt;/em&gt;deg)
+    aline(x3,y3,x4,y4)
+    acircle(x3,y3,5)
+    bline(x2,y2,x4,y4)
+    theta +=1&lt;/p&gt;
+&lt;p&gt;timer.set_interval(animate, 50)
+&lt;/script&gt;
+&lt;/pre&gt;&lt;/p&gt;</summary><category term="Python"></category></entry><entry><title>直線與圓的轉動</title><link href="./zhi-xian-yu-yuan-de-zhuan-dong.html" rel="alternate"></link><published>2017-01-06T12:00:00+08:00</published><updated>2017-01-06T12:00:00+08:00</updated><author><name>劉育彤</name></author><id>tag:,2017-01-06:./zhi-xian-yu-yuan-de-zhuan-dong.html</id><summary type="html">&lt;!-- PELICAN_END_SUMMARY --&gt;
 
 &lt;!-- 導入 Brython 標準程式庫 --&gt;
 
@@ -90,6 +322,7 @@ timer.set_interval(animate, 50)
 
 &lt;/script&gt;
 
+&lt;p&gt;心得:上完今天的課後我才知道原來 python 不只能畫靜態，還可以做動態圖，利用一連串的指令最後打上 timer.set_interval(animate, 50)，就可以轉動了&lt;/p&gt;
 &lt;p&gt;以下為指令碼
 &lt;pre class = "brush : python"&gt;
 &lt;canvas id="onebar" width="400" height="400"&gt;&lt;/canvas&gt;
@@ -154,7 +387,7 @@ for i in range(36):
     theta +=1&lt;/p&gt;
 &lt;p&gt;timer.set_interval(animate, 50)&lt;/p&gt;
 &lt;p&gt;&lt;/script&gt;
-&lt;/pre&gt;&lt;/p&gt;</summary><category term="Python"></category></entry><entry><title>元旦快樂</title><link href="./yuan-dan-kuai-le.html" rel="alternate"></link><published>2016-12-30T12:00:00+08:00</published><updated>2016-12-30T12:00:00+08:00</updated><author><name>劉育彤</name></author><id>tag:,2016-12-30:./yuan-dan-kuai-le.html</id><summary type="html">&lt;p&gt;2017年元旦快樂&lt;/p&gt;
+&lt;/pre&gt;&lt;/p&gt;</summary><category term="Python"></category></entry><entry><title>元旦快樂 - 數字產生</title><link href="./yuan-dan-kuai-le-shu-zi-chan-sheng.html" rel="alternate"></link><published>2016-12-30T12:00:00+08:00</published><updated>2016-12-30T12:00:00+08:00</updated><author><name>劉育彤</name></author><id>tag:,2016-12-30:./yuan-dan-kuai-le-shu-zi-chan-sheng.html</id><summary type="html">&lt;p&gt;2017年元旦快樂&lt;/p&gt;
 
 
 &lt;p&gt;首先了解random 亂數模組的用法&lt;/p&gt;
@@ -199,7 +432,6 @@ document["but1"].bind("click", lottery)
 &lt;/script&gt;
 
 &lt;p&gt;&lt;button id="but1"&gt;產生整數亂數&lt;/button&gt;&lt;/p&gt;
-
 &lt;pre class="brush: python"&gt;
 &lt;div id="newyear"&gt;&lt;/div&gt;
 &lt;script type="text/python3"&gt;
@@ -236,12 +468,10 @@ def lottery(e):
     for i in range(6):
         print_location &lt;= num_list[i] + html.BR()
     print_location &lt;= "恭喜中獎!" + html.BR()
-
 document["but2"].bind("click", lottery)
 &lt;/script&gt;
 
 &lt;p&gt;&lt;button id="but2"&gt;恭喜中獎&lt;/button&gt;&lt;/p&gt;
-
 &lt;pre class="brush: python"&gt;
 &lt;script type="text/python3"&gt;
 from browser import document
@@ -258,7 +488,9 @@ def lottery(e):
 document["but2"].bind("click", lottery)
 &lt;/script&gt;
 &lt;button id="but2"&gt;恭喜中獎&lt;/button&gt;
-&lt;/pre&gt;</summary><category term="NewYear"></category></entry><entry><title>聖誕快樂</title><link href="./sheng-dan-kuai-le.html" rel="alternate"></link><published>2016-12-16T12:00:00+08:00</published><updated>2016-12-16T12:00:00+08:00</updated><author><name>劉育彤</name></author><id>tag:,2016-12-16:./sheng-dan-kuai-le.html</id><summary type="html">&lt;!-- PELICAN_END_SUMMARY --&gt;
+&lt;/pre&gt;
+
+&lt;p&gt;心得: random 是隨機的意思，random.randint 是隨機且有可能重複的數字，所以要改用 random.sample 來避免選出來的數字為重複的&lt;/p&gt;</summary><category term="NewYear"></category></entry><entry><title>聖誕快樂 - 判別數字大小</title><link href="./sheng-dan-kuai-le-pan-bie-shu-zi-da-xiao.html" rel="alternate"></link><published>2016-12-23T12:00:00+08:00</published><updated>2016-12-23T12:00:00+08:00</updated><author><name>劉育彤</name></author><id>tag:,2016-12-23:./sheng-dan-kuai-le-pan-bie-shu-zi-da-xiao.html</id><summary type="html">&lt;!-- PELICAN_END_SUMMARY --&gt;
 
 &lt;!-- 導入 FileSaver --&gt;
 
@@ -303,7 +535,8 @@ for i in range(5):
 do["b1"].bind("click", compa)
 &lt;/script&gt;
 
-&lt;p&gt;&lt;button id="b1"&gt;compa&lt;/button&gt;&lt;/p&gt;
+&lt;p&gt;&lt;button id="b1"&gt;compa&lt;/button&gt;
+心得: try 和 else 是用來判斷輸入的是否為數字，如果不是就會跑出請輸入整數
 &lt;pre class="brush: python"&gt;
 &lt;div id="con"&gt;&lt;/div&gt;
 &lt;script type="text/python3"&gt;
@@ -314,22 +547,21 @@ def compa(e):
     your_input = input("請輸入一個整數!")
     # 如何判斷所輸入的整數比 10 大
     try:
-        if int(your_input) &gt; 10:
-            c &lt;= "所輸入的整數:" + your_input + "比 10 大" + html.BR()
+        if int(your_input) &amp;gt; 10:
+            c &amp;lt;= "所輸入的整數:" + your_input + "比 10 大" + html.BR()
         else:
-            c &lt;= "所輸入的整數:" + your_input + "比 10 小" + html.BR()
+            c &amp;lt;= "所輸入的整數:" + your_input + "比 10 小" + html.BR()
     except:
-        c &lt;= "請輸入整數!!" + html.BR()
-
-#print("test")
-'''
+        c &amp;lt;= "請輸入整數!!" + html.BR()&lt;/p&gt;
+&lt;h1&gt;print("test")&lt;/h1&gt;
+&lt;p&gt;'''
 for i in range(5):
-    c &lt;= "test" + html.BR()
+    c &amp;lt;= "test" + html.BR()
 '''
 do["b1"].bind("click", compa)
 &lt;/script&gt;
 &lt;button id="b1"&gt;compa&lt;/button&gt;
-&lt;/pre&gt;</summary><category term="W15"></category></entry><entry><title>W14練習</title><link href="./w14lian-xi.html" rel="alternate"></link><published>2016-12-16T12:00:00+08:00</published><updated>2016-12-16T12:00:00+08:00</updated><author><name>劉育彤</name></author><id>tag:,2016-12-16:./w14lian-xi.html</id><summary type="html">&lt;!-- PELICAN_END_SUMMARY --&gt;
+&lt;/pre&gt;&lt;/p&gt;</summary><category term="W15"></category></entry><entry><title>建立按鈕</title><link href="./jian-li-an-niu.html" rel="alternate"></link><published>2016-12-16T12:00:00+08:00</published><updated>2016-12-16T12:00:00+08:00</updated><author><name>劉育彤</name></author><id>tag:,2016-12-16:./jian-li-an-niu.html</id><summary type="html">&lt;!-- PELICAN_END_SUMMARY --&gt;
 
 &lt;!-- 導入 FileSaver --&gt;
 
@@ -362,18 +594,18 @@ document['ch01'].bind('click',get_input)
 &lt;/script&gt;
 
 &lt;p&gt;&lt;button id="ch01"&gt;40523139&lt;/button&gt;&lt;/p&gt;
+&lt;p&gt;心得: alert 是跳出訊息的意思，給它一個按鈕才不會近來一直跳訊息
 &lt;pre class = "brush: python"&gt;
 &lt;script type="text/python3"&gt;
 from browser import document
 from browser import alert
 def get_input(ev):
     the_input= input("我上課不要玩手機")
-    alert("輸入為:"+str(the_input))
-
-document['ch01'].bind('click',get_input)
+    alert("輸入為:"+str(the_input))&lt;/p&gt;
+&lt;p&gt;document['ch01'].bind('click',get_input)
 &lt;/script&gt;
 &lt;button id="ch01"&gt;40523139&lt;/button&gt;
-&lt;/pre&gt;</summary><category term="W14"></category></entry><entry><title>W13練習</title><link href="./w13lian-xi.html" rel="alternate"></link><published>2016-12-09T12:00:00+08:00</published><updated>2016-12-09T12:00:00+08:00</updated><author><name>劉育彤</name></author><id>tag:,2016-12-09:./w13lian-xi.html</id><summary type="html">&lt;p&gt;將&lt;a href="http://mde.tw/2016fallcp/course/Python3Programs.txt"&gt;http://mde.tw/2016fallcp/course/Python3Programs.txt &lt;/a&gt; 整理成brython&lt;/p&gt;
+&lt;/pre&gt;&lt;/p&gt;</summary><category term="W14"></category></entry><entry><title>重覆與溫度</title><link href="./zhong-fu-yu-wen-du.html" rel="alternate"></link><published>2016-12-09T12:00:00+08:00</published><updated>2016-12-09T12:00:00+08:00</updated><author><name>劉育彤</name></author><id>tag:,2016-12-09:./zhong-fu-yu-wen-du.html</id><summary type="html">&lt;p&gt;將&lt;a href="http://mde.tw/2016fallcp/course/Python3Programs.txt"&gt;http://mde.tw/2016fallcp/course/Python3Programs.txt &lt;/a&gt; 整理成brython&lt;/p&gt;
 
 
 &lt;!-- 導入 Brython 標準程式庫 --&gt;
@@ -398,31 +630,33 @@ brython(1);
 from browser import document as doc
 from browser import html
 container = doc['container']
-def repeat():
+def repeat(e):
     mystring = ""
     num = input("請輸入重複執行次數")
     #for i in range(1 , 11):
     for i in range(1, int(num)+1):
         mystring += str(i)  + ": hello mde"  + html.BR()
     container &lt;= mystring
-doc["but1"].bind["click", repeat]
- &lt;/script&gt;
+doc['but1'].bind('click', repeat)
+&lt;/script&gt;
 
-&lt;p&gt;&lt;button id = "but1"&gt;請輸入重複執行次數&lt;/button&gt;&lt;/p&gt;
+&lt;p&gt;&lt;button id="but1"&gt;輸入想重複執行次數&lt;/button&gt;&lt;/p&gt;
 &lt;pre class="brush: python"&gt;
 &lt;div id="container"&gt;&lt;/div&gt;
 &lt;script type="text/python3"&gt;
 from browser import document as doc
 from browser import html
 container = doc['container']
-mystring = ""
-num = input("請輸入重複執行次數")
-#for i in range(1 , 11):
-for i in range(1, int(num)+1):
-    mystring += str(i)  + ": hello mde"  + html.BR()
-container &lt;= mystring
-doc["but1"].bind["click", repeat]
+def repeat(e):
+    mystring = ""
+    num = input("請輸入重複執行次數")
+    #for i in range(1 , 11):
+    for i in range(1, int(num)+1):
+        mystring += str(i)  + ": hello mde"  + html.BR()
+    container &lt;= mystring
+doc['but1'].bind('click',repeat)
 &lt;/script&gt;
+&lt;button id="but1"&gt;輸入想重複執行次數&lt;/button&gt;
 &lt;/pre&gt;
 
 &lt;div id="temperature"&gt;&lt;/div&gt;
@@ -431,35 +665,38 @@ doc["but1"].bind["click", repeat]
 from browser import document as doc
 from browser import html
 container = doc['temperature']
-def temperature():
+def temperature(e):
     mystring = ""
     cdegree = input("請輸入攝氏溫度:")
     fdegree = float(cdegree)*9/5 + 32
-    output_string = "攝氏" + str(cdegree) + "度=華式" + str(fdegree) + "度"
+    output_string = "攝氏" + str(cdegree) + "度=華式" + str(fdegree) + "度" + html.BR()
     container &lt;= output_string
-doc["but2"].bind["click", temperature]    
+doc['but2'].bind('click',temperature)
 &lt;/script&gt;
 
-&lt;p&gt;&lt;button id = "but1"&gt;請輸入攝氏溫度&lt;/button&gt;&lt;/p&gt;
+&lt;p&gt;&lt;button id="but2"&gt;輸入攝氏溫度，轉成華氏溫度&lt;/button&gt;&lt;/p&gt;
 &lt;pre class="brush: python"&gt;
 &lt;div id="temperature"&gt;&lt;/div&gt;
 &lt;script type="text/python3"&gt;
 from browser import document as doc
 from browser import html
 container = doc['temperature']
-mystring = ""
-cdegree = input("請輸入攝氏溫度:")
-fdegree = float(cdegree)*9/5 + 32
-output_string = "攝氏" + str(cdegree) + "度=華式" + str(fdegree) + "度"
-container &lt;= output_string
-&lt;/script&gt;
-
+def temperature(e):
+    mystring = ""
+    cdegree = input("請輸入攝氏溫度:")
+    fdegree = float(cdegree)*9/5 + 32
+    output_string = "攝氏" + str(cdegree) + "度=華式" + str(fdegree) + "度" + html.BR()
+    container &lt;= output_string
+doc['but2'].bind('click',temperature)
+&lt;/script&gt; 
+&lt;button id="but2"&gt;輸入攝氏溫度，轉成華氏溫度&lt;/button&gt;
 &lt;/pre&gt;
 
 &lt;p&gt;開始進行範例分類:&lt;/p&gt;
 &lt;p&gt;接受使用者的輸入&lt;/p&gt;
 &lt;p&gt;利用alert() 顯示結束&lt;/p&gt;
-&lt;p&gt;直接列印結果&lt;/p&gt;</summary><category term="W13"></category></entry><entry><title>上課練習</title><link href="./shang-ke-lian-xi.html" rel="alternate"></link><published>2016-11-15T12:00:00+08:00</published><updated>2016-11-15T12:00:00+08:00</updated><author><name>劉育彤</name></author><id>tag:,2016-11-15:./shang-ke-lian-xi.html</id><summary type="html">&lt;!-- PELICAN_END_SUMMARY --&gt;
+&lt;p&gt;直接列印結果&lt;/p&gt;
+&lt;p&gt;心得:將原本只能show在console的程式利用 &amp;lt;= 語法將此show在網頁上，並結合button做連結&lt;/p&gt;</summary><category term="W13"></category></entry><entry><title>未分組成員</title><link href="./wei-fen-zu-cheng-yuan.html" rel="alternate"></link><published>2016-11-15T12:00:00+08:00</published><updated>2016-11-15T12:00:00+08:00</updated><author><name>劉育彤</name></author><id>tag:,2016-11-15:./wei-fen-zu-cheng-yuan.html</id><summary type="html">&lt;!-- PELICAN_END_SUMMARY --&gt;
 
 &lt;h1&gt;找出未分組的名單&lt;/h1&gt;
 
@@ -490,7 +727,7 @@ for m in registered:
     if m not in result_g:
         print(m)
 
-&lt;/pre&gt;</summary><category term="Python"></category></entry><entry><title>上課練習(2)</title><link href="./shang-ke-lian-xi-2.html" rel="alternate"></link><published>2016-11-14T12:00:00+08:00</published><updated>2016-11-14T12:00:00+08:00</updated><author><name>劉育彤</name></author><id>tag:,2016-11-14:./shang-ke-lian-xi-2.html</id><summary type="html">&lt;!-- PELICAN_END_SUMMARY --&gt;
+&lt;/pre&gt;</summary><category term="Python"></category></entry><entry><title>各組成員名單</title><link href="./ge-zu-cheng-yuan-ming-dan.html" rel="alternate"></link><published>2016-11-14T12:00:00+08:00</published><updated>2016-11-14T12:00:00+08:00</updated><author><name>劉育彤</name></author><id>tag:,2016-11-14:./ge-zu-cheng-yuan-ming-dan.html</id><summary type="html">&lt;!-- PELICAN_END_SUMMARY --&gt;
 
 &lt;h2&gt;用for迴圈列出各組名單&lt;/h2&gt;
 

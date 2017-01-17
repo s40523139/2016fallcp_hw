@@ -2,7 +2,7 @@
 <html lang="en"
 >
 <head>
-    <title>聖誕快樂 - 2016Fall 課程網誌 (虎尾科大MDE)</title>
+    <title>四連桿 - 2016Fall 課程網誌 (虎尾科大MDE)</title>
     <!-- Using the latest rendering mode for IE -->
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta charset="utf-8">
@@ -166,19 +166,19 @@ init_mathjax = function() {
 init_mathjax();
 </script>
 
-<link rel="canonical" href="./sheng-dan-kuai-le.html">
+<link rel="canonical" href="./si-lian-gan.html">
 
         <meta name="author" content="劉育彤" />
-        <meta name="keywords" content="W15" />
+        <meta name="keywords" content="Python" />
 
         <meta property="og:site_name" content="2016Fall 課程網誌 (虎尾科大MDE)" />
         <meta property="og:type" content="article"/>
-        <meta property="og:title" content="聖誕快樂"/>
-        <meta property="og:url" content="./sheng-dan-kuai-le.html"/>
+        <meta property="og:title" content="四連桿"/>
+        <meta property="og:url" content="./si-lian-gan.html"/>
         <meta property="og:description" content=""/>
-        <meta property="article:published_time" content="2016-12-16" />
+        <meta property="article:published_time" content="2017-01-16" />
             <meta property="article:section" content="Misc" />
-            <meta property="article:tag" content="W15" />
+            <meta property="article:tag" content="Python" />
             <meta property="article:author" content="劉育彤" />
 
 
@@ -289,10 +289,10 @@ init_mathjax();
         <article>
             <header class="page-header">
                 <h1>
-                    <a href="./sheng-dan-kuai-le.html"
+                    <a href="./si-lian-gan.html"
                        rel="bookmark"
-                       title="Permalink to 聖誕快樂">
-                        聖誕快樂
+                       title="Permalink to 四連桿">
+                        四連桿
                     </a>
                 </h1>
             </header>
@@ -302,7 +302,7 @@ init_mathjax();
 <footer class="post-info">
     <span class="label label-default">Date</span>
     <span class="published">
-        <i class="fa fa-calendar"></i><time datetime="2016-12-16T12:00:00+08:00"> 週五 16 十二月 2016</time>
+        <i class="fa fa-calendar"></i><time datetime="2017-01-16T12:00:00+08:00"> 週一 16 一月 2017</time>
     </span>
             <span class="label label-default">By</span>
             <a href="./author/liu-yu-tong.html"><i class="fa fa-user"></i> 劉育彤</a>
@@ -310,15 +310,11 @@ init_mathjax();
 
 
 <span class="label label-default">Tags</span>
-	<a href="./tag/w15.html">W15</a>
+	<a href="./tag/python.html">Python</a>
     
 </footer><!-- /.post-info -->                    </div>
                 </div>
                 <!-- PELICAN_END_SUMMARY -->
-
-<!-- 導入 FileSaver -->
-
-<script type="text/javascript" src="./../FileSaver.min.js"></script>
 
 <!-- 導入 Brython 標準程式庫 -->
 
@@ -334,58 +330,223 @@ brython(1);
 }
 </script>
 
-<div id="con"></div>
+<!-- 以下可以執行  Brython 程式 -->
+
+<canvas id="onebar" width="600" height="600"></canvas>
 
 <script type="text/python3">
-from browser import document as do
-from browser import html
-c = do["con"]
-def compa(e):
-    your_input = input("請輸入一個整數!")
-    # 如何判斷所輸入的整數比 10 大
-    try:
-        if int(your_input) > 10:
-            c <= "所輸入的整數:" + your_input + "比 10 大" + html.BR()
-        else:
-            c <= "所輸入的整數:" + your_input + "比 10 小" + html.BR()
-    except:
-        c <= "請輸入整數!!" + html.BR()
+from browser import document
+from browser import window
+from browser import timer
+import math
+canvas = document["onebar"]
+ctx = canvas.getContext("2d")
 
-#print("test")
-'''
-for i in range(5):
-    c <= "test" + html.BR()
-'''
-do["b1"].bind("click", compa)
+ #取畫布的寬與高度
+
+width = canvas.width
+height = canvas.height
+
+# 畫圓函式
+def circle(x,y,r):
+    ctx.beginPath()
+    ctx.arc(x, y, r, 0, math.pi*2, True)
+    ctx.fill()
+    ctx.closePath()
+
+def line(x1,y1,x2,y2):
+    # 以下可以利用 ctx 物件進行畫圖
+    # 先畫一條直線
+    ctx.beginPath()
+    # 設定線的寬度為 1 個單位
+    ctx.lineWidth = 1
+    # 將畫筆移動到 (x1, y1) 座標點
+    ctx.moveTo(x1,y1)
+    # 然後畫直線到(x2 , y2) 座標點
+    ctx.lineTo(x2, y2)
+    # 設定顏色為藍色, 也可以使用 "rgb(0, 0, 255)" 字串設定顏色值
+    ctx.strokeStyle = "blue"
+    # 實際執行畫線
+    ctx.stroke()
+    ctx.closePath()
+line(200, 200, 200, 75)
+circle(200, 200, 5)
+
+def acircle(x,y,r):
+    ctx.beginPath()
+    ctx.arc(x, y, r, 0, math.pi*2, True)
+    ctx.fill()
+    ctx.closePath()
+
+def aline(x3,y3,x4,y4):
+    # 以下可以利用 ctx 物件進行畫圖
+    # 先畫一條直線
+    ctx.beginPath()
+    # 設定線的寬度為 1 個單位
+    ctx.lineWidth = 1
+    # 將畫筆移動到 (x1, y1) 座標點
+    ctx.moveTo(x3,y3)
+    # 然後畫直線到(x2 , y2) 座標點
+    ctx.lineTo(x4, y4)
+    # 設定顏色為藍色, 也可以使用 "rgb(0, 0, 255)" 字串設定顏色值
+    ctx.strokeStyle = "blue"
+    # 實際執行畫線
+    ctx.stroke()
+    ctx.closePath()
+aline(400,200,400,150)
+acircle(400,200,5)
+
+def bline(x2,y2,x4,y4):
+    # 以下可以利用 ctx 物件進行畫圖
+    # 先畫一條直線
+    ctx.beginPath()
+    # 設定線的寬度為 1 個單位
+    ctx.lineWidth = 1
+    # 將畫筆移動到 (x1, y1) 座標點
+    ctx.moveTo(x2,y2)
+    # 然後畫直線到(x2 , y2) 座標點
+    ctx.lineTo(x4, y4)
+    # 設定顏色為藍色, 也可以使用 "rgb(0, 0, 255)" 字串設定顏色值
+    ctx.strokeStyle = "blue"
+    # 實際執行畫線
+    ctx.stroke()
+    ctx.closePath()
+bline(200,75,400,150)
+
+x1 = 200
+y1 = 200
+x3 = 400
+y3 = 200
+x4 = 400
+y4 = 150
+r = 100
+deg = math.pi/180
+
+theta = 0
+
+def animate():
+    global theta
+    ctx.clearRect(0, 0, width, height)
+    #逐一重新繪製直線與圓心線
+    ctx.fillstyle = "#000000"
+    x2 = x1 + r*math.cos(theta*deg)
+    y2 = y1 +r*math.sin(theta*deg)
+    line(x1 ,y1, x2, y2)
+    #再加一條小線段
+    circle(x1, y1, 5)
+    x4 = x3 + r*math.cos(3*theta*deg)
+    y4 = y3 +r*math.sin(3*theta*deg)
+    aline(x3,y3,x4,y4)
+    acircle(x3,y3,5)
+    bline(x2,y2,x4,y4)
+    theta +=1
+
+timer.set_interval(animate, 50)
 </script>
 
-<p><button id="b1">compa</button></p>
-<pre class="brush: python">
-<div id="con"></div>
+<p>心得:依照老師上課教的自己繪製了一個四連桿機構，雖然其中有一些不是很懂，但還是被我胡亂拼湊了起來</p>
+<p>以下為程式碼
+<pre class = "brush : python">
+<canvas id="onebar" width="600" height="600"></canvas>
 <script type="text/python3">
-from browser import document as do
-from browser import html
-c = do["con"]
-def compa(e):
-    your_input = input("請輸入一個整數!")
-    # 如何判斷所輸入的整數比 10 大
-    try:
-        if int(your_input) > 10:
-            c <= "所輸入的整數:" + your_input + "比 10 大" + html.BR()
-        else:
-            c <= "所輸入的整數:" + your_input + "比 10 小" + html.BR()
-    except:
-        c <= "請輸入整數!!" + html.BR()
-
-#print("test")
-'''
-for i in range(5):
-    c <= "test" + html.BR()
-'''
-do["b1"].bind("click", compa)
+from browser import document
+from browser import window
+from browser import timer
+import math
+canvas = document["onebar"]
+ctx = canvas.getContext("2d")</p>
+<p>#取畫布的寬與高度</p>
+<p>width = canvas.width
+height = canvas.height</p>
+<h1>畫圓函式</h1>
+<p>def circle(x,y,r):
+    ctx.beginPath()
+    ctx.arc(x, y, r, 0, math.pi*2, True)
+    ctx.fill()
+    ctx.closePath()</p>
+<p>def line(x1,y1,x2,y2):
+    # 以下可以利用 ctx 物件進行畫圖
+    # 先畫一條直線
+    ctx.beginPath()
+    # 設定線的寬度為 1 個單位
+    ctx.lineWidth = 1
+    # 將畫筆移動到 (x1, y1) 座標點
+    ctx.moveTo(x1,y1)
+    # 然後畫直線到(x2 , y2) 座標點
+    ctx.lineTo(x2, y2)
+    # 設定顏色為藍色, 也可以使用 "rgb(0, 0, 255)" 字串設定顏色值
+    ctx.strokeStyle = "blue"
+    # 實際執行畫線
+    ctx.stroke()
+    ctx.closePath()
+line(200, 200, 200, 75)
+circle(200, 200, 5)</p>
+<p>def acircle(x,y,r):
+    ctx.beginPath()
+    ctx.arc(x, y, r, 0, math.pi*2, True)
+    ctx.fill()
+    ctx.closePath()</p>
+<p>def aline(x3,y3,x4,y4):
+    # 以下可以利用 ctx 物件進行畫圖
+    # 先畫一條直線
+    ctx.beginPath()
+    # 設定線的寬度為 1 個單位
+    ctx.lineWidth = 1
+    # 將畫筆移動到 (x1, y1) 座標點
+    ctx.moveTo(x3,y3)
+    # 然後畫直線到(x2 , y2) 座標點
+    ctx.lineTo(x4, y4)
+    # 設定顏色為藍色, 也可以使用 "rgb(0, 0, 255)" 字串設定顏色值
+    ctx.strokeStyle = "blue"
+    # 實際執行畫線
+    ctx.stroke()
+    ctx.closePath()
+aline(400,200,400,150)
+acircle(400,200,5)</p>
+<p>def bline(x2,y2,x4,y4):
+    # 以下可以利用 ctx 物件進行畫圖
+    # 先畫一條直線
+    ctx.beginPath()
+    # 設定線的寬度為 1 個單位
+    ctx.lineWidth = 1
+    # 將畫筆移動到 (x1, y1) 座標點
+    ctx.moveTo(x2,y2)
+    # 然後畫直線到(x2 , y2) 座標點
+    ctx.lineTo(x4, y4)
+    # 設定顏色為藍色, 也可以使用 "rgb(0, 0, 255)" 字串設定顏色值
+    ctx.strokeStyle = "blue"
+    # 實際執行畫線
+    ctx.stroke()
+    ctx.closePath()
+bline(200,75,400,150)</p>
+<p>x1 = 200
+y1 = 200
+x3 = 400
+y3 = 200
+x4 = 400
+y4 = 150
+r = 100
+deg = math.pi/180</p>
+<p>theta = 0</p>
+<p>def animate():
+    global theta
+    ctx.clearRect(0, 0, width, height)
+    #逐一重新繪製直線與圓心線
+    ctx.fillstyle = "#000000"
+    x2 = x1 + r<em>math.cos(theta</em>deg)
+    y2 = y1 +r<em>math.sin(theta</em>deg)
+    line(x1 ,y1, x2, y2)
+    #再加一條小線段
+    circle(x1, y1, 5)
+    x4 = x3 + r<em>math.cos(3</em>theta<em>deg)
+    y4 = y3 +r</em>math.sin(3<em>theta</em>deg)
+    aline(x3,y3,x4,y4)
+    acircle(x3,y3,5)
+    bline(x2,y2,x4,y4)
+    theta +=1</p>
+<p>timer.set_interval(animate, 50)
 </script>
-<button id="b1">compa</button>
-</pre>
+</pre></p>
             </div>
             <!-- /.entry-content -->
         </article>
@@ -401,28 +562,28 @@ do["b1"].bind("click", compa)
             <li class="list-group-item"><h4><i class="fa fa-home fa-lg"></i><span class="icon-label">Recent Posts</span></h4>
                 <ul class="list-group" id="recentposts">
                     <li class="list-group-item">
-                        <a href="./w17-lian-xi.html">
-                            W17 練習
+                        <a href="./si-lian-gan.html">
+                            四連桿
                         </a>
                     </li>
                     <li class="list-group-item">
-                        <a href="./yuan-dan-kuai-le.html">
-                            元旦快樂
+                        <a href="./zhi-xian-yu-yuan-de-zhuan-dong.html">
+                            直線與圓的轉動
                         </a>
                     </li>
                     <li class="list-group-item">
-                        <a href="./sheng-dan-kuai-le.html">
-                            聖誕快樂
+                        <a href="./yuan-dan-kuai-le-shu-zi-chan-sheng.html">
+                            元旦快樂 - 數字產生
                         </a>
                     </li>
                     <li class="list-group-item">
-                        <a href="./w14lian-xi.html">
-                            W14練習
+                        <a href="./sheng-dan-kuai-le-pan-bie-shu-zi-da-xiao.html">
+                            聖誕快樂 - 判別數字大小
                         </a>
                     </li>
                     <li class="list-group-item">
-                        <a href="./w13lian-xi.html">
-                            W13練習
+                        <a href="./jian-li-an-niu.html">
+                            建立按鈕
                         </a>
                     </li>
                 </ul>

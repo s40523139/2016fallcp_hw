@@ -2,7 +2,7 @@
 <html lang="en"
 >
 <head>
-    <title>上課練習(2) - 2016Fall 課程網誌 (虎尾科大MDE)</title>
+    <title>未分組成員 - 2016Fall 課程網誌 (虎尾科大MDE)</title>
     <!-- Using the latest rendering mode for IE -->
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta charset="utf-8">
@@ -166,17 +166,17 @@ init_mathjax = function() {
 init_mathjax();
 </script>
 
-<link rel="canonical" href="./shang-ke-lian-xi-2.html">
+<link rel="canonical" href="./wei-fen-zu-cheng-yuan.html">
 
         <meta name="author" content="劉育彤" />
         <meta name="keywords" content="Python" />
 
         <meta property="og:site_name" content="2016Fall 課程網誌 (虎尾科大MDE)" />
         <meta property="og:type" content="article"/>
-        <meta property="og:title" content="上課練習(2)"/>
-        <meta property="og:url" content="./shang-ke-lian-xi-2.html"/>
+        <meta property="og:title" content="未分組成員"/>
+        <meta property="og:url" content="./wei-fen-zu-cheng-yuan.html"/>
         <meta property="og:description" content=""/>
-        <meta property="article:published_time" content="2016-11-14" />
+        <meta property="article:published_time" content="2016-11-15" />
             <meta property="article:section" content="Misc" />
             <meta property="article:tag" content="Python" />
             <meta property="article:author" content="劉育彤" />
@@ -289,10 +289,10 @@ init_mathjax();
         <article>
             <header class="page-header">
                 <h1>
-                    <a href="./shang-ke-lian-xi-2.html"
+                    <a href="./wei-fen-zu-cheng-yuan.html"
                        rel="bookmark"
-                       title="Permalink to 上課練習(2)">
-                        上課練習(2)
+                       title="Permalink to 未分組成員">
+                        未分組成員
                     </a>
                 </h1>
             </header>
@@ -302,7 +302,7 @@ init_mathjax();
 <footer class="post-info">
     <span class="label label-default">Date</span>
     <span class="published">
-        <i class="fa fa-calendar"></i><time datetime="2016-11-14T12:00:00+08:00"> 週一 14 十一月 2016</time>
+        <i class="fa fa-calendar"></i><time datetime="2016-11-15T12:00:00+08:00"> 週二 15 十一月 2016</time>
     </span>
             <span class="label label-default">By</span>
             <a href="./author/liu-yu-tong.html"><i class="fa fa-user"></i> 劉育彤</a>
@@ -316,28 +316,34 @@ init_mathjax();
                 </div>
                 <!-- PELICAN_END_SUMMARY -->
 
-<h2>用for迴圈列出各組名單</h2>
+<h1>找出未分組的名單</h1>
 
 <pre class="brush: python">
-content = open("cpa.txt").read()
-#print(content)
-# 這是單行註解
-result = content.splitlines()
-# result 變數資料形變為 list
-#print(result)
-# 針對 list 資料，可以利用 for 迴圈列出其數列成員
-num = 1
-for g in result:
-    g_list = g.split(",")
-    g_list = g_list[:-1]
-    for m in g_list:
-          print("group:", num, "member:", m)
-    num = num + 1
+data3 = open("w6_group.txt").read()
+#data3 = open("w6_list.txt").read()
+#print(data3)
+group = data3.splitlines()
+#print(len(group))
 
-'''
-for line in content.splitlines():
-result.append(list(line.split(",")))
-'''
+# 希望將分組資料轉為學員數列, 令為變數名稱 result_g
+result_g = []
+# 已經註冊者數列設為 registered
+registered = open("w6_list.txt").read()
+registered = registered.splitlines()
+#print(registered)
+for line in group:
+    # 去除每一行最後的空白成員
+    sline = line.split(",")[:-1]
+    #print (sline)
+    # 再將各組拆成個別組員後, 串成 result_g
+    for m in sline:
+        result_g.append(m)
+#print(result_g )
+#not_in_group = [c for c in registered if c not in result_g]
+#print(not_in_group)
+for m in registered:
+    if m not in result_g:
+        print(m)
 
 </pre>
             </div>
@@ -355,28 +361,28 @@ result.append(list(line.split(",")))
             <li class="list-group-item"><h4><i class="fa fa-home fa-lg"></i><span class="icon-label">Recent Posts</span></h4>
                 <ul class="list-group" id="recentposts">
                     <li class="list-group-item">
-                        <a href="./w17-lian-xi.html">
-                            W17 練習
+                        <a href="./si-lian-gan.html">
+                            四連桿
                         </a>
                     </li>
                     <li class="list-group-item">
-                        <a href="./yuan-dan-kuai-le.html">
-                            元旦快樂
+                        <a href="./zhi-xian-yu-yuan-de-zhuan-dong.html">
+                            直線與圓的轉動
                         </a>
                     </li>
                     <li class="list-group-item">
-                        <a href="./sheng-dan-kuai-le.html">
-                            聖誕快樂
+                        <a href="./yuan-dan-kuai-le-shu-zi-chan-sheng.html">
+                            元旦快樂 - 數字產生
                         </a>
                     </li>
                     <li class="list-group-item">
-                        <a href="./w14lian-xi.html">
-                            W14練習
+                        <a href="./sheng-dan-kuai-le-pan-bie-shu-zi-da-xiao.html">
+                            聖誕快樂 - 判別數字大小
                         </a>
                     </li>
                     <li class="list-group-item">
-                        <a href="./w13lian-xi.html">
-                            W13練習
+                        <a href="./jian-li-an-niu.html">
+                            建立按鈕
                         </a>
                     </li>
                 </ul>

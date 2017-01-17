@@ -2,7 +2,7 @@
 <html lang="en"
 >
 <head>
-    <title>W10 Brython 繪圖範例 - 2016Fall 課程網誌 (虎尾科大MDE)</title>
+    <title>元旦快樂 - 數字產生 - 2016Fall 課程網誌 (虎尾科大MDE)</title>
     <!-- Using the latest rendering mode for IE -->
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta charset="utf-8">
@@ -166,20 +166,20 @@ init_mathjax = function() {
 init_mathjax();
 </script>
 
-<link rel="canonical" href="./w10-brython-hui-tu-fan-li.html">
+<link rel="canonical" href="./yuan-dan-kuai-le-shu-zi-chan-sheng.html">
 
         <meta name="author" content="劉育彤" />
-        <meta name="keywords" content="Brython" />
-        <meta name="description" content="Brython 繪圖" />
+        <meta name="keywords" content="NewYear" />
+        <meta name="description" content="2017年元旦快樂" />
 
         <meta property="og:site_name" content="2016Fall 課程網誌 (虎尾科大MDE)" />
         <meta property="og:type" content="article"/>
-        <meta property="og:title" content="W10 Brython 繪圖範例"/>
-        <meta property="og:url" content="./w10-brython-hui-tu-fan-li.html"/>
-        <meta property="og:description" content="Brython 繪圖"/>
-        <meta property="article:published_time" content="2016-11-18" />
-            <meta property="article:section" content="Course" />
-            <meta property="article:tag" content="Brython" />
+        <meta property="og:title" content="元旦快樂 - 數字產生"/>
+        <meta property="og:url" content="./yuan-dan-kuai-le-shu-zi-chan-sheng.html"/>
+        <meta property="og:description" content="2017年元旦快樂"/>
+        <meta property="article:published_time" content="2016-12-30" />
+            <meta property="article:section" content="Misc" />
+            <meta property="article:tag" content="NewYear" />
             <meta property="article:author" content="劉育彤" />
 
 
@@ -261,10 +261,10 @@ init_mathjax();
                          <li><a href="./pages/about/">
                              About
                           </a></li>
-                        <li class="active">
+                        <li >
                             <a href="./category/course.html">Course</a>
                         </li>
-                        <li >
+                        <li class="active">
                             <a href="./category/misc.html">Misc</a>
                         </li>
             </ul>
@@ -290,10 +290,10 @@ init_mathjax();
         <article>
             <header class="page-header">
                 <h1>
-                    <a href="./w10-brython-hui-tu-fan-li.html"
+                    <a href="./yuan-dan-kuai-le-shu-zi-chan-sheng.html"
                        rel="bookmark"
-                       title="Permalink to W10 Brython 繪圖範例">
-                        W10 Brython 繪圖範例
+                       title="Permalink to 元旦快樂 - 數字產生">
+                        元旦快樂 - 數字產生
                     </a>
                 </h1>
             </header>
@@ -303,7 +303,7 @@ init_mathjax();
 <footer class="post-info">
     <span class="label label-default">Date</span>
     <span class="published">
-        <i class="fa fa-calendar"></i><time datetime="2016-11-18T12:00:00+08:00"> 週五 18 十一月 2016</time>
+        <i class="fa fa-calendar"></i><time datetime="2016-12-30T12:00:00+08:00"> 週五 30 十二月 2016</time>
     </span>
             <span class="label label-default">By</span>
             <a href="./author/liu-yu-tong.html"><i class="fa fa-user"></i> 劉育彤</a>
@@ -311,14 +311,15 @@ init_mathjax();
 
 
 <span class="label label-default">Tags</span>
-	<a href="./tag/brython.html">Brython</a>
+	<a href="./tag/newyear.html">NewYear</a>
     
 </footer><!-- /.post-info -->                    </div>
                 </div>
-                <p>Brython 繪圖</p>
+                <p>2017年元旦快樂</p>
 
 
-<p>繪圖流程, 導入程式庫, 啟動, 然後引用各種模組開始繪圖</p>
+<p>首先了解random 亂數模組的用法</p>
+<p>然後利用random 模組笧生一個介於1-100的整數,列印在網頁上</p>
 <!-- 導入 Brython 標準程式庫 -->
 
 <script type="text/javascript" 
@@ -333,94 +334,91 @@ brython(1);
 }
 </script>
 
-<!-- 以下實際利用  Brython 畫兩條直線 -->
+<!-- 以下可以執行  Brython 程式 -->
 
-<canvas id="guitarchord" width="600" height="200"></canvas>
-
-<script type="text/python3">
-from browser import document as doc
-import math
-
-canvas = doc["guitarchord"]
-ctx = canvas.getContext("2d")
-ctx.beginPath()
-ctx.lineWidth = 1
-ctx.moveTo(100, 100)
-ctx.lineTo(150, 100)
-ctx.lineTo(150, 200)
-ctx.lineTo(100, 200)
-ctx.lineTo(100, 100)
-
-# 設定顏色為藍色, 也可以使用 "rgb(0, 0, 255)" 字串設定顏色值
-ctx.strokeStyle = "blue"
-ctx.stroke()
-ctx.closePath()
-</script>
-
-<canvas id="guitarchord2" width="600" height="200"></canvas>
+<div id="newyear"></div>
 
 <script type="text/python3">
-from browser import document as doc
-import math
+from browser import document
+from browser import html
+import random
+print_location = document["newyear"]
 
-canvas = doc["guitarchord2"]
-ctx = canvas.getContext("2d")
-ctx.beginPath()
-ctx.lineWidth = 1
-for i in range(5):
-    ctx.moveTo(100+i*10, 100)
-    ctx.lineTo(100+i*10, 200)
+def gen_int():
+    num = random.randint(1, 49)
+    # 設法將 num 列印在網頁上
+    #print_location = document["newyear"]
+    print_location <= num + html.BR()
 
-ctx.strokeStyle = "blue"
-ctx.stroke()
-ctx.closePath()
+def lottery(e):
+    for i in range(6):
+        gen_int()
+    print_location <= "恭喜中獎!" + html.BR()
 
+#document["but1"].bind("click", gen_int)
+document["but1"].bind("click", lottery)
 </script>
 
-<p>上述繪圖的程式碼
+<p><button id="but1">產生整數亂數</button></p>
 <pre class="brush: python">
-<canvas id="guitarchord" width="600" height="200"></canvas></p>
+<div id="newyear"></div>
 <script type="text/python3">
-from browser import document as doc
-import math
+from browser import document
+from browser import html
+import random
+print_location = document["newyear"]
 
-canvas = doc["guitarchord"]
-ctx = canvas.getContext("2d")
-ctx.beginPath()
-ctx.lineWidth = 1
-ctx.moveTo(100, 100)
-ctx.lineTo(150, 100)
-ctx.lineTo(150, 200)
-ctx.lineTo(100, 200)
-ctx.lineTo(100, 100)
+def gen_int():
+    num = random.randint(1, 49)
+    # 設法將 num 列印在網頁上
+    #print_location = document["newyear"]
+    print_location <= num + html.BR()
 
-# 設定顏色為藍色, 也可以使用 "rgb(0, 0, 255)" 字串設定顏色值
-ctx.strokeStyle = "blue"
-ctx.stroke()
-ctx.closePath()
+def lottery(e):
+    for i in range(6):
+        gen_int()
+    print_location <= "恭喜中獎!" + html.BR()
+
+#document["but1"].bind("click", gen_int)
+document["but1"].bind("click", lottery)
 </script>
-
-<canvas id="guitarchord2" width="600" height="200"></canvas>
-
-<script type="text/python3">
-from browser import document as doc
-import math
-
-canvas = doc["guitarchord2"]
-ctx = canvas.getContext("2d")
-ctx.beginPath()
-ctx.lineWidth = 1
-for i in range(5):
-    ctx.moveTo(100+i*10, 100)
-    ctx.lineTo(100+i*10, 200)
-
-ctx.strokeStyle = "blue"
-ctx.stroke()
-ctx.closePath()
-
-</script>
-
+<button id="but1">產生整數亂數</button>
 </pre>
+
+<script type="text/python3">
+from browser import document
+from browser import html
+import random
+print_location = document["newyear"]
+
+def lottery(e):
+    num_list = random.sample(list(range(1, 50)), 6)
+    for i in range(6):
+        print_location <= num_list[i] + html.BR()
+    print_location <= "恭喜中獎!" + html.BR()
+document["but2"].bind("click", lottery)
+</script>
+
+<p><button id="but2">恭喜中獎</button></p>
+<pre class="brush: python">
+<script type="text/python3">
+from browser import document
+from browser import html
+import random
+print_location = document["newyear"]
+
+def lottery(e):
+    num_list = random.sample(list(range(1, 50)), 6)
+    for i in range(6):
+        print_location <= num_list[i] + html.BR()
+    print_location <= "恭喜中獎!" + html.BR()
+
+document["but2"].bind("click", lottery)
+</script>
+<button id="but2">恭喜中獎</button>
+</pre>
+
+<p>心得: random 是隨機的意思，random.randint 是隨機且有可能重複的數字，所以要改用 random.sample 來避免選出來的數字為重複的</p>
             </div>
             <!-- /.entry-content -->
         </article>
@@ -436,28 +434,28 @@ ctx.closePath()
             <li class="list-group-item"><h4><i class="fa fa-home fa-lg"></i><span class="icon-label">Recent Posts</span></h4>
                 <ul class="list-group" id="recentposts">
                     <li class="list-group-item">
-                        <a href="./w17-lian-xi.html">
-                            W17 練習
+                        <a href="./si-lian-gan.html">
+                            四連桿
                         </a>
                     </li>
                     <li class="list-group-item">
-                        <a href="./yuan-dan-kuai-le.html">
-                            元旦快樂
+                        <a href="./zhi-xian-yu-yuan-de-zhuan-dong.html">
+                            直線與圓的轉動
                         </a>
                     </li>
                     <li class="list-group-item">
-                        <a href="./sheng-dan-kuai-le.html">
-                            聖誕快樂
+                        <a href="./yuan-dan-kuai-le-shu-zi-chan-sheng.html">
+                            元旦快樂 - 數字產生
                         </a>
                     </li>
                     <li class="list-group-item">
-                        <a href="./w14lian-xi.html">
-                            W14練習
+                        <a href="./sheng-dan-kuai-le-pan-bie-shu-zi-da-xiao.html">
+                            聖誕快樂 - 判別數字大小
                         </a>
                     </li>
                     <li class="list-group-item">
-                        <a href="./w13lian-xi.html">
-                            W13練習
+                        <a href="./jian-li-an-niu.html">
+                            建立按鈕
                         </a>
                     </li>
                 </ul>
