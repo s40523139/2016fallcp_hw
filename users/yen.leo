@@ -41,14 +41,11 @@
 <v t="amd.20161004112026.1" a="E"><vh>vimeo</vh>
 <v t="amd.20161004112026.2"><vh>在近端開啟部落格</vh></v>
 </v>
-<v t="amd.20161004083800.15"><vh>github intro</vh></v>
 <v t="amd.20161004083800.27" a="E"><vh>vimeo</vh>
-<v t="amd.20161004101902.1" a="E"><vh>投影片</vh>
 <v t="amd.20161004101902.2"><vh>修改blog</vh></v>
 </v>
-</v>
-<v t="amd.20161004083800.47" a="E"><vh>Markdown 投影片</vh>
-<v t="amd.20161004092208.1"><vh>利用 MD 寫內容</vh></v>
+<v t="amd.20161004083800.47" a="E"><vh>vimeo</vh>
+<v t="amd.20161004092208.1"><vh>四連桿機構繪圖</vh></v>
 </v>
 <v t="amd.20161004094125.1" a="E"><vh>Markdown 投影片</vh>
 <v t="amd.20161004094125.2"><vh>MD 投影片內容</vh></v>
@@ -171,7 +168,6 @@ print("hello")
 <t tx="amd.20161004083800.110"></t>
 <t tx="amd.20161004083800.115"></t>
 <t tx="amd.20161004083800.121"></t>
-<t tx="amd.20161004083800.15"></t>
 <t tx="amd.20161004083800.158"></t>
 <t tx="amd.20161004083800.162"></t>
 <t tx="amd.20161004083800.166"></t>
@@ -263,7 +259,11 @@ print("hello")
 &lt;/div&gt;
 
 </t>
-<t tx="amd.20161004092208.1"></t>
+<t tx="amd.20161004092208.1">##四連桿機構繪圖
+&lt;iframe src="https://player.vimeo.com/video/199958998" width="640" height="343" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen&gt;&lt;/iframe&gt;
+&lt;p&gt;&lt;a href="https://vimeo.com/199958998"&gt;2017-01-18 15-11-13&lt;/a&gt;
+ from &lt;a href="https://vimeo.com/user58915964"&gt;劉育彤&lt;/a&gt;
+  on &lt;a href="https://vimeo.com"&gt;Vimeo&lt;/a&gt;.&lt;/p&gt;</t>
 <t tx="amd.20161004094125.1">&lt;section data-markdown&gt;
     &lt;script type="text/template"&gt;
 &lt;!-- 請注意, @others 不可以內縮 --&gt;
@@ -340,15 +340,6 @@ Created by me
 &lt;a href="https://vimeo.com/user58915964"&gt;劉育彤&lt;/a&gt; on
  &lt;a href="https://vimeo.com"&gt;Vimeo&lt;/a&gt;.
  &lt;/p&gt;</t>
-<t tx="amd.20161004101902.1">&lt;section data-markdown&gt;
-    &lt;script type="text/template"&gt;
-@others
-    &lt;/script&gt;
-&lt;/section&gt;
-
-
-						
-</t>
 <t tx="amd.20161004101902.2">&lt;section&gt;
 　&lt;h2&gt;修改blog與推回遠端&lt;/h2&gt;
 &lt;iframe src="https://player.vimeo.com/video/191648411" width="640" height="360" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen&gt;&lt;/iframe&gt;
