@@ -259,11 +259,7 @@ print("hello")
 &lt;/div&gt;
 
 </t>
-<t tx="amd.20161004092208.1">##四連桿機構繪圖
-&lt;iframe src="https://player.vimeo.com/video/199958998" width="640" height="343" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen&gt;&lt;/iframe&gt;
-&lt;p&gt;&lt;a href="https://vimeo.com/199958998"&gt;2017-01-18 15-11-13&lt;/a&gt;
- from &lt;a href="https://vimeo.com/user58915964"&gt;劉育彤&lt;/a&gt;
-  on &lt;a href="https://vimeo.com"&gt;Vimeo&lt;/a&gt;.&lt;/p&gt;</t>
+<t tx="amd.20161004092208.1"></t>
 <t tx="amd.20161004094125.1">&lt;section data-markdown&gt;
     &lt;script type="text/template"&gt;
 &lt;!-- 請注意, @others 不可以內縮 --&gt;
@@ -297,7 +293,7 @@ print("hello")
 
 						
 </t>
-<t tx="amd.20161004095719.2"># 2016fall cpa 40523139 劉育彤
+<t tx="amd.20161004095719.2"># 2017 網際網路內容管理40523139 劉育彤
 
 ### 
 
@@ -333,22 +329,10 @@ Created by me
 
 						
 </t>
-<t tx="amd.20161004101327.2">##利用Brython秀出學號
-&lt;iframe src="https://player.vimeo.com/video/191265690" width="640" height="343" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen&gt;&lt;/iframe&gt;
-&lt;p&gt;
-&lt;a href="https://vimeo.com/191265690"&gt;2016-11-12 19-31-16&lt;/a&gt; from 
-&lt;a href="https://vimeo.com/user58915964"&gt;劉育彤&lt;/a&gt; on
- &lt;a href="https://vimeo.com"&gt;Vimeo&lt;/a&gt;.
- &lt;/p&gt;</t>
-<t tx="amd.20161004101902.2">&lt;section&gt;
-　&lt;h2&gt;修改blog與推回遠端&lt;/h2&gt;
-&lt;iframe src="https://player.vimeo.com/video/191648411" width="640" height="360" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen&gt;&lt;/iframe&gt;
-&lt;p&gt;&lt;a href="https://vimeo.com/191648411"&gt;2016-11-15 22-50-02&lt;/a&gt; from
- &lt;a href="https://vimeo.com/user58915964"&gt;劉育彤&lt;/a&gt; on 
- &lt;a href="https://vimeo.com"&gt;Vimeo&lt;/a&gt;.
- &lt;/p&gt;
- 
- &lt;/section&gt;</t>
+<t tx="amd.20161004101327.2">##在 ubuntu 中安裝 nginx 伺服
+&lt;iframe src="https://player.vimeo.com/video/215033333" width="640" height="360" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen&gt;&lt;/iframe&gt;
+&lt;p&gt;&lt;a href="https://vimeo.com/215033333"&gt;2017-04-27_23-21-44&lt;/a&gt; from &lt;a href="https://vimeo.com/user58915964"&gt;劉育彤&lt;/a&gt; on &lt;a href="https://vimeo.com"&gt;Vimeo&lt;/a&gt;.&lt;/p&gt;</t>
+<t tx="amd.20161004101902.2"></t>
 <t tx="amd.20161004104641.1">&lt;section data-markdown&gt;
     &lt;script type="text/template"&gt;
 @others
@@ -359,14 +343,9 @@ Created by me
 						
 </t>
 <t tx="amd.20161004104641.2">&lt;section&gt;
-　&lt;h2&gt;git_clone&amp;git_push&lt;/h2&gt;
-　&lt;iframe src="https://player.vimeo.com/video/191251269" width="640" height="343" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen&gt;&lt;/iframe&gt;
-　&lt;p&gt;
-　&lt;a href="https://vimeo.com/191251269"&gt;2016-11-12 13-37-02&lt;/a&gt; from 
-&lt;a href="https://vimeo.com/user58915964"&gt;劉育彤&lt;/a&gt; on
-&lt;a href="https://vimeo.com"&gt;Vimeo&lt;/a&gt;.
-　&lt;/p&gt;
-</t>
+　&lt;h2&gt;virtualbox中啟動 fossil&lt;/h2&gt;
+&lt;iframe src="https://player.vimeo.com/video/215008801" width="640" height="360" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen&gt;&lt;/iframe&gt;
+&lt;p&gt;&lt;a href="https://vimeo.com/215008801"&gt;2017-04-27_20-33-51&lt;/a&gt; from &lt;a href="https://vimeo.com/user58915964"&gt;劉育彤&lt;/a&gt; on &lt;a href="https://vimeo.com"&gt;Vimeo&lt;/a&gt;.&lt;/p&gt;</t>
 <t tx="amd.20161004104820.1">&lt;section&gt;
 @others
 &lt;/section&gt;
@@ -380,13 +359,9 @@ Created by me
 
 						
 </t>
-<t tx="amd.20161004112026.2">##在近端開啟部落格
-&lt;iframe src="https://player.vimeo.com/video/191637926" width="640" height="343" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen&gt;&lt;/iframe&gt;
-&lt;p&gt;
-&lt;a href="https://vimeo.com/191637926"&gt;2016-11-15 21-23-08&lt;/a&gt; from
- &lt;a href="https://vimeo.com/user58915964"&gt;劉育彤&lt;/a&gt; on 
- &lt;a href="https://vimeo.com"&gt;Vimeo&lt;/a&gt;
- .&lt;/p&gt;</t>
+<t tx="amd.20161004112026.2">##啟動 CMsimfly
+&lt;iframe src="https://player.vimeo.com/video/215030751" width="640" height="360" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen&gt;&lt;/iframe&gt;
+&lt;p&gt;&lt;a href="https://vimeo.com/215030751"&gt;2017-04-27_23-08-37&lt;/a&gt; from &lt;a href="https://vimeo.com/user58915964"&gt;劉育彤&lt;/a&gt; on &lt;a href="https://vimeo.com"&gt;Vimeo&lt;/a&gt;.&lt;/p&gt;</t>
 <t tx="amd.20161004171423.1">&lt;section data-markdown&gt;
     &lt;script type="text/template"&gt;
 &lt;!-- 請注意, @others 不可以內縮 --&gt;
